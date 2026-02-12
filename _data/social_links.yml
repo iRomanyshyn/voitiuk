@@ -1,0 +1,27 @@
+en:
+  title: "Social links"
+  links:
+    - name: "Instagram"
+      url: "https://www.instagram.com/voitiuk_print/"
+      handle: "@voitiuk_print"
+    - name: "Facebook"
+      url: "https://www.facebook.com/anna.vojtyuk/"
+      handle: "Anna Vojtiuk"
+uk:
+  title: "Соцмережі"
+  links:
+    - name: "Instagram"
+      url: "https://www.instagram.com/voitiuk_print/"
+      handle: "@voitiuk_print"
+    - name: "Facebook"
+      url: "https://www.facebook.com/anna.vojtyuk/"
+      handle: "Anna Vojtiuk"
+de:
+  title: "Soziale Netzwerke"
+  links:
+    - name: "Instagram"
+      url: "https://www.instagram.com/voitiuk_print/"
+      handle: "@voitiuk_print"
+    - name: "Facebook"
+      url: "https://www.facebook.com/anna.vojtyuk/"
+      handle: "Anna Vojtiuk"
