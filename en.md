@@ -38,9 +38,6 @@ I am grateful to all colleagues, curators, and friends who support my artistic j
 
 You can send me a message using the form below.
 
-> Note: On GitHub Pages, direct backend form handling is not available.  
-> I use **Formspree** for secure form delivery to email.
-
 <form action="https://formspree.io/{{ site.formspree_form_path }}" method="POST">
   <p>
     <label for="name-en">Name</label><br>

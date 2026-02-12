@@ -38,9 +38,6 @@ Ich bin allen Kolleg:innen, Kurator:innen und Freund:innen dankbar, die meinen k
 
 Sie können mir über das folgende Formular eine Nachricht senden.
 
-> Hinweis: GitHub Pages bietet kein eigenes Backend für Formulare.  
-> Deshalb verwende ich **Formspree** für die sichere Zustellung per E-Mail.
-
 <form action="https://formspree.io/{{ site.formspree_form_path }}" method="POST">
   <p>
     <label for="name-de">Name</label><br>

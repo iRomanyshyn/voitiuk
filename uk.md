@@ -38,9 +38,6 @@ permalink: /uk.html
 
 Ви можете написати мені через форму нижче.
 
-> Примітка: GitHub Pages не має вбудованого бекенду для прийому форм.  
-> Тому для доставки повідомлень на email використовую **Formspree**.
-
 <form action="https://formspree.io/{{ site.formspree_form_path }}" method="POST">
   <p>
     <label for="name-uk">Ім’я</label><br>
