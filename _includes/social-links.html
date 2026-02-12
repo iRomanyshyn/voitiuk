@@ -1,0 +1,12 @@
+{% assign lang = include.lang | default: 'en' %}
+{% assign social = site.data.social_links[lang] | default: site.data.social_links.en %}
+
+<h3 id="social-links">{{ social.title }}</h3>
+<ul>
+  {% for item in social.links %}
+  <li>
+    {{ item.name }}:
+    <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.handle }}</a>
+  </li>
+  {% endfor %}
+</ul>
