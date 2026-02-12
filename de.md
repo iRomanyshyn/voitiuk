@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Anna Voitiuk
-permalink: /de.html
+permalink: /de/
 ---
 
 ## Anna Voitiuk

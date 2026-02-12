@@ -6,7 +6,7 @@ permalink: /
 
 ## Anna Voitiuk
 
-**Language:** English (default) · [Українська](/uk.html) · [Deutsch](/de.html)
+**Language:** English · [Українська](/uk.html) · [Deutsch](/de.html)
 
 ### Quick navigation
 
