@@ -30,6 +30,20 @@ Aktuelle und jüngste Ausstellungen finden Sie hier:
 - Heike Arndt Gallery (ausgewählte Arbeiten/Editionen): <https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/>
 - Deutsche Exlibris-Gesellschaft (DEG): <https://exlibris-deg.de/>
 
+### Auszeichnungen und Wettbewerbsergebnisse
+
+- **2021** — Preisträgerin ("Nagrody / Prizes") in der Kategorie **20–25** beim *IV. Internationalen Biennale-Wettbewerb für kleine Grafikformen „Between black and white…“* (Rybnik).  
+  Quelle: <http://mdk.rybnik.pl/wp-content/uploads/2021/06/IV-_biennale_miedzy_czernia_a_biela_wyniki.pdf>
+
+### Ausstellungsschwerpunkte
+
+- **Mini Maxi Berlin 2021/22** (in den Kategorien meiner Werke bei Heike Arndt Gallery gelistet).  
+- **Support Ukrainian Artists** Initiative (Heike Arndt Gallery / GHA Donation-Kontext).
+
+Quellen:
+- <https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/>
+- <https://exlibris-deg.de/>
+
 ### Dank
 
 Ich bin allen Kolleg:innen, Kurator:innen und Freund:innen dankbar, die meinen künstlerischen Weg unterstützen. Besonders danke ich **Utz Benkel** für seine fortlaufende Unterstützung.

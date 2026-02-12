@@ -30,6 +30,20 @@ permalink: /uk.html
 - Heike Arndt Gallery (добірка робіт/тиражів): <https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/>
 - Deutsche Exlibris-Gesellschaft (DEG): <https://exlibris-deg.de/>
 
+### Нагороди та результати конкурсів
+
+- **2021** — лауреатка в блоці "Nagrody / Prizes" у категорії **20–25** на *IV International Biennial of Small Graphic Forms “Between black and white…”* (Рибник).  
+  Джерело: <http://mdk.rybnik.pl/wp-content/uploads/2021/06/IV-_biennale_miedzy_czernia_a_biela_wyniki.pdf>
+
+### Виставкові акценти
+
+- **Mini Maxi Berlin 2021/22** (вказано в категоріях робіт на сторінці Heike Arndt Gallery).  
+- Ініціатива **Support Ukrainian Artists** (контекст Heike Arndt Gallery / GHA donation).
+
+Джерела:
+- <https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/>
+- <https://exlibris-deg.de/>
+
 ### Подяка
 
 Я вдячна колегам, кураторам і друзям, які підтримують мій мистецький шлях. Окрема подяка **Utz Benkel** за постійну допомогу та підтримку.
