@@ -19,3 +19,25 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
+
+uk:
+  nav:
+    - title: "Про мене"
+      section: miy-hudozhniy-pidhid
+    - title: "Виставки"
+      section: vystavky-ta-prezentatsiyi
+    - title: "Нагороди"
+      section: nagorody-ta-rezultaty-konkursiv
+    - title: "Контакт"
+      section: forma-zvorotnogo-zv-yazku
+
+de:
+  nav:
+    - title: "Über mich"
+      section: kunstlerisches-statement
+    - title: "Ausstellungen"
+      section: ausstellungen-und-prasentationen
+    - title: "Auszeichnungen"
+      section: auszeichnungen-und-wettbewerbsergebnisse
+    - title: "Kontakt"
+      section: kontaktformular

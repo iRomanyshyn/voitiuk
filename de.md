@@ -2,6 +2,7 @@
 layout: page
 title: Anna Voitiuk
 permalink: /de.html
+lang: de
 ---
 
 ## Anna Voitiuk
@@ -10,9 +11,9 @@ permalink: /de.html
 
 ### Schnelle Navigation
 
-- [Künstlerisches Statement](#künstlerisches-statement)
-- [Namensschreibung / Transliteration](#namensschreibung--transliteration)
-- [Ausstellungen und Präsentationen](#ausstellungen-und-präsentationen)
+- [Künstlerisches Statement](#kunstlerisches-statement)
+- [Namensschreibung / Transliteration](#namensschreibung-transliteration)
+- [Ausstellungen und Präsentationen](#ausstellungen-und-prasentationen)
 - [Auszeichnungen und Wettbewerbsergebnisse](#auszeichnungen-und-wettbewerbsergebnisse)
 - [Ausstellungsschwerpunkte](#ausstellungsschwerpunkte)
 - [Soziale Netzwerke](#social-links)
@@ -22,28 +23,28 @@ Hallo und herzlich willkommen auf meiner persönlichen Website.
 
 Ich bin eine ukrainische Druckgrafikerin und Künstlerin. In meiner Arbeit konzentriere ich mich auf monochrome, sehr detailreiche Drucktechniken und visuelles Erzählen, das symbolische Motive, Tierbilder und surreale narrative Elemente verbindet.
 
-### Künstlerisches Statement
+### Künstlerisches Statement {#kunstlerisches-statement}
 
 In meiner künstlerischen Praxis beschäftige ich mich mit Fragilität, Erinnerung und Resilienz. Mich interessiert, wie ein gedrucktes Bild zugleich Präzision und Emotion tragen kann. Durch grafische Struktur und Detail schaffe ich visuelle Welten, die intim, poetisch und leicht verstörend wirken.
 
-### Namensschreibung / Transliteration
+### Namensschreibung / Transliteration {#namensschreibung-transliteration}
 
 Die allgemein korrekte Transliteration meines Nachnamens ist **Voitiuk**.  
 Die Variante **Vojtiuk** hat dieselbe Aussprache und wird ebenfalls in manchen Publikationen verwendet.
 
-### Ausstellungen und Präsentationen
+### Ausstellungen und Präsentationen {#ausstellungen-und-prasentationen}
 
 Meine Arbeiten werden in Kontexten der Druckgrafik und Exlibris-Kunst präsentiert, unter anderem in Galerieprojekten und gemeinschaftlichen Initiativen.
 
 - Heike Arndt Gallery (ausgewählte Arbeiten/Editionen): <https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/>
 - Deutsche Exlibris-Gesellschaft (DEG): <https://exlibris-deg.de/>
 
-### Auszeichnungen und Wettbewerbsergebnisse
+### Auszeichnungen und Wettbewerbsergebnisse {#auszeichnungen-und-wettbewerbsergebnisse}
 
 - **2021** — Preisträgerin ("Nagrody / Prizes") in der Kategorie **20–25** beim *IV. Internationalen Biennale-Wettbewerb für kleine Grafikformen „Between black and white…“* (Rybnik).  
   Quelle: <http://mdk.rybnik.pl/wp-content/uploads/2021/06/IV-_biennale_miedzy_czernia_a_biela_wyniki.pdf>
 
-### Ausstellungsschwerpunkte
+### Ausstellungsschwerpunkte {#ausstellungsschwerpunkte}
 
 - **Mini Maxi Berlin 2021/22** (in den Kategorien meiner Werke bei Heike Arndt Gallery gelistet).
 - **Support Ukrainian Artists** Initiative (Heike Arndt Gallery / GHA Donation-Kontext).
@@ -54,7 +55,7 @@ Meine Arbeiten werden in Kontexten der Druckgrafik und Exlibris-Kunst präsentie
 
 Ich bin allen Kolleg:innen, Kurator:innen und Freund:innen dankbar, die meinen künstlerischen Weg unterstützen. Besonders danke ich **Utz Benkel** für seine fortlaufende Unterstützung.
 
-### Kontaktformular
+### Kontaktformular {#kontaktformular}
 
 Sie können mir über das folgende Formular eine Nachricht senden.
 

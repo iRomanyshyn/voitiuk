@@ -2,6 +2,7 @@
 layout: page
 title: Anna Voitiuk
 permalink: /
+lang: en
 ---
 
 ## Anna Voitiuk
@@ -18,7 +19,7 @@ permalink: /
 - [Social links](#social-links)
 - [Contact form](#contact-form)
 
-### Artist statement
+### Artist statement {#artist-statement}
 
 Hello and welcome to my personal website.
 
@@ -26,24 +27,24 @@ I am a Ukrainian printmaker and graphic artist. In my work, I focus on monochrom
 
 In my artistic practice, I explore fragility, memory, and resilience. I am interested in how a printed image can hold both precision and emotion at the same time. Through graphic structure and detail, I build visual worlds that feel intimate, poetic, and slightly unsettling.
 
-### Name transliteration
+### Name transliteration {#name-transliteration}
 
 The generally correct transliteration of my surname is **Voitiuk**.  
 The variant **Vojtiuk** has the same pronunciation and is also used in some publications.
 
-### Exhibitions and presentations
+### Exhibitions and presentations {#exhibitions-and-presentations}
 
 My work is presented in graphic art and exlibris contexts, including gallery projects and community-based initiatives.
 
 - Heike Arndt Gallery (selected works and editions): <https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/>
 - Deutsche Exlibris-Gesellschaft (DEG): <https://exlibris-deg.de/>
 
-### Awards and competition results
+### Awards and competition results {#awards-and-competition-results}
 
 - **2021** — Prize winner ("Nagrody / Prizes") in the **20–25** category at the *4th International Biennial of Small Graphic Forms “Between black and white…”* (Rybnik).  
   Source: <http://mdk.rybnik.pl/wp-content/uploads/2021/06/IV-_biennale_miedzy_czernia_a_biela_wyniki.pdf>
 
-### Exhibition highlights
+### Exhibition highlights {#exhibition-highlights}
 
 - **Mini Maxi Berlin 2021/22** (listed by Heike Arndt Gallery categories for my works).
 - **Support Ukrainian Artists** initiative (Heike Arndt Gallery / GHA donation context).
@@ -54,7 +55,7 @@ My work is presented in graphic art and exlibris contexts, including gallery pro
 
 I am grateful to all colleagues, curators, and friends who support my artistic journey. I especially appreciate the continued encouragement and help of **Utz Benkel**.
 
-### Contact form
+### Contact form {#contact-form}
 
 You can send me a message using the form below.
 
