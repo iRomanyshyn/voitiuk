@@ -6,24 +6,46 @@ permalink: /de.html
 
 ## Anna Voitiuk
 
-Grafikerin und Druckkünstlerin aus der Ukraine.
+Hallo und herzlich willkommen auf meiner persönlichen Website.
 
-### Über die Künstlerin
+Ich bin eine ukrainische Druckgrafikerin und Künstlerin. In meiner Arbeit konzentriere ich mich auf monochrome, sehr detailreiche Drucktechniken und visuelles Erzählen, das symbolische Motive, Tierbilder und surreale narrative Elemente verbindet.
 
-Anna Voitiuk arbeitet vor allem mit monochromen und sehr detailreichen Drucktechniken. Ihre Bildsprache verbindet häufig poetische Symbolik, Tiere und surreale Erzählmotive.
+### Künstlerisches Statement
+
+In meiner künstlerischen Praxis beschäftige ich mich mit Fragilität, Erinnerung und Resilienz. Mich interessiert, wie ein gedrucktes Bild zugleich Präzision und Emotion tragen kann. Durch grafische Struktur und Detail versuche ich, visuelle Welten zu schaffen, die intim, poetisch und leicht verstörend wirken.
 
 ### Namensvarianten
 
-In verschiedenen Quellen erscheint der Nachname als **Voitiuk** oder **Vojtiuk**.  
-Dabei handelt es sich um Transliterationsvarianten; beide Formen können dieselbe Künstlerin bezeichnen.
+In verschiedenen Quellen erscheint mein Nachname als **Voitiuk** oder **Vojtiuk**.  
+Das sind Transliterationsvarianten und sie können dieselbe Person bezeichnen.
 
-### Für Kurator:innen, Galerien und Medien
+Für englischsprachige Medien, Kataloge und Ankündigungen empfehle ich die Schreibweise **Anna Voitiuk**.
 
-- Primäre englische Schreibweise auf dieser Website: **Anna Voitiuk**
-- Zulässige Variante: **Anna Vojtiuk**
-- Standort: Ukraine
-- Bereich: Druckgrafik / Grafik
+### Social Media
 
-### Kontakt
+- Instagram: [@anna_voitiuk](https://www.instagram.com/anna_voitiuk/)
+- Facebook: [Anna Vojtiuk (Anna Voitiuk)](https://www.facebook.com/anna.vojtyuk/)
 
-Für Ausstellungen, Publikationen und Kooperationen nutzen Sie bitte die Kontaktwege in den offiziellen Social-Media-Profilen und Galerieeinträgen.
+### Kontaktformular
+
+Sie können mir über das folgende Formular eine Nachricht senden.
+
+> Hinweis: GitHub Pages bietet kein eigenes Backend für Formulare.  
+> Deshalb verwende ich **Formspree** für die sichere Zustellung per E-Mail.
+
+<form action="https://formspree.io/{{ site.formspree_form_path }}" method="POST">
+  <p>
+    <label for="name-de">Name</label><br>
+    <input id="name-de" type="text" name="name" required style="width:100%;max-width:520px;">
+  </p>
+  <p>
+    <label for="email-de">E-Mail</label><br>
+    <input id="email-de" type="email" name="email" required style="width:100%;max-width:520px;">
+  </p>
+  <p>
+    <label for="message-de">Nachricht</label><br>
+    <textarea id="message-de" name="message" rows="6" required style="width:100%;max-width:520px;"></textarea>
+  </p>
+  <input type="hidden" name="_subject" value="Neue Nachricht von anna voitiuk site (DE)">
+  <button type="submit">Senden</button>
+</form>
