@@ -1,28 +1,16 @@
-#
-# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
-#
-# Configuration: Add to _config.yml
-# locale: "en-US"  [YOUR PREFERRED LOCALE]
-#
-# How to use:
-# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
+# Navigation for single-page content anchors used in `layout: page`
+# Values in `section` are appended as `#<section>` in the navbar URLs.
 
-# English (default)
-# -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "Services"
-      section: services
-    - title: "Portfolio"
-      section: portfolio
     - title: "About"
-      section: about
-    - title: "Timeline"
-      section: timeline
-    - title: "Team"
-      section: team
+      section: artist-statement
+    - title: "Exhibitions"
+      section: exhibitions-and-presentations
+    - title: "Awards"
+      section: awards-and-competition-results
     - title: "Contact"
-      section: contact
+      section: contact-form
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -31,24 +19,3 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
-
-# Spanish
-# -------
-es: &DEFAULT_ES
-  nav:
-    - title: "Servicios"
-      section: servicios
-    - title: "Portafolio"
-      section: portafolio
-    - title: "Sobre Nosotros"
-      section: nosotros
-    - title: "Cronología"
-      section: cronologia
-    - title: "Equipo"
-      section: equipo
-    - title: "Contáctenos"
-      section: contacto
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES
