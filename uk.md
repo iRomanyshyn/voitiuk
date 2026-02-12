@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Анна Войтюк
-permalink: /uk/
+permalink: /uk.html
 ---
 
 ## Анна Войтюк
