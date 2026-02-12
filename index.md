@@ -7,7 +7,7 @@ permalink: /
 ## Welcome / Willkommen / Вітаю
 
 Hello! I am **Anna Voitiuk** — a Ukrainian printmaker and graphic artist.  
-This personal website is available in three equal versions:
+My personal website is available in three equal versions:
 
 - [English](/en.html)
 - [Deutsch](/de.html)
@@ -17,15 +17,22 @@ This personal website is available in three equal versions:
 
 ### About my name
 
-In different publications and social networks, you may see two spellings:
-**Anna Voitiuk** and **Anna Vojtiuk**.
-
-On this website, I use **Anna Voitiuk** as my primary English spelling.  
-I also recognize **Anna Vojtiuk** as a valid transliteration variant.
+The generally correct transliteration is **Voitiuk**.  
+You may also see **Vojtiuk** in publications and social media; it has the same pronunciation.
 
 ---
 
 ### Social links
 
-- Instagram: [@anna_voitiuk](https://www.instagram.com/anna_voitiuk/)
-- Facebook: [Anna Vojtiuk (Anna Voitiuk)](https://www.facebook.com/anna.vojtyuk/)
+- Instagram: [@voitiuk_print](https://www.instagram.com/voitiuk_print/)
+- Facebook: [Anna Vojtiuk](https://www.facebook.com/anna.vojtyuk/)
+
+---
+
+### Exhibitions and photo reports
+
+I regularly share artwork photos and exhibition reports in my social media.  
+You can also find selected presentation materials via galleries and exlibris communities:
+
+- Heike Arndt Gallery (selected works): <https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/>
+- Deutsche Exlibris-Gesellschaft (DEG): <https://exlibris-deg.de/>

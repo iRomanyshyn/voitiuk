@@ -12,19 +12,27 @@ Ich bin eine ukrainische Druckgrafikerin und Künstlerin. In meiner Arbeit konze
 
 ### Künstlerisches Statement
 
-In meiner künstlerischen Praxis beschäftige ich mich mit Fragilität, Erinnerung und Resilienz. Mich interessiert, wie ein gedrucktes Bild zugleich Präzision und Emotion tragen kann. Durch grafische Struktur und Detail versuche ich, visuelle Welten zu schaffen, die intim, poetisch und leicht verstörend wirken.
+In meiner künstlerischen Praxis beschäftige ich mich mit Fragilität, Erinnerung und Resilienz. Mich interessiert, wie ein gedrucktes Bild zugleich Präzision und Emotion tragen kann. Durch grafische Struktur und Detail schaffe ich visuelle Welten, die intim, poetisch und leicht verstörend wirken.
 
-### Namensvarianten
+### Namensschreibung / Transliteration
 
-In verschiedenen Quellen erscheint mein Nachname als **Voitiuk** oder **Vojtiuk**.  
-Das sind Transliterationsvarianten und sie können dieselbe Person bezeichnen.
+Die allgemein korrekte Transliteration meines Nachnamens ist **Voitiuk**.  
+Die Variante **Vojtiuk** hat dieselbe Aussprache und wird ebenfalls in manchen Publikationen verwendet.
 
-Für englischsprachige Medien, Kataloge und Ankündigungen empfehle ich die Schreibweise **Anna Voitiuk**.
+### Ausstellungen und Präsentationen (Auswahl)
 
-### Social Media
+Meine Arbeiten werden in Kontexten der Druckgrafik und Exlibris-Kunst präsentiert, unter anderem in Galerieprojekten und gemeinschaftlichen Initiativen.
 
-- Instagram: [@anna_voitiuk](https://www.instagram.com/anna_voitiuk/)
-- Facebook: [Anna Vojtiuk (Anna Voitiuk)](https://www.facebook.com/anna.vojtyuk/)
+Aktuelle und jüngste Ausstellungen finden Sie hier:
+
+- Instagram (neue Arbeiten + Stories): <https://www.instagram.com/voitiuk_print/>
+- Facebook (Alben + Ausstellungsberichte): <https://www.facebook.com/anna.vojtyuk/>
+- Heike Arndt Gallery (ausgewählte Arbeiten/Editionen): <https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/>
+- Deutsche Exlibris-Gesellschaft (DEG): <https://exlibris-deg.de/>
+
+### Dank
+
+Ich bin allen Kolleg:innen, Kurator:innen und Freund:innen dankbar, die meinen künstlerischen Weg unterstützen. Besonders danke ich **Utz Benkel** für seine fortlaufende Unterstützung.
 
 ### Kontaktformular
 

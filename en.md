@@ -12,19 +12,27 @@ I am a Ukrainian printmaker and graphic artist. In my work, I focus on monochrom
 
 ### Artist statement
 
-In my artistic practice, I explore fragility, memory, and resilience. I am interested in how a printed image can hold both precision and emotion at the same time. Through graphic structure and detail, I try to build visual worlds that feel intimate, poetic, and slightly unsettling.
+In my artistic practice, I explore fragility, memory, and resilience. I am interested in how a printed image can hold both precision and emotion at the same time. Through graphic structure and detail, I build visual worlds that feel intimate, poetic, and slightly unsettling.
 
-### Name variants
+### Name transliteration
 
-In different sources, my surname appears as **Voitiuk** and **Vojtiuk**.  
-These are transliteration variants and can refer to the same person.
+The generally correct transliteration of my surname is **Voitiuk**.  
+The variant **Vojtiuk** has the same pronunciation and is also used in some publications.
 
-For consistency in English-language media, catalogs, and announcements, I recommend using **Anna Voitiuk**.
+### Selected exhibitions and presentations
 
-### Social media
+My work is presented in graphic art and exlibris contexts, including gallery projects and community-based initiatives.
 
-- Instagram: [@anna_voitiuk](https://www.instagram.com/anna_voitiuk/)
-- Facebook: [Anna Vojtiuk (Anna Voitiuk)](https://www.facebook.com/anna.vojtyuk/)
+To follow current and recent exhibitions, please use:
+
+- Instagram (new works + exhibition stories): <https://www.instagram.com/voitiuk_print/>
+- Facebook (albums + event reports): <https://www.facebook.com/anna.vojtyuk/>
+- Heike Arndt Gallery (selected works and editions): <https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/>
+- Deutsche Exlibris-Gesellschaft (DEG): <https://exlibris-deg.de/>
+
+### Acknowledgement
+
+I am grateful to all colleagues, curators, and friends who support my artistic journey. I especially appreciate the continued encouragement and help of **Utz Benkel**.
 
 ### Contact form
 
