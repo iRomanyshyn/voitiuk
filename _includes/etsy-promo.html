@@ -1,0 +1,17 @@
+{% assign locale = include.locale %}
+{% assign shop = site.data.content[locale].shop %}
+<section class="shop-promo" aria-labelledby="etsy-shop-title-{{ page.page_key }}">
+  <div class="shell shop-promo-inner">
+    <div class="shop-promo-name" aria-hidden="true">
+      <span>VoitiukPrint</span>
+      <small>on Etsy</small>
+    </div>
+    <div class="shop-promo-copy">
+      <p class="eyebrow">{{ shop.eyebrow }}</p>
+      <h2 id="etsy-shop-title-{{ page.page_key }}">{{ shop.title }}</h2>
+      <p>{{ shop.description }}</p>
+      <p class="shop-promo-note">{{ shop.shipping_note }}</p>
+      <a class="button" href="https://www.etsy.com/shop/VoitiukPrint" target="_blank" rel="noopener external">{{ shop.cta }} <span aria-hidden="true">↗</span><span class="sr-only"> — {{ shop.new_tab }}</span></a>
+    </div>
+  </div>
+</section>

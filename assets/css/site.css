@@ -60,6 +60,18 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
 .button-secondary:hover { background: var(--ink); color: white; }
 .text-link { color: var(--accent-dark); font-size: 0.9rem; font-weight: 600; }
 
+.shop-promo { border-block: 1px solid var(--line); background: var(--ink); color: var(--paper-bright); }
+.shop-promo-inner { min-height: 400px; display: grid; grid-template-columns: minmax(260px, 0.68fr) minmax(0, 1fr); align-items: center; gap: clamp(50px, 10vw, 150px); padding-block: clamp(64px, 8vw, 110px); }
+.shop-promo-name { display: flex; flex-direction: column; justify-content: center; min-height: 220px; border: 1px solid #6e716d; padding: clamp(28px, 4vw, 56px); font-family: var(--serif); }
+.shop-promo-name span { font-size: clamp(2.4rem, 5vw, 5.4rem); letter-spacing: -0.055em; line-height: 0.92; overflow-wrap: anywhere; }
+.shop-promo-name small { margin-top: 18px; color: #b8bbb6; font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+.shop-promo-copy { max-width: 700px; }
+.shop-promo-copy h2 { max-width: 680px; margin-bottom: 24px; }
+.shop-promo-copy > p:not(.eyebrow) { max-width: 650px; color: #d2d3cf; }
+.shop-promo-note { font-size: 0.86rem; }
+.shop-promo .button { margin-top: 14px; border-color: var(--paper-bright); background: var(--paper-bright); color: var(--ink); }
+.shop-promo .button:hover { border-color: white; background: transparent; color: white; }
+
 .section { padding-block: clamp(80px, 10vw, 150px); }
 .section-tint { background: #e8e6df; }
 .section-heading { display: grid; grid-template-columns: 1fr minmax(260px, 0.55fr); align-items: end; gap: 40px; margin-bottom: 48px; border-bottom: 1px solid var(--line); }
@@ -168,6 +180,7 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
   .menu-toggle[aria-expanded="true"] span:last-child { transform: rotate(45deg); }
   .split-editorial { grid-template-columns: 1fr; gap: 30px; }
   .split-editorial h2 { position: static; }
+  .shop-promo-inner { grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr); gap: 50px; }
   .two-columns, .publication-columns { gap: 50px; }
 }
 
@@ -189,6 +202,8 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
   .work-image-button { min-height: 330px; padding: 14px; }
   .work-caption { flex-direction: column; gap: 8px; }
   .two-columns, .about-notes, .publication-columns, .contact-layout { grid-template-columns: 1fr; }
+  .shop-promo-inner { min-height: 0; grid-template-columns: 1fr; gap: 38px; }
+  .shop-promo-name { min-height: 150px; }
   .page-hero { min-height: 40vh; padding-block: 74px 48px; }
   .page-hero h1 { font-size: clamp(3.4rem, 17vw, 5rem); }
   .page-hero-actions { flex-direction: column; align-items: flex-start; }

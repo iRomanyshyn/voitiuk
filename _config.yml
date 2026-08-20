@@ -4,7 +4,6 @@ baseurl: ""
 title: "Anna Voitiuk"
 description: "Official website of Ukrainian printmaker and graphic artist Anna Voitiuk."
 author: "Anna Voitiuk"
-email: "anna.vojtiuk@gmail.com"
 locale: "en"
 
 markdown: kramdown

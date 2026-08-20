@@ -20,8 +20,8 @@ alternate_en: /privacy/
   <p>When you submit the contact form, the name, email address and message you provide are sent through Formspree so Anna Voitiuk can respond. Do not submit sensitive personal information through the form.</p>
 
   <h2>External links</h2>
-  <p>The website links to Instagram, Facebook, galleries and professional sources. Those services have their own privacy practices.</p>
+  <p>The website links to Etsy, Instagram, Facebook, galleries and professional sources. Those services have their own privacy practices.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this notice can be sent to <a href="mailto:anna.vojtiuk@gmail.com">anna.vojtiuk@gmail.com</a>.</p>
+  <p>Questions about this notice can be sent through the <a href="/en/contact/">contact form</a>.</p>
 </section>
