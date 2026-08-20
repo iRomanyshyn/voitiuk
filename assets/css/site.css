@@ -190,6 +190,8 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
 .form-field label { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; }
 .form-field input, .form-field textarea { width: 100%; border: 0; border-bottom: 1px solid var(--ink); border-radius: 0; background: transparent; padding: 10px 4px; }
 .form-field textarea { border: 1px solid var(--line); background: var(--paper-bright); resize: vertical; }
+.form-legal { max-width: 680px; margin: -8px 0 0; color: var(--muted); font-size: 0.78rem; line-height: 1.55; }
+.form-legal a { color: var(--accent-dark); }
 .honeypot { position: absolute; left: -9999px; }
 .contact-direct { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding-top: 8px; }
 .contact-direct h2 { font-size: 2rem; }

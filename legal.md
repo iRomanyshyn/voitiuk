@@ -25,7 +25,8 @@ alternate_uk: /uk/privacy/
   <p><button class="button button-secondary" type="button" data-clarity-settings>Review analytics choice</button></p>
 
   <h2>Contact form</h2>
-  <p>When you submit the contact form, the name, email address and message you provide are sent through Formspree so Anna Voitiuk can respond. Do not submit sensitive personal information through the form.</p>
+  <p>When you submit the contact form, the name, email address and message you provide are sent to Formspree so Anna Voitiuk can respond. Formspree accepts, stores and processes the submission to deliver it.</p>
+  <p>By submitting the form, you use Formspree’s message-delivery service. Formspree’s handling of the submitted information is governed by its <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>, and use of that service is subject to its <a href="https://formspree.io/legal/terms-of-service/" target="_blank" rel="noopener noreferrer">Terms of Service</a>. Do not submit sensitive personal information through the form.</p>
 
   <h2>External links</h2>
   <p>The website links to Etsy, Instagram, Facebook, galleries and professional sources. Those services have their own privacy practices.</p>
