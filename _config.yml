@@ -17,6 +17,7 @@ defaults:
       image: /assets/img/works/sightseeing-tour.jpg
 
 formspree_form_id: "mykdekvr"
+clarity_project_id: "y5fc1g7g0m"
 
 exclude:
   - README.md

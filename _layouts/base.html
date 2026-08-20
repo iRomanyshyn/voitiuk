@@ -58,7 +58,7 @@
     </script>
     {% if page.extra_schema %}{{ page.extra_schema }}{% endif %}
   </head>
-  <body class="page-{{ page.page_key | default: 'default' }}">
+  <body class="page-{{ page.page_key | default: 'default' }}" data-clarity-project-id="{{ site.clarity_project_id }}">
     <a class="skip-link" href="#main-content">{{ t.skip }}</a>
     <header class="site-header" data-site-header>
       <div class="shell header-inner">
@@ -94,9 +94,21 @@
           <a href="https://www.facebook.com/anna.vojtyuk/" target="_blank" rel="me noopener noreferrer">{{ t.footer.facebook }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
           <a href="https://www.etsy.com/shop/VoitiukPrint" target="_blank" rel="me noopener external">{{ t.footer.etsy }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
           <a href="/{% if locale == 'uk' %}uk{% else %}en{% endif %}/contact/">{{ t.footer.contact }}</a>
+          <a href="{% if locale == 'uk' %}/uk/privacy/{% else %}/privacy/{% endif %}">{{ t.footer.privacy }}</a>
+          <button class="footer-link" type="button" data-clarity-settings>{{ t.consent.settings }}</button>
         </nav>
       </div>
     </footer>
+    <aside class="consent-banner" data-consent-banner hidden aria-label="{{ t.consent.label }}">
+      <div class="consent-copy">
+        <strong>{{ t.consent.title }}</strong>
+        <p>{{ t.consent.message }} <a href="{% if locale == 'uk' %}/uk/privacy/{% else %}/privacy/{% endif %}">{{ t.consent.learn_more }}</a>.</p>
+      </div>
+      <div class="consent-actions">
+        <button class="button button-secondary" type="button" data-clarity-decline>{{ t.consent.decline }}</button>
+        <button class="button" type="button" data-clarity-accept>{{ t.consent.accept }}</button>
+      </div>
+    </aside>
     <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
   </body>
 </html>

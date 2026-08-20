@@ -79,4 +79,77 @@
     });
   }
 
+  const clarityProjectId = document.body.dataset.clarityProjectId;
+  const consentBanner = document.querySelector('[data-consent-banner]');
+  const acceptAnalytics = document.querySelector('[data-clarity-accept]');
+  const declineAnalytics = document.querySelector('[data-clarity-decline]');
+  const analyticsSettings = Array.from(document.querySelectorAll('[data-clarity-settings]'));
+  const consentStorageKey = 'voitiuk-clarity-consent-v1';
+
+  if (clarityProjectId && consentBanner && acceptAnalytics && declineAnalytics) {
+    const readConsent = () => {
+      try {
+        return window.localStorage.getItem(consentStorageKey);
+      } catch (_error) {
+        return null;
+      }
+    };
+    const saveConsent = (value) => {
+      try {
+        window.localStorage.setItem(consentStorageKey, value);
+      } catch (_error) {
+        // The choice still applies to the current page when storage is unavailable.
+      }
+    };
+    const signalConsent = (analyticsStorage) => {
+      if (typeof window.clarity === 'function') {
+        window.clarity('consentv2', {
+          ad_Storage: 'denied',
+          analytics_Storage: analyticsStorage
+        });
+      }
+    };
+    const loadClarity = () => {
+      if (document.querySelector('script[data-clarity-script]')) {
+        signalConsent('granted');
+        return;
+      }
+      window.clarity = window.clarity || function () {
+        (window.clarity.q = window.clarity.q || []).push(arguments);
+      };
+      signalConsent('granted');
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = `https://www.clarity.ms/tag/${clarityProjectId}`;
+      script.dataset.clarityScript = '';
+      document.head.appendChild(script);
+    };
+    const showConsent = (moveFocus = false) => {
+      consentBanner.hidden = false;
+      if (moveFocus) declineAnalytics.focus();
+    };
+    const hideConsent = () => {
+      consentBanner.hidden = true;
+    };
+
+    acceptAnalytics.addEventListener('click', () => {
+      saveConsent('granted');
+      loadClarity();
+      hideConsent();
+    });
+    declineAnalytics.addEventListener('click', () => {
+      saveConsent('denied');
+      signalConsent('denied');
+      hideConsent();
+    });
+    analyticsSettings.forEach((button) => button.addEventListener('click', () => showConsent(true)));
+
+    const storedConsent = readConsent();
+    if (storedConsent === 'granted') {
+      loadClarity();
+    } else if (storedConsent !== 'denied') {
+      showConsent();
+    }
+  }
+
 })();

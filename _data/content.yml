@@ -112,12 +112,21 @@ en:
     shipping_note: "Delivery is available to destinations supported by Etsy and the carrier; sanctioned or otherwise restricted destinations are excluded. Exact availability and cost are shown at checkout."
     cta: "Shop available works on Etsy"
     new_tab: "opens in a new tab"
+  consent:
+    label: "Analytics preferences"
+    title: "Optional analytics"
+    message: "With your permission, Microsoft Clarity helps us understand how the website is used and where its experience can be improved. Declining will not affect the website."
+    learn_more: "Privacy information"
+    accept: "Allow analytics"
+    decline: "Decline"
+    settings: "Analytics settings"
   footer:
     rights: "© Anna Voitiuk"
     instagram: "Instagram"
     facebook: "Facebook"
     etsy: "Etsy shop"
     contact: "Contact"
+    privacy: "Privacy"
 
 uk:
   site_name: "Анна Войтюк"
@@ -233,9 +242,18 @@ uk:
     shipping_note: "Доставка доступна до напрямків, які підтримують Etsy та перевізник; підсанкційні й інші обмежені напрямки виключено. Точна доступність і вартість відображаються під час оформлення."
     cta: "Переглянути доступні роботи на Etsy"
     new_tab: "відкриється у новій вкладці"
+  consent:
+    label: "Налаштування аналітики"
+    title: "Необов’язкова аналітика"
+    message: "З вашого дозволу Microsoft Clarity допомагає зрозуміти, як використовують сайт і що в ньому можна покращити. Відмова не вплине на роботу сайту."
+    learn_more: "Інформація про приватність"
+    accept: "Дозволити аналітику"
+    decline: "Відмовитися"
+    settings: "Налаштування аналітики"
   footer:
     rights: "© Анна Войтюк"
     instagram: "Instagram"
     facebook: "Facebook"
     etsy: "Etsy-магазин"
     contact: "Контакти"
+    privacy: "Приватність"

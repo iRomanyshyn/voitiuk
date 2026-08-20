@@ -7,15 +7,22 @@ description: "Privacy information for voitiuk.com."
 permalink: /privacy/
 sitemap: false
 alternate_en: /privacy/
+alternate_uk: /uk/privacy/
 ---
 
 <header class="page-hero shell">
   <p class="eyebrow">voitiuk.com</p>
   <h1>Privacy</h1>
-  <p>This website does not use analytics or advertising cookies.</p>
+  <p>This website uses optional analytics only with your permission.</p>
 </header>
 
 <section class="section shell prose">
+  <h2>Optional analytics</h2>
+  <p>With your permission, this website loads Microsoft Clarity to understand aggregate use and identify usability problems. Clarity can measure page views and interactions such as clicks and scrolling and can provide session recordings. It is not used here for advertising.</p>
+  <p>Clarity is not loaded before you choose “Allow analytics”. If you decline, the website continues to work normally. Your choice is stored in your browser’s local storage so the website can remember it; that preference is not used to track you. If analytics is allowed, Clarity may set analytics cookies and Microsoft processes the resulting data under its own privacy terms.</p>
+  <p><a href="https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-cookies" target="_blank" rel="noopener noreferrer">Read about Clarity cookies</a> and the <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy Statement</a>.</p>
+  <p><button class="button button-secondary" type="button" data-clarity-settings>Review analytics choice</button></p>
+
   <h2>Contact form</h2>
   <p>When you submit the contact form, the name, email address and message you provide are sent through Formspree so Anna Voitiuk can respond. Do not submit sensitive personal information through the form.</p>
 
