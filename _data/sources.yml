@@ -230,3 +230,18 @@ pubchem-ferric-chloride:
   organization: "PubChem, National Library of Medicine"
   url: "https://pubchem.ncbi.nlm.nih.gov/compound/Iron-trichloride"
   type: "government-chemical-reference"
+encyclopedia-hnizdovsky:
+  label: "Hnizdovsky, Jacques"
+  organization: "Encyclopedia of Ukraine"
+  url: "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CH%5CN%5CHnizdovskyJacques.htm"
+  type: "encyclopedia-entry"
+kitchen-lithography-aizier:
+  label: "Kitchen Litho on aluminium foil"
+  organization: "Atelier Kitchen Print — Émilie Aizier"
+  url: "https://www.atelier-kitchen-print.org/product/kitchen-litho-simple-and-non-toxic-lithography-with-cola-and-cooking-oil/"
+  type: "artist-method-reference"
+essdee-artists-lino:
+  label: "Traditional lino and contemporary carving materials"
+  organization: "Essdee"
+  url: "https://www.essdee.co.uk/lino/"
+  type: "manufacturer-reference"

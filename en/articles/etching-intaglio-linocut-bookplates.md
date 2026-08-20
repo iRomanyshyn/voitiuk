@@ -4,13 +4,13 @@ lang: en
 page_key: article
 parent_url: /en/publications/
 og_type: article
-title: "What are etching, intaglio, linocut and ex libris? — Anna Voitiuk"
-article_title: "From a line in metal to an impression: etching, linocut and the art of the bookplate"
-description: "How an original print is made, how etching differs from linocut, what the codes C1–C8 mean, and how the bookplate became an art form of its own."
+title: "Etching, woodcut, linocut, lithography and ex libris — Anna Voitiuk"
+article_title: "From matrix to impression: etching, woodcut, linocut, lithography and the bookplate"
+description: "How intaglio and relief printing work, how woodcut, linocut and lithography differ, what international technique codes mean, and how the bookplate became an art form."
 eyebrow: "Printmaking explained"
 date: 2026-08-20
 date_label: "20 August 2026"
-reading_time: "13 min read"
+reading_time: "18 min read"
 ai_disclosure: "This article was created with the use of artificial intelligence; factual statements were checked against the sources listed below."
 image: "/assets/img/works/sightseeing-tour.jpg"
 image_alt: "Sightseeing Tour, an etching and aquatint by Anna Voitiuk"
@@ -39,6 +39,9 @@ source_ids:
   - kent-printmaking-safety
   - pubchem-nitric-acid
   - pubchem-ferric-chloride
+  - encyclopedia-hnizdovsky
+  - kitchen-lithography-aizier
+  - essdee-artists-lino
 ---
 
 Imagine a fine black line on a sheet of paper. It may look light and immediate, yet its route to the page can be surprisingly long: the artist prepares a plate, scratches or etches it, applies ink, wipes the surface, dampens the paper and sends everything through a press. In printmaking, an image is shaped not only by drawing but also by material, pressure and the act of transfer itself.
@@ -67,6 +70,10 @@ For an etching, a metal plate is covered with an acid-resistant ground. The arti
 
 The needle can move almost as freely as a pencil, but the final character of the mark also depends on the ground, metal, mordant, timing and printing. That is part of etching’s fascination: the artist directs the image, while the material retains a voice of its own.
 
+The **ground** is not an ordinary household varnish but a coating formulated to adhere to metal, resist the etching solution and still open cleanly under a needle. Hard ground is used for a crisp line; soft ground remains slightly tacky and can receive the texture of fabric, paper or a drawing; stop-out varnish protects areas that have already been bitten during later stages. Traditional recipes used waxes, resins and asphaltum, while liquid and acrylic grounds are also available today.<sup><a href="#source-vam-what-is-print">[5]</a></sup>
+
+This is a small, specialist corner of the art-materials market. Ready-made grounds and stop-out varnishes come from a limited group of printmaking manufacturers rather than every general paint brand. The same is true of etching needles, scrapers, burnishers, mezzotint tools and presses. Some workshops therefore make their own grounds, but the formulation affects both the image and working safety, so the ingredients and safety information should never be a mystery.
+
 ### From nitric acid to ferric chloride
 
 In older etching practice, copper and zinc plates were often bitten with nitric acid or more complex acid mixtures. When nitric acid reacts with metal, it can release toxic nitrogen oxides, including brown nitrogen dioxide. This gas strongly irritates the lungs, while its odour may not provide an adequate warning of a dangerous concentration. Vapour and splashes can cause chemical burns to the skin and eyes; inhalation can injure the respiratory tract, and substantial or repeated exposure has been associated with bronchitis and chemical pneumonitis.<sup><a href="#source-kent-printmaking-safety">[15]</a></sup><sup><a href="#source-pubchem-nitric-acid">[16]</a></sup>
@@ -79,7 +86,7 @@ Several related intaglio techniques are often used alongside etching:
 
 - **aquatint** produces tonal fields and gradations rather than line alone. A granular resist is formed on the plate, and the mordant bites in the microscopic spaces around its particles;
 - **drypoint** needs no mordant: the image is scratched directly into the plate. The displaced material creates a burr that holds ink and prints a soft, velvety line. Because the burr gradually wears under the press, only a limited number of especially rich impressions can usually be taken;
-- **mezzotint** begins with a plate roughened so evenly that it could print as a deep black. By smoothing selected areas, the artist seems to draw light out of darkness.
+- **mezzotint** begins with a plate roughened so evenly that it could print as a deep black. The tool used is a **mezzotint rocker**: a curved steel blade with extremely regular teeth and a handle. It looks a little like a miniature toothed hoe or some precisely engineered piece of farm equipment, yet it is made with the accuracy of an engraver’s tool. The rocker is rolled repeatedly across the plate in many directions until the surface is covered with an even field of burrs. Scrapers and burnishers then reduce this roughness: the smoother the area, the less ink it holds and the lighter it prints.<sup><a href="#source-vam-what-is-print">[5]</a></sup>
 
 <figure>
   <img src="/assets/img/works/kotoroka.jpg" alt="Kotoroka, a drypoint by Anna Voitiuk">
@@ -106,13 +113,53 @@ After returning from exile, he worked intensively on etchings, including portrai
 
 So when a contemporary Ukrainian artist works in etching or aquatint, the background is not only a European history stretching from Dürer to Goya, but a substantial tradition closer to home.
 
-## Linocut: what remains is what prints
+## Relief printing: woodcut, wood engraving and linocut
 
-Linocut belongs not to intaglio but to **relief printing**. The artist cuts away the parts of a sheet of linoleum that should remain white. Ink is rolled over the uncut surface, paper is placed on top and pressure transfers the image. Here the raised areas print and the recesses remain silent.
+Relief printing reverses the logic of etching: ink is rolled over the top of the matrix, while the cut recesses remain white. Woodcut, wood engraving and linocut all belong to this family. Their basic principle is shared, but the material and the direction of its grain change the character of the line completely.<sup><a href="#source-vam-what-is-print">[5]</a></sup>
 
-Linoleum is softer than a wooden block, has no grain and permits cutting in any direction. Linocut emerged as an artistic technique in the twentieth century. It is valued for bold contrast, simplified forms and the energy of the cut mark. Picasso pushed it far beyond the idea of a “simple black-and-white image”. In 1959 he developed the one-block reduction method: after each colour is printed, more of the block is cut away, so there is no return to an earlier stage.<sup><a href="#source-met-picasso-linocuts">[6]</a></sup>
+### Woodcut: drawing with the grain
 
-The difference is easy to remember: **in etching, ink stays in the recesses; in linocut, it stays on the surface that has not been cut away**.
+A **woodcut** is made on a block sawn lengthwise through the trunk, much like a plank used for furniture. The grain runs across the printing surface. Knives, chisels and gouges remove everything that should not print; ink remains on the uncut planes.
+
+The grain can resist the tool, steer a line or unexpectedly splinter an edge. Rather than concealing this behaviour, woodcut often turns it into part of its language: hence its forceful black shapes, living contours and physical energy. European woodcuts on paper became widespread in the early fifteenth century in religious images, playing cards and books. Dürer showed that the process could do far more than transmit information, building complex dramatic worlds in relief. In Japan, multicolour printing from woodblocks became the foundation of *ukiyo-e*, the art of Hokusai and Hiroshige.<sup><a href="#source-vam-what-is-print">[5]</a></sup>
+
+### Wood engraving: the burin works across the grain
+
+The broad phrase “engraving on wood” is sometimes used for both woodcut and **wood engraving**, but technically they are not quite the same. Wood engraving uses the dense end grain of a block — traditionally boxwood — and a burin related to the tool used for copper engraving. On this hard surface it can produce exceedingly fine white lines, cross-hatching and jewel-like detail. This made it especially important to book and periodical illustration in the eighteenth and nineteenth centuries.
+
+The shortest distinction is this: **woodcut is generally worked with knives and gouges on a plank-grain block; wood engraving with a burin on dense end grain**. Both print in relief, but one readily displays the character of wood while the other can rival metal engraving in precision.
+
+### Jacques Hnizdovsky: wood as an international language
+
+Jacques Hnizdovsky was one of the most distinctive Ukrainian masters of relief printmaking in the twentieth century. Born in Galicia in 1915, he studied in Warsaw and Zagreb and settled in the United States in 1949. His body of work includes close to 250 woodcuts. Plants, trees, rams, sheep and birds do not appear as mere “nature illustrations”: rhythmically organised lines and an almost architectural structure give them monumentality.
+
+Hnizdovsky called his approach “simplified realism”. He combined the discipline of Dürer, Ukrainian Baroque engraving, Chinese and Japanese woodcuts, and modern tendencies into a personal language that brought him international recognition. His prints entered museum and library collections in the United States and Canada, while solo exhibitions were held in New York, Paris, London and elsewhere.<sup><a href="#source-encyclopedia-hnizdovsky">[18]</a></sup>
+
+His influence should not be exaggerated into the invention of a new process: technically, he built on a long tradition. What Hnizdovsky demonstrated was that Ukrainian graphic art could speak internationally without surrendering its own visual memory. For later generations, that example became a standard in itself — economy of means, absolute discipline of line and the ability to turn a modest subject into a major image.
+
+### Linocut: wood without the grain
+
+**Linocut** also belongs to relief printing. The parts of a linoleum sheet that should remain white are cut away; ink is rolled over the uncut surface, paper is laid on top and pressure transfers the image. The raised areas print and the recesses remain silent.
+
+The traditional material is neither soft packaging foam nor vinyl flooring, but dense, smooth **artists’ linoleum**. It is related to traditional floor lino: a linseed-oil-based mixture with fillers carried on a jute backing. Its best-known form is often called *battleship grey* — grey sheets roughly three millimetres thick. It is firm enough to retain an edge but becomes easier to carve when gently warmed. Polymer *SoftCut* blocks and other easy-carve substitutes are now widely sold; they are convenient, but technically they are not traditional linoleum.<sup><a href="#source-essdee-artists-lino">[20]</a></sup>
+
+Linoleum has no wood grain and permits cutting in any direction. Linocut emerged as an artistic technique in the twentieth century and is valued for bold contrast, simplified forms and the energy of the cut mark. Picasso pushed it far beyond the idea of a “simple black-and-white image”. In 1959 he developed the one-block reduction method: after each colour is printed, more of the block is cut away, so there is no return to an earlier stage.<sup><a href="#source-met-picasso-linocuts">[6]</a></sup>
+
+The difference is easy to remember: **in etching, ink stays in the recesses; in woodcut and linocut, it stays on the surface that has not been cut away**.
+
+## Lithography: drawing on a flat surface
+
+Lithography is neither relief nor intaglio but a **planographic process**: printing and non-printing areas lie almost in the same plane. A greasy crayon or tusche is used to draw on a lithographic stone or metal plate. After chemical preparation, the untouched areas accept water and repel greasy ink, while the drawing accepts ink and repels water. Paper and matrix pass through a press to transfer the image.<sup><a href="#source-vam-what-is-print">[5]</a></sup>
+
+A traditional lithographic workshop does require a considerable apparatus: a heavy limestone slab or prepared metal plate, graining materials, lithographic tusche, gum arabic, rollers and a specialised press. In return, it offers a surface on which a mark can remain almost as free as on paper, from a fine crayon line to a broad wash-like area.
+
+### Kitchen lithography: a smaller entrance to the same principle
+
+**Kitchen Litho** transfers the same repulsion between water and grease to more accessible materials. The French artist Émilie Aizier developed the method in 2011. Instead of a heavy stone it uses aluminium foil or a thin aluminium plate; in its basic form cola helps process the image and ordinary cooking oil is used for cleaning.<sup><a href="#source-kitchen-lithography-aizier">[19]</a></sup>
+
+This makes a first experiment possible without a lithographic stone, a graining sink or a large collection of acids and solvents. “Kitchen”, however, does not mean that opening one drawer supplies everything: a greasy drawing material, printing ink, roller, paper and even pressure are still required. Depending on the version of the method, the impression is transferred by hand burnishing or with a press; a press usually gives more consistent results.
+
+Kitchen lithography is particularly useful for understanding the logic of planographic printing and beginning to experiment at home or in a small studio. It is not a complete replacement for classical lithography: foil is less durable, a long edition is harder to control, and printing inks or any additional products still need to be used according to their safety information. Its strength is not the promise of “art without any equipment”, but a radically lower barrier to entry.
 
 ## Ex libris: a miniature portrait of a library owner
 
@@ -122,9 +169,18 @@ The ownership mark soon became more than a label. A coat of arms, profession, fa
 
 Bookplates are still alive. Private and institutional libraries use them to mark collections, record provenance and commemorate donors or special bequests.<sup><a href="#source-loc-bookplates">[12]</a></sup> At the same time, ex libris has become an independent form of small-format graphic art. Artists make editions, collectors exchange them, museums preserve them, and international competitions exhibit them alongside other original prints. A contemporary ex libris may never be pasted into a book, yet the owner’s name, the words *Ex Libris* and its personal imagery preserve the connection with its first purpose.<sup><a href="#source-met-bookplates">[11]</a></sup>
 
-## What do C3, C4 or C3+C5 mean?
+## What do X1, L1, C3 or C3+C5 mean?
 
-Catalogues of ex libris and small-format prints often place a short code beside the technique. It belongs to an international system first organised by the FISAE community in 1958 and revised in 2002.<sup><a href="#source-fisae-technique-codes">[13]</a></sup> The letter **C** groups intaglio processes; the number specifies how the recesses were made.
+Catalogues of ex libris and small-format prints often place a short code beside the technique. It belongs to an international system first organised by the FISAE community in 1958 and revised in 2002.<sup><a href="#source-fisae-technique-codes">[13]</a></sup> The letter identifies a family of processes and the number a particular method.
+
+| Code | Technique | Print family |
+|---|---|---|
+| **X1** | Woodcut | Relief printing from plank grain |
+| **X2** | Wood engraving | Relief printing from end grain |
+| **X3** | Linocut | Relief printing from linoleum |
+| **L1** | Original lithography | Planographic printing from stone or metal |
+
+The letter **C** groups intaglio processes; here the number specifies how the recesses were made.
 
 | Code | Technique | In plain language |
 |---|---|---|
@@ -143,4 +199,4 @@ When several processes occur in one work, their codes are joined with a plus sig
 
 In a digital world, an image can appear on a screen almost instantly. Printmaking offers a different experience: slow, physical and slightly unpredictable. The artist has to think in reverse, wait for the mordant, feel the resistance of a tool, learn how to wipe a plate and accept that the press may answer a little differently from what was expected.
 
-That collaboration between hand, material and time keeps etching, drypoint and linocut contemporary despite their age. The bookplate makes the same point at an intimate scale: a whole world can fit on a small sheet — personal, witty and able to travel from book to book and collection to collection.
+That collaboration between hand, material and time keeps etching, drypoint, woodcut, linocut and lithography contemporary despite their age. The bookplate makes the same point at an intimate scale: a whole world can fit on a small sheet — personal, witty and able to travel from book to book and collection to collection.
