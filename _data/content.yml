@@ -114,8 +114,8 @@ en:
     new_tab: "opens in a new tab"
   consent:
     label: "Analytics preferences"
-    title: "Optional analytics"
-    message: "With your permission, Microsoft Clarity helps us understand how the website is used and where its experience can be improved. Declining will not affect the website."
+    title: "Optional analytics cookies"
+    message: "Microsoft Clarity provides limited, cookieless usage measurements. With your permission, analytics cookies enable fuller session insights. Declining will not affect the website."
     learn_more: "Privacy information"
     accept: "Allow analytics"
     decline: "Decline"
@@ -244,8 +244,8 @@ uk:
     new_tab: "відкриється у новій вкладці"
   consent:
     label: "Налаштування аналітики"
-    title: "Необов’язкова аналітика"
-    message: "З вашого дозволу Microsoft Clarity допомагає зрозуміти, як використовують сайт і що в ньому можна покращити. Відмова не вплине на роботу сайту."
+    title: "Необов’язкові аналітичні cookies"
+    message: "Microsoft Clarity збирає обмежені дані про використання без cookies. З вашого дозволу аналітичні cookies дають повніше уявлення про сеанси. Відмова не вплине на роботу сайту."
     learn_more: "Інформація про приватність"
     accept: "Дозволити аналітику"
     decline: "Відмовитися"

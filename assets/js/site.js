@@ -109,21 +109,6 @@
         });
       }
     };
-    const loadClarity = () => {
-      if (document.querySelector('script[data-clarity-script]')) {
-        signalConsent('granted');
-        return;
-      }
-      window.clarity = window.clarity || function () {
-        (window.clarity.q = window.clarity.q || []).push(arguments);
-      };
-      signalConsent('granted');
-      const script = document.createElement('script');
-      script.async = true;
-      script.src = `https://www.clarity.ms/tag/${clarityProjectId}`;
-      script.dataset.clarityScript = '';
-      document.head.appendChild(script);
-    };
     const showConsent = (moveFocus = false) => {
       consentBanner.hidden = false;
       if (moveFocus) declineAnalytics.focus();
@@ -134,7 +119,7 @@
 
     acceptAnalytics.addEventListener('click', () => {
       saveConsent('granted');
-      loadClarity();
+      signalConsent('granted');
       hideConsent();
     });
     declineAnalytics.addEventListener('click', () => {
@@ -146,8 +131,11 @@
 
     const storedConsent = readConsent();
     if (storedConsent === 'granted') {
-      loadClarity();
-    } else if (storedConsent !== 'denied') {
+      signalConsent('granted');
+    } else {
+      signalConsent('denied');
+    }
+    if (storedConsent !== 'granted' && storedConsent !== 'denied') {
       showConsent();
     }
   }
