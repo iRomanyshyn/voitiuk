@@ -5,7 +5,7 @@
   country: { en: "Bulgaria", uk: "Болгарія" }
   artwork: "Bicycle Race"
   technique: "C3"
-  source_ids: [varna-2025, fisae-varna-2025]
+  source_ids: [fisae-varna-2025, varna-2025]
   featured: true
 - year: 2023
   award: "Prize"

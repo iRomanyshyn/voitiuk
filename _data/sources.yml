@@ -18,6 +18,9 @@ varna-2025:
   organization: "International Exlibris Competition Varna"
   url: "https://www.exlibris-competition-varna.org/wp-content/uploads/2025/08/Katalog-2025-FINAL-1.pdf"
   type: "official-catalogue"
+  public: false
+  availability: "missing"
+  last_checked: "2026-08-20"
 fisae-varna-2025:
   label: "FISAE Newsletter 487"
   organization: "FISAE"
@@ -26,23 +29,44 @@ fisae-varna-2025:
 rybnik-2023:
   label: "V Biennial jury protocol"
   organization: "Młodzieżowy Dom Kultury w Rybniku"
-  url: "https://mdk.rybnik.pl/wp-content/uploads/2023/04/Protokol-z-obrad-jury-wyniki-V-Biennale.pdf"
+  url: "/assets/documents/catalogues/Rybnik_2023_V_Biennial_Jury_Protocol.pdf"
+  original_url: "https://mdk.rybnik.pl/wp-content/uploads/2023/04/Protokol-z-obrad-jury-wyniki-V-Biennale.pdf"
   type: "jury-protocol"
+  file_size: 108735
+  pages: 5
+  verified_pages: [2]
+  sha256: "6262AAEA70548EFC6A047BC7A4766965A261F34A6E89D36E10E875847F83ADCB"
 rybnik-2021:
   label: "IV Biennial official results"
   organization: "Młodzieżowy Dom Kultury w Rybniku"
-  url: "http://mdk.rybnik.pl/wp-content/uploads/2021/06/IV-_biennale_miedzy_czernia_a_biela_wyniki.pdf"
+  url: "/assets/documents/catalogues/Rybnik_2021_IV_Biennial_Official_Results.pdf"
+  original_url: "http://mdk.rybnik.pl/wp-content/uploads/2021/06/IV-_biennale_miedzy_czernia_a_biela_wyniki.pdf"
   type: "jury-protocol"
+  file_size: 161983
+  pages: 5
+  verified_pages: [2, 5]
+  sha256: "AF3B4570F465BBFEB18F4012FAD82B2FA220D53250CF5E37BACC43078AE6F8FD"
 hommage-2021:
   label: "Hommage à Trois catalogue"
   organization: "AIDA"
-  url: "https://cdnc.heyzine.com/files/uploaded/v2/5f51d8e36ed1f751af2da763181f09c80689715a.pdf"
+  url: "/assets/documents/catalogues/Hommage_a_Trois_2021_Catalogue.pdf"
+  original_url: "https://cdnc.heyzine.com/files/uploaded/v2/5f51d8e36ed1f751af2da763181f09c80689715a.pdf"
   type: "official-catalogue"
+  file_size: 23409518
+  pages: 213
+  verified_pages: [15, 19, 22, 23]
+  sha256: "7B9A24D2C41DC1D049BCB97F653C05B94A26D6373C75EE38AE140D73667B349B"
 trakai-2020:
   label: "Trakai Peninsula Castle: Unicorn — 2020 competition catalogue"
   organization: "Trakai History Museum"
-  url: "https://fliphtml5.com/vwalu/bxhu/Trakai_peninsula_castle%3A_unicorn_%E2%80%93_a_symbol_of_cultural_and_historical_heritage/"
+  url: "/assets/documents/catalogues/Trakai_2020_Peninsula_Castle_Unicorn.pdf"
+  original_url: "https://fliphtml5.com/vwalu/bxhu/Trakai_peninsula_castle%3A_unicorn_%E2%80%93_a_symbol_of_cultural_and_historical_heritage/"
   type: "official-catalogue"
+  file_size: 23528178
+  pages: 272
+  verified_pages: [71]
+  printed_pages: [69]
+  sha256: "C96366397B4AAFB814A24A8753632A2F08578E18ACD196E81B67D4642FC3CB2F"
 trakai-2021:
   label: "Trakai 700 — 2021 competition winners"
   organization: "Trakai History Museum"
@@ -76,13 +100,25 @@ pnpu-book-2025:
 trakai-2022:
   label: "International Ex Libris Competition 2022 catalogue"
   organization: "Trakai History Museum"
-  url: "https://trakaimuziejus.lt/wp-content/uploads/2022/10/TIM-Ex-libris-2022-web.pdf"
+  url: "/assets/documents/catalogues/Trakai_2022_International_Ex_Libris_Competition.pdf"
+  original_url: "https://trakaimuziejus.lt/wp-content/uploads/2022/10/TIM-Ex-libris-2022-web.pdf"
   type: "official-catalogue"
+  file_size: 23734332
+  pages: 176
+  verified_pages: [95]
+  printed_pages: [91]
+  sha256: "74D4B69A630DE495F234FF2388AE0872D01839B0A686316A56C3B7DE07388AE7"
 ruse-2020:
   label: "XVI International Ex Libris Competition catalogue"
   organization: "Lyuben Karavelov Regional Library"
-  url: "https://www.libruse.bg/filesDB/catalogues/Catalogue_20/exliibris_2020.pdf"
+  url: "/assets/documents/catalogues/Ruse_2020_XVI_International_Ex_Libris_Competition.pdf"
+  original_url: "https://old.libruse.bg/filesDB/catalogues/Catalogue_20/exliibris_2020.pdf"
   type: "official-catalogue"
+  file_size: 47836159
+  pages: 348
+  verified_pages: [35, 36]
+  printed_pages: [35, 36]
+  sha256: "1A45B2235B47695DE7941AF96E168AF4F7CD6635D1D881975D568DB1BADE20E7"
 exlibriswereld-2025:
   label: "Grafiekwereld article about the 2025 premieprent"
   organization: "Exlibriswereld"

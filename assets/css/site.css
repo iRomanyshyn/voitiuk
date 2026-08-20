@@ -62,8 +62,8 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
 
 .shop-promo { border-block: 1px solid var(--line); background: var(--ink); color: var(--paper-bright); }
 .shop-promo-inner { min-height: 400px; display: grid; grid-template-columns: minmax(260px, 0.68fr) minmax(0, 1fr); align-items: center; gap: clamp(50px, 10vw, 150px); padding-block: clamp(64px, 8vw, 110px); }
-.shop-promo-name { display: flex; flex-direction: column; justify-content: center; min-height: 220px; border: 1px solid #6e716d; padding: clamp(28px, 4vw, 56px); font-family: var(--serif); }
-.shop-promo-name span { font-size: clamp(2.4rem, 5vw, 5.4rem); letter-spacing: -0.055em; line-height: 0.92; overflow-wrap: anywhere; }
+.shop-promo-name { container-type: inline-size; display: flex; flex-direction: column; justify-content: center; min-height: 220px; border: 1px solid #6e716d; padding: clamp(28px, 4vw, 56px); font-family: var(--serif); }
+.shop-promo-name span { font-size: clamp(2rem, 3.8vw, 4.8rem); font-size: clamp(2rem, 14cqi, 4.8rem); letter-spacing: -0.055em; line-height: 0.92; overflow-wrap: normal; white-space: nowrap; }
 .shop-promo-name small { margin-top: 18px; color: #b8bbb6; font-family: var(--sans); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
 .shop-promo-copy { max-width: 700px; }
 .shop-promo-copy h2 { max-width: 680px; margin-bottom: 24px; }
