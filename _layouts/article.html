@@ -1,0 +1,64 @@
+---
+layout: base
+---
+{% assign locale = page.lang %}
+<article class="article-page">
+  <header class="article-header shell">
+    <p class="eyebrow">{{ page.eyebrow }}</p>
+    <h1>{{ page.article_title }}</h1>
+    <p class="article-dek">{{ page.description }}</p>
+    <div class="article-meta">
+      <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date_label }}</time>
+      <span aria-hidden="true">·</span>
+      <span>{{ page.reading_time }}</span>
+    </div>
+    {% if page.ai_disclosure %}<p class="article-disclosure">{{ page.ai_disclosure }}</p>{% endif %}
+  </header>
+
+  <figure class="article-hero shell">
+    <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}">
+    <figcaption>{{ page.image_caption }}</figcaption>
+  </figure>
+
+  <div class="article-body shell">
+    {{ content }}
+  </div>
+
+  {% if page.source_ids %}
+    <section class="article-sources shell" aria-labelledby="article-sources-title">
+      <h2 id="article-sources-title">{{ page.sources_title }}</h2>
+      <p>{{ page.sources_intro }}</p>
+      <ol>
+        {% for source_id in page.source_ids %}
+          {% assign source = site.data.sources[source_id] %}
+          {% if source and source.url %}
+            <li id="source-{{ source_id }}">
+              <span>{{ source.organization }} — {{ source.label }}</span>
+              {% include source-links.html source_id=source_id locale=locale label=page.open_source %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+  {% endif %}
+
+  <nav class="article-back shell" aria-label="{{ page.back_label }}">
+    <a class="button button-secondary" href="/{{ locale }}/publications/">← {{ page.back_label }}</a>
+  </nav>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.article_title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.date | date: '%Y-%m-%d' }}",
+  "inLanguage": "{{ locale }}",
+  "image": "{{ page.image | absolute_url }}",
+  {% if page.ai_disclosure %}"creditText": {{ page.ai_disclosure | jsonify }},{% endif %}
+  "publisher": {"@type": "Person", "name": "{{ site.data.content[locale].site_name }}"},
+  "mainEntityOfPage": "{{ page.url | absolute_url }}"
+}
+</script>

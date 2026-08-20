@@ -11,7 +11,7 @@ layout: base
 <article class="artwork-page shell">
   <header><p class="eyebrow">Portfolio{% if work.year %} · {{ work.year }}{% endif %}</p><h1>{{ work.title[locale] }}</h1></header>
   <figure><img src="{{ work.image }}" alt="{{ work.alt[locale] }}" width="{{ work.image_width }}" height="{{ work.image_height }}" fetchpriority="high" decoding="async"><figcaption>{{ work.title[locale] }}{% if work.year %}, {{ work.year }}{% endif %}</figcaption></figure>
-  <dl class="artwork-meta"><div><dt>{% if locale == 'uk' %}Техніка{% else %}Technique{% endif %}</dt><dd>{{ work.technique[locale] }}</dd></div><div><dt>{% if locale == 'uk' %}Розмір зображення{% else %}Image size{% endif %}</dt><dd>{{ work.plate_size }}</dd></div>{% if work.edition %}<div><dt>{% if locale == 'uk' %}Тираж{% else %}Edition{% endif %}</dt><dd>{{ work.edition }}</dd></div>{% endif %}</dl>
+  <dl class="artwork-meta"><div><dt>{% if locale == 'uk' %}Техніка{% else %}Technique{% endif %}</dt><dd>{% include technique.html work=work locale=locale %}</dd></div><div><dt>{% if locale == 'uk' %}Розмір зображення{% else %}Image size{% endif %}</dt><dd>{{ work.plate_size }}</dd></div>{% if work.edition %}<div><dt>{% if locale == 'uk' %}Тираж{% else %}Edition{% endif %}</dt><dd>{{ work.edition }}</dd></div>{% endif %}</dl>
   {% if work.description %}<div class="artwork-description"><p>{{ work.description[locale] }}</p></div>{% endif %}
   <div class="artwork-links"><a class="button button-secondary" href="/{{ locale }}/works/">← {{ t.title }}</a>{% include source-links.html source_id=work.source_id locale=locale class='text-link' label=t.source %}</div>
 </article>

@@ -5,8 +5,11 @@
 {% assign meta_description = page.description | default: site.description %}
 {% assign canonical_path = page.canonical_path | default: page.url %}
 {% assign share_image = page.image | default: '/assets/img/works/sightseeing-tour.jpg' %}
+{% assign og_type = page.og_type | default: 'website' %}
 {% assign head_work = site.data.works | where: 'id', page.work_id | first %}
-{% if head_work %}
+{% if page.image_alt %}
+  {% assign share_alt = page.image_alt %}
+{% elsif head_work %}
   {% assign share_alt = head_work.alt[locale] %}
 {% else %}
   {% assign share_alt = 'Sightseeing Tour, a 2020 print by Anna Voitiuk' %}
@@ -23,7 +26,7 @@
     {% if page.alternate_en %}<link rel="alternate" hreflang="en" href="{{ page.alternate_en | absolute_url }}">{% endif %}
     {% if page.alternate_uk %}<link rel="alternate" hreflang="uk" href="{{ page.alternate_uk | absolute_url }}">{% endif %}
     {% if page.alternate_en %}<link rel="alternate" hreflang="x-default" href="{{ page.alternate_en | absolute_url }}">{% endif %}
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{{ og_type }}">
     <meta property="og:site_name" content="Anna Voitiuk">
     <meta property="og:title" content="{{ meta_title | escape }}">
     <meta property="og:description" content="{{ meta_description | escape }}">
@@ -69,7 +72,7 @@
         <nav class="site-nav" id="site-navigation" aria-label="Primary" data-navigation>
           <ul>
             {% for item in t.nav %}
-              <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+              <li><a href="{{ item.url }}"{% if page.url == item.url or page.parent_url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
             {% endfor %}
           </ul>
           <div class="language-switcher" aria-label="{{ t.language }}">

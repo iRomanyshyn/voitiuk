@@ -4,6 +4,20 @@ layout: base
 {% assign locale = page.lang %}
 {% assign t = site.data.content[locale].publications %}
 <header class="page-hero shell"><p class="eyebrow">Bibliography</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
+<section class="section shell publication-section article-listing">
+  <h2>{{ t.articles }}</h2>
+  {% for item in site.data.articles %}
+    <article class="article-card">
+      <a class="article-card-image" href="{{ item.url[locale] }}" tabindex="-1" aria-hidden="true"><img src="{{ item.image }}" alt=""></a>
+      <div>
+        <time datetime="{{ item.date }}">{{ item.date | date: '%Y' }}</time>
+        <h3><a href="{{ item.url[locale] }}">{{ item.title[locale] }}</a></h3>
+        <p>{{ item.summary[locale] }}</p>
+        <a class="text-link" href="{{ item.url[locale] }}">{{ t.read_article }} →</a>
+      </div>
+    </article>
+  {% endfor %}
+</section>
 <section class="section shell publication-section">
   <h2>{{ t.authored }}</h2>
   {% for item in site.data.professional.publications %}

@@ -1,0 +1,14 @@
+- date: "2026-08-20"
+  image: "/assets/img/works/sightseeing-tour.jpg"
+  image_alt:
+    en: "Sightseeing Tour, an etching and aquatint by Anna Voitiuk"
+    uk: "«Оглядова екскурсія», офорт і акватинта Анни Войтюк"
+  title:
+    en: "From a line in metal to an impression: etching, linocut and the art of the bookplate"
+    uk: "Від лінії на металі до відбитка: офорт, ліногравюра й мистецтво екслібриса"
+  summary:
+    en: "How ink travels from a plate to paper, why etching is not simply drawing, what C3 and C5 mean in catalogues, and how a small ownership mark became an independent work of art."
+    uk: "Як фарба переходить із форми на папір, чому офорт — це не просто рисунок, що означають C3 і C5 у каталогах та як маленький знак власника став самостійним твором мистецтва."
+  url:
+    en: "/en/articles/etching-intaglio-linocut-bookplates/"
+    uk: "/uk/articles/ofort-hlybokyi-druk-ekslibris/"

@@ -27,7 +27,7 @@
   event: "International Ex Libris Competition “Trakai 700. In Search of Identity: Trakai Resident's DNA”"
   city: "Trakai"
   country: { en: "Lithuania", uk: "Литва" }
-  technique: "C3, X3"
+  technique: "C3+X3"
   size: "95 × 120 mm"
   source_ids: [trakai-2021]
   featured: false
@@ -52,7 +52,7 @@
   event: "International Ex Libris Competition “Trakai Peninsula Castle: Unicorn – a Symbol of Cultural and Historical Heritage”"
   city: "Trakai"
   country: { en: "Lithuania", uk: "Литва" }
-  technique: "C3, C5"
+  technique: "C3+C5"
   size: "135 × 70 mm"
   source_ids: [trakai-2020]
   featured: false

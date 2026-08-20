@@ -75,6 +75,8 @@ en:
   publications:
     title: "Publications & projects"
     intro: "Authored publications, professional collaborations and selected writing about the artist."
+    articles: "Stories about printmaking"
+    read_article: "Read article"
     authored: "Authored publication"
     projects: "Professional projects"
     press: "Selected writing about the artist"
@@ -194,6 +196,8 @@ uk:
   publications:
     title: "Публікації та проєкти"
     intro: "Авторські публікації, професійні співпраці та вибрані матеріали про художницю."
+    articles: "Історії про друковану графіку"
+    read_article: "Читати статтю"
     authored: "Авторська публікація"
     projects: "Професійні проєкти"
     press: "Вибрані матеріали про художницю"

@@ -17,7 +17,7 @@ layout: base
   </div>
   <a class="hero-art" href="/{{ locale }}/works/{{ hero_work.slug }}/">
     <img src="{{ hero_work.image }}" alt="{{ hero_work.alt[locale] }}" width="{{ hero_work.image_width }}" height="{{ hero_work.image_height }}" fetchpriority="high" decoding="async">
-    <span><strong>{{ hero_work.title[locale] }}</strong><small>{% if hero_work.year %}{{ hero_work.year }} · {% endif %}{{ hero_work.technique[locale] }}</small></span>
+    <span><strong>{{ hero_work.title[locale] }}</strong><small>{% if hero_work.year %}{{ hero_work.year }} · {% endif %}{% include technique.html work=hero_work locale=locale %}</small></span>
   </a>
 </section>
 
