@@ -51,3 +51,41 @@
     en: "Square black-and-white print depicting two wolves facing each other around a cracked celestial sphere."
     uk: "Квадратна чорно-біла графіка із двома вовками, що дивляться один на одного крізь розколоту небесну сферу."
   source_id: heike-fenrir
+
+- id: kotoroka
+  slug: kotoroka
+  title: { en: "Kotoroka", uk: "Которока" }
+  technique: { en: "Drypoint", uk: "Суха голка" }
+  plate_size: "12.5 × 17.5 cm"
+  image: "/assets/img/works/kotoroka.jpg"
+  thumbnail: "/assets/img/works/kotoroka-960.jpg"
+  image_width: 1588
+  image_height: 1588
+  thumbnail_width: 960
+  thumbnail_height: 960
+  alt:
+    en: "Black-and-white drypoint print of Kotoroka, a cat-magpie hybrid holding a rat by the tail."
+    uk: "Чорно-білий відбиток у техніці сухої голки із Которокою — гібридом кота й сороки, що тримає щура за хвіст."
+  description:
+    en: "Kotoroka is an original handmade drypoint print depicting a surreal hybrid of a cat and a magpie. Half cat and half bird, the creature playfully holds a rat by the tail—curious, mischievous and elegant. The work brings together instinct and imagination, lightness and danger, embodying playful intelligence and the animal spirit of creation. Each impression is hand-inked and pulled from a plastic plate, so subtle variations make every print unique."
+    uk: "«Которока» — оригінальний авторський відбиток у техніці сухої голки із сюрреалістичною істотою — гібридом кота й сороки. Напівкіт-напівптах грайливо тримає щура за хвіст: допитливий, пустотливий і водночас елегантний. Робота поєднує інстинкт та уяву, легкість і небезпеку, втілюючи грайливий інтелект і тваринний дух творчості. Кожен відбиток вручну фарбується й друкується з пластикової пластини, тому має незначні унікальні відмінності."
+
+- id: cat-bacchus
+  slug: cat-bacchus
+  title: { en: "Cat Bacchus", uk: "Кіт Бахус" }
+  year: 2022
+  technique: { en: "Etching", uk: "Офорт" }
+  plate_size: "17.5 × 16 cm"
+  edition: 50
+  image: "/assets/img/works/cat-bacchus.webp"
+  thumbnail: "/assets/img/works/cat-bacchus-960.webp"
+  image_width: 1588
+  image_height: 1458
+  thumbnail_width: 960
+  thumbnail_height: 882
+  alt:
+    en: "Black-and-white etching of a reclining cat crowned with grapes, holding wine and playing a gramophone."
+    uk: "Чорно-білий офорт із котом у виноградному вінку, який лежить із келихом вина та грає на грамофоні."
+  description:
+    en: "Cat Bacchus is an original handmade etching depicting a playful, hedonistic cat—the feline spirit of Bacchus, god of wine and joy. The cat lounges with a glass of wine while gently playing music on a gramophone with its claw. The print combines humour, mythology and calmness in a small story about pleasure and self-indulgence. Each impression is hand-inked and printed on a professional etching press, making every print unique."
+    uk: "«Кіт Бахус» — оригінальний авторський офорт із грайливим котом-гедоністом, котячим утіленням Бахуса — бога вина й радості. Кіт ліниво відпочиває з келихом вина й обережно вмикає грамофон пазуром. Робота поєднує гумор, міфологію та спокій у невеликій історії про насолоду й потурання власним бажанням. Кожен відбиток вручну фарбується та друкується на професійному офортному верстаті, тому є унікальним."

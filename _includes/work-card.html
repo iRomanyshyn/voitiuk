@@ -9,7 +9,7 @@
     data-image="{{ work.image }}"
     data-alt="{{ work.alt[locale] | escape }}"
     data-title="{{ work.title[locale] | escape }}"
-    data-meta="{{ work.year }} · {{ work.technique[locale] | escape }}"
+    data-meta="{% if work.year %}{{ work.year }} · {% endif %}{{ work.technique[locale] | escape }}"
     aria-label="{{ work_t.open }}: {{ work.title[locale] | escape }}"
   >
     <img
@@ -27,7 +27,7 @@
   <div class="work-caption">
     <div>
       <h3><a href="/{{ locale }}/works/{{ work.slug }}/">{{ work.title[locale] }}</a></h3>
-      <p>{{ work.year }} · {{ work.technique[locale] }}</p>
+      <p>{% if work.year %}{{ work.year }} · {% endif %}{{ work.technique[locale] }}</p>
     </div>
     <a class="text-link" href="/{{ locale }}/works/{{ work.slug }}/">{{ work_t.details }}</a>
   </div>

@@ -143,10 +143,12 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
 .artwork-page figure { margin: 0; background: var(--paper-bright); padding: clamp(16px, 4vw, 70px); }
 .artwork-page figure img { max-height: 78vh; margin-inline: auto; object-fit: contain; }
 .artwork-page figcaption { margin-top: 18px; color: var(--muted); font-size: 0.82rem; }
-.artwork-meta { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0; }
+.artwork-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 0; }
 .artwork-meta div { padding: 25px 0; border-bottom: 1px solid var(--line); }
 .artwork-meta dt { color: var(--muted); font-size: 0.74rem; text-transform: uppercase; }
 .artwork-meta dd { margin: 4px 0 0; font-family: var(--serif); font-size: 1.2rem; }
+.artwork-description { max-width: 820px; padding-top: 42px; }
+.artwork-description p { color: var(--muted); font-family: var(--serif); font-size: clamp(1.12rem, 1.65vw, 1.38rem); line-height: 1.65; }
 .artwork-links { display: flex; align-items: center; justify-content: space-between; margin-top: 40px; }
 
 .lightbox { width: 100vw; max-width: none; height: 100vh; max-height: none; margin: 0; padding: 0; border: 0; background: #101110; color: white; }
