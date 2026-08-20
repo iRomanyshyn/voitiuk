@@ -87,9 +87,9 @@
       <div class="shell footer-inner">
         <p>{{ t.footer.rights }}</p>
         <nav aria-label="Footer">
-          <a href="https://www.instagram.com/voitiuk_print/" rel="me noopener noreferrer">{{ t.footer.instagram }}</a>
-          <a href="https://www.facebook.com/anna.vojtyuk/" rel="me noopener noreferrer">{{ t.footer.facebook }}</a>
-          <a href="https://www.etsy.com/shop/VoitiukPrint" rel="me external">{{ t.footer.etsy }}</a>
+          <a href="https://www.instagram.com/voitiuk_print/" target="_blank" rel="me noopener noreferrer">{{ t.footer.instagram }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
+          <a href="https://www.facebook.com/anna.vojtyuk/" target="_blank" rel="me noopener noreferrer">{{ t.footer.facebook }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
+          <a href="https://www.etsy.com/shop/VoitiukPrint" target="_blank" rel="me noopener external">{{ t.footer.etsy }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
           <a href="/{% if locale == 'uk' %}uk{% else %}en{% endif %}/contact/">{{ t.footer.contact }}</a>
         </nav>
       </div>

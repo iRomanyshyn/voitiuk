@@ -96,6 +96,7 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
 .two-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(60px, 9vw, 130px); }
 .timeline-list { margin: 0 0 28px; padding: 0; list-style: none; }
 .timeline-list li { display: grid; grid-template-columns: 82px 1fr; gap: 20px; padding: 19px 0; border-top: 1px solid var(--line); }
+.section-heading.compact + .timeline-list > li:first-child { border-top: 0; }
 .timeline-list time { color: var(--accent); font-size: 0.82rem; font-weight: 700; }
 .timeline-list strong, .timeline-list span { display: block; }
 .timeline-list span { margin-top: 3px; color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
