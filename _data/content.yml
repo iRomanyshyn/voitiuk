@@ -99,6 +99,11 @@ en:
     message: "Message"
     send: "Send message"
     required: "Required"
+    success: "Thank you. Your message has been sent."
+    error: "The message could not be sent. Please try again or use email."
+    name_error: "Please enter your name."
+    email_error: "Please enter a valid email address."
+    message_error: "Please enter a message."
     direct: "Direct contact"
   footer:
     rights: "© Anna Voitiuk"
@@ -207,6 +212,11 @@ uk:
     message: "Повідомлення"
     send: "Надіслати"
     required: "Обов'язкове поле"
+    success: "Дякуємо. Повідомлення надіслано."
+    error: "Не вдалося надіслати повідомлення. Спробуйте ще раз або напишіть електронною поштою."
+    name_error: "Вкажіть, будь ласка, ваше ім'я."
+    email_error: "Вкажіть, будь ласка, коректну електронну адресу."
+    message_error: "Введіть, будь ласка, повідомлення."
     direct: "Прямий контакт"
   footer:
     rights: "© Анна Войтюк"

@@ -17,7 +17,7 @@ defaults:
       layout: base
       image: /assets/img/works/sightseeing-tour.jpg
 
-formspree_form_path: "f/mykdekvr"
+formspree_form_id: "mykdekvr"
 
 exclude:
   - README.md

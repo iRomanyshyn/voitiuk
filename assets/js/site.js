@@ -79,30 +79,4 @@
     });
   }
 
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    const status = form.querySelector('[data-form-status]');
-    form.addEventListener('submit', async (event) => {
-      if (!form.checkValidity()) return;
-      event.preventDefault();
-      const button = form.querySelector('button[type="submit"]');
-      button.disabled = true;
-      status.textContent = document.documentElement.lang === 'uk' ? 'Надсилання…' : 'Sending…';
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { Accept: 'application/json' }
-        });
-        if (!response.ok) throw new Error('Request failed');
-        form.reset();
-        status.textContent = document.documentElement.lang === 'uk' ? 'Дякуємо. Повідомлення надіслано.' : 'Thank you. Your message has been sent.';
-      } catch (error) {
-        status.textContent = document.documentElement.lang === 'uk' ? 'Не вдалося надіслати. Спробуйте ще раз або напишіть електронною поштою.' : 'The message could not be sent. Please try again or use email.';
-      } finally {
-        button.disabled = false;
-      }
-    });
-  }
 })();
-

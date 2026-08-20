@@ -5,14 +5,34 @@ layout: base
 {% assign t = site.data.content[locale].contact %}
 <header class="page-hero shell"><p class="eyebrow">Anna Voitiuk</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
 <section class="section shell contact-layout">
-  <form class="contact-form" action="https://formspree.io/{{ site.formspree_form_path }}" method="POST">
-    <div class="form-field"><label for="contact-name">{{ t.name }} <span aria-hidden="true">*</span><span class="sr-only">{{ t.required }}</span></label><input id="contact-name" name="name" type="text" autocomplete="name" required></div>
-    <div class="form-field"><label for="contact-email">{{ t.email }} <span aria-hidden="true">*</span><span class="sr-only">{{ t.required }}</span></label><input id="contact-email" name="email" type="email" autocomplete="email" required></div>
-    <div class="form-field"><label for="contact-message">{{ t.message }} <span aria-hidden="true">*</span><span class="sr-only">{{ t.required }}</span></label><textarea id="contact-message" name="message" rows="7" required></textarea></div>
-    <input type="hidden" name="_subject" value="New message from voitiuk.com ({{ locale }})">
-    <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <button class="button" type="submit">{{ t.send }}</button>
-    <p class="form-status" data-form-status aria-live="polite"></p>
-  </form>
+  <div>
+    <p class="form-feedback form-feedback--success" data-fs-success role="status">{{ t.success }}</p>
+    <p class="form-feedback form-feedback--error" data-fs-error role="alert">{{ t.error }}</p>
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/{{ site.formspree_form_id }}" method="POST" accept-charset="UTF-8">
+      <div class="form-field">
+        <label for="contact-name">{{ t.name }} <span aria-hidden="true">*</span><span class="sr-only">{{ t.required }}</span></label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" aria-describedby="contact-name-error" data-fs-field required>
+        <span class="field-error" id="contact-name-error" data-fs-error="name">{{ t.name_error }}</span>
+      </div>
+      <div class="form-field">
+        <label for="contact-email">{{ t.email }} <span aria-hidden="true">*</span><span class="sr-only">{{ t.required }}</span></label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" aria-describedby="contact-email-error" data-fs-field required>
+        <span class="field-error" id="contact-email-error" data-fs-error="email">{{ t.email_error }}</span>
+      </div>
+      <div class="form-field">
+        <label for="contact-message">{{ t.message }} <span aria-hidden="true">*</span><span class="sr-only">{{ t.required }}</span></label>
+        <textarea id="contact-message" name="message" rows="7" aria-describedby="contact-message-error" data-fs-field required></textarea>
+        <span class="field-error" id="contact-message-error" data-fs-error="message">{{ t.message_error }}</span>
+      </div>
+      <input type="hidden" name="_subject" value="New message from voitiuk.com ({{ locale }})">
+      <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="button" type="submit" data-fs-submit-btn>{{ t.send }}</button>
+    </form>
+  </div>
   <aside class="contact-direct"><h2>{{ t.direct }}</h2><a href="mailto:anna.vojtiuk@gmail.com">anna.vojtiuk@gmail.com</a><a href="https://www.instagram.com/voitiuk_print/" rel="me noopener noreferrer">Instagram @voitiuk_print</a><a href="https://www.facebook.com/anna.vojtyuk/" rel="me noopener noreferrer">Facebook Anna Vojtiuk</a><p>{{ site.data.content[locale].location }}</p></aside>
 </section>
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contact-form', formId: '{{ site.formspree_form_id }}' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1.1.5/dist/global.js" integrity="sha384-9fQrvHz7unHjhv7e+pJqhvNxPV4tYHHsSn3PxBIEyPTGY8Q/PAKM1sfhL+zTYmhc" crossorigin="anonymous" defer></script>
