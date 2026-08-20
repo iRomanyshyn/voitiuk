@@ -1,0 +1,428 @@
+page:
+  uk:
+    eyebrow: "Персональна виставка · Львів"
+    title: "«Червона книга»"
+    intro: "Цифрова добірка робіт з експозиції Анни Войтюк у галереї «Зелена Канапа»: офорти, гравюри на дереві та екслібриси, об’єднані образами тварин."
+    dates: "18 серпня — 13 вересня 2026"
+    venue: "галерея «Зелена Канапа»"
+    city: "Львів, Україна"
+    selection: "Роботи з експозиції"
+    browse: "Перейти до розділу"
+    plate: "Пластина"
+    plate_diameter: "Діаметр пластини"
+    plate_side: "Сторона пластини"
+    paper: "Папір"
+    open: "Відкрити велике зображення"
+    source: "Сторінка виставки"
+    back: "Усі виставки"
+  en:
+    eyebrow: "Solo exhibition · Lviv"
+    title: "Red Book"
+    intro: "A digital selection from Anna Voitiuk’s exhibition at Green Sofa Gallery: etchings, wood engravings and bookplates brought together through images of animals."
+    dates: "18 August – 13 September 2026"
+    venue: "Green Sofa Gallery"
+    city: "Lviv, Ukraine"
+    selection: "Works from the exhibition"
+    browse: "Go to section"
+    plate: "Plate"
+    plate_diameter: "Plate diameter"
+    plate_side: "Plate side"
+    paper: "Paper"
+    open: "Open large image"
+    source: "Exhibition page"
+    back: "All exhibitions"
+
+techniques:
+  etching:
+    code: "C3"
+    label: { uk: "Офорт", en: "Etching" }
+  wood_engraving:
+    code: "X2"
+    label: { uk: "Гравюра на дереві", en: "Wood engraving" }
+
+series:
+  - id: "red-book-of-ukraine"
+    title: { uk: "Червона книга України", en: "Red Data Book of Ukraine" }
+    description:
+      uk: "Офорти, присвячені видам тварин, занесеним до Червоної книги України."
+      en: "Etchings devoted to animal species included in the Red Data Book of Ukraine."
+    works:
+      - slug: "agile-frog"
+        title: { uk: "Прудка жаба", en: "Agile Frog" }
+        year: 2026
+        technique: "etching"
+        plate: "10"
+        plate_kind: "diameter"
+        paper: "20 × 20"
+        full_size: [1760, 1776]
+        thumb_size: [951, 960]
+      - slug: "european-pond-turtle"
+        title: { uk: "Болотяна черепаха", en: "European Pond Turtle" }
+        year: 2026
+        technique: "etching"
+        plate: "10"
+        plate_kind: "diameter"
+        paper: "20 × 20"
+        full_size: [1736, 1707]
+        thumb_size: [960, 944]
+      - slug: "bottlenose-dolphins"
+        title: { uk: "Афаліни", en: "Bottlenose Dolphins" }
+        year: 2026
+        technique: "etching"
+        plate: "10"
+        plate_kind: "diameter"
+        paper: "20 × 20"
+        full_size: [1757, 1723]
+        thumb_size: [960, 941]
+      - slug: "desman"
+        title: { uk: "Хохуля руська", en: "Desman" }
+        year: 2026
+        technique: "etching"
+        plate: "10"
+        plate_kind: "diameter"
+        paper: "20 × 20"
+        full_size: [1750, 1685]
+        thumb_size: [960, 924]
+      - slug: "fire-salamander"
+        title: { uk: "Саламандра плямиста", en: "Fire Salamander" }
+        year: 2026
+        technique: "etching"
+        plate: "10"
+        plate_kind: "side"
+        paper: "20 × 20"
+        full_size: [1648, 1488]
+        thumb_size: [960, 867]
+      - slug: "brown-bear"
+        title: { uk: "Ведмідь бурий", en: "Brown Bear" }
+        year: 2026
+        technique: "etching"
+        plate: "10 × 10"
+        paper: "20 × 20"
+        full_size: [1719, 1752]
+        thumb_size: [942, 960]
+      - slug: "long-eared-hedgehog"
+        title: { uk: "Їжак вухатий", en: "Long-eared Hedgehog" }
+        year: 2026
+        technique: "etching"
+        plate: "10 × 10"
+        paper: "20 × 20"
+        full_size: [1772, 1772]
+        thumb_size: [960, 960]
+      - slug: "eurasian-lynx"
+        title: { uk: "Рись", en: "Eurasian Lynx" }
+        year: 2026
+        technique: "etching"
+        plate: "10 × 10"
+        paper: "20 × 20"
+        full_size: [1796, 1818]
+        thumb_size: [948, 960]
+      - slug: "european-bison"
+        title: { uk: "Зубр", en: "European Bison" }
+        year: 2026
+        technique: "etching"
+        plate: "10 × 10"
+        paper: "20 × 20"
+        full_size: [1813, 1773]
+        thumb_size: [960, 939]
+      - slug: "boreal-owl"
+        title: { uk: "Сич волохатий", en: "Boreal Owl" }
+        year: 2026
+        technique: "etching"
+        plate: "9.5 × 9.5"
+        paper: "20 × 20"
+        full_size: [1797, 1793]
+        thumb_size: [960, 958]
+      - slug: "steppe-eagle"
+        title: { uk: "Орел степовий", en: "Steppe Eagle" }
+        year: 2026
+        technique: "etching"
+        plate: "9.5 × 9.5"
+        paper: "20 × 20"
+        full_size: [1801, 1782]
+        thumb_size: [960, 950]
+      - slug: "black-stork"
+        title: { uk: "Лелека чорний", en: "Black Stork" }
+        year: 2026
+        technique: "etching"
+        plate: "9.5 × 9.5"
+        paper: "20 × 20"
+        full_size: [1819, 1783]
+        thumb_size: [960, 941]
+      - slug: "barn-owl"
+        title: { uk: "Сипуха крапчаста", en: "Barn Owl" }
+        year: 2026
+        technique: "etching"
+        plate: "9.5 × 9.5"
+        paper: "20 × 20"
+        full_size: [1806, 1830]
+        thumb_size: [947, 960]
+
+  - id: "birds-of-ukraine"
+    title: { uk: "Птахи України", en: "Birds of Ukraine" }
+    description:
+      uk: "Серія гравюр на дереві, у яких силуети птахів вибудувані ритмом чорного й білого."
+      en: "A series of wood engravings in which bird silhouettes are shaped through a rhythm of black and white."
+    works:
+      - slug: "mandarin-duck"
+        title: { uk: "Мандаринка", en: "Mandarin Duck" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "15 × 21"
+        full_size: [1720, 1236]
+        thumb_size: [960, 690]
+      - slug: "turtle-doves"
+        title: { uk: "Горлиці", en: "Turtle Doves" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "15 × 21"
+        full_size: [1268, 1752]
+        thumb_size: [695, 960]
+      - slug: "cuckoo"
+        title: { uk: "Зозуля", en: "Cuckoo" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "15 × 21"
+        full_size: [1736, 1240]
+        thumb_size: [960, 686]
+      - slug: "great-tit"
+        title: { uk: "Синиця", en: "Tit" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "15 × 21"
+        full_size: [1768, 1240]
+        thumb_size: [960, 673]
+      - slug: "eagle"
+        title: { uk: "Орел", en: "Eagle" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "15 × 21"
+        full_size: [1252, 1764]
+        thumb_size: [681, 960]
+      - slug: "magpie"
+        title: { uk: "Сорока", en: "Magpie" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "21 × 15"
+        full_size: [1200, 1740]
+        thumb_size: [662, 960]
+      - slug: "owl"
+        title: { uk: "Сова", en: "Owl" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "21 × 15"
+        full_size: [1308, 1736]
+        thumb_size: [723, 960]
+      - slug: "parrot"
+        title: { uk: "Папуга", en: "Parrot" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "15 × 21"
+        full_size: [1724, 1236]
+        thumb_size: [960, 688]
+      - slug: "hen"
+        title: { uk: "Курочка", en: "Hen" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "21 × 15"
+        full_size: [1204, 1756]
+        thumb_size: [658, 960]
+      - slug: "stork"
+        title: { uk: "Лелека", en: "Stork" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "21 × 15"
+        full_size: [1204, 1764]
+        thumb_size: [655, 960]
+
+  - id: "outside-series"
+    title: { uk: "Поза циклами", en: "Outside the Series" }
+    description:
+      uk: "Самостійні роботи з фантастичними й побутовими образами тварин."
+      en: "Independent works with fantastical and everyday images of animals."
+    works:
+      - slug: "lion-and-unicorn"
+        title: { uk: "Лев і єдиноріг", en: "Lion and Unicorn" }
+        year: 2026
+        technique: "etching"
+        plate: "11 × 5.5"
+        paper: "19 × 25"
+        full_size: [1472, 2080]
+        thumb_size: [679, 960]
+      - slug: "mice"
+        title: { uk: "Мишки", en: "Mice" }
+        year: 2026
+        technique: "etching"
+        plate: "9.5"
+        plate_kind: "diameter"
+        paper: "19 × 19"
+        full_size: [1789, 1801]
+        thumb_size: [954, 960]
+      - slug: "guinea-pig"
+        title: { uk: "Мурчак", en: "Guinea Pig" }
+        year: 2026
+        technique: "etching"
+        paper: "25 × 19"
+        full_size: [1344, 1290]
+        thumb_size: [960, 921]
+      - slug: "pupa"
+        title: { uk: "Пупа", en: "Pupa" }
+        year: 2025
+        technique: "etching"
+        paper: "19 × 19"
+        full_size: [2270, 1478]
+        thumb_size: [960, 625]
+      - slug: "coffee-gathering"
+        title: { uk: "Кавування", en: "Coffee Gathering" }
+        year: 2025
+        technique: "etching"
+        paper: "19 × 19"
+        full_size: [1868, 1900]
+        thumb_size: [944, 960]
+      - slug: "reda"
+        title: { uk: "Реда", en: "Reda" }
+        year: 2024
+        technique: "etching"
+        paper: "19 × 19"
+        full_size: [1584, 1509]
+        thumb_size: [960, 915]
+      - slug: "owl-at-night"
+        title: { uk: "Сова вночі", en: "Owl at Night" }
+        year: 2025
+        technique: "etching"
+        plate: "11.5 × 6"
+        paper: "21 × 15"
+        full_size: [1599, 1484]
+        thumb_size: [960, 891]
+      - slug: "strawberry"
+        title: { uk: "Полуничка", en: "Strawberry" }
+        year: 2025
+        technique: "wood_engraving"
+        paper: "10.5 × 15"
+        full_size: [1728, 1244]
+        thumb_size: [960, 691]
+
+  - id: "motherhood"
+    title: { uk: "Материнство", en: "Motherhood" }
+    description:
+      uk: "Тварини та їхні дитинчата — від камерних родинних сцен до дотепних багатофігурних композицій."
+      en: "Animals and their young, from intimate family scenes to playful multi-figure compositions."
+    works:
+      - slug: "monkey-family"
+        title: { uk: "Сім’я мавп", en: "Monkey Family" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "19 × 19"
+        full_size: [1492, 1420]
+        thumb_size: [960, 914]
+      - slug: "hen-with-chicks"
+        title: { uk: "Квочка з курчатами", en: "Hen with Chicks" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "19 × 19"
+        full_size: [1490, 1519]
+        thumb_size: [942, 960]
+      - slug: "guinea-pig-family"
+        title: { uk: "Сім’я морських свинок", en: "Guinea Pig Family" }
+        year: 2026
+        technique: "etching"
+        paper: "19 × 19"
+        full_size: [1813, 1496]
+        thumb_size: [960, 792]
+      - slug: "dachshund-family"
+        title: { uk: "Сім’я такс", en: "Dachshund Family" }
+        year: 2025
+        technique: "etching"
+        paper: "25 × 19"
+        full_size: [2108, 1660]
+        thumb_size: [960, 756]
+      - slug: "cow-and-calf"
+        title: { uk: "Корова з телятком", en: "Cow and Calf" }
+        year: 2026
+        technique: "etching"
+        paper: "25 × 19"
+        full_size: [2056, 2352]
+        thumb_size: [839, 960]
+      - slug: "pregnant-cat"
+        title: { uk: "Кішка при надії", en: "Pregnant Cat" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "19 × 19"
+        full_size: [1170, 1084]
+        thumb_size: [960, 889]
+      - slug: "nursing-cat"
+        title: { uk: "Годуюча кішка", en: "Nursing Cat" }
+        year: 2026
+        technique: "wood_engraving"
+        paper: "19 × 19"
+        full_size: [1082, 969]
+        thumb_size: [960, 860]
+
+  - id: "bookplates"
+    title: { uk: "Екслібриси", en: "Bookplates" }
+    description:
+      uk: "Персональні книжкові знаки, у яких образ власника розкривається через тварин, міфи й літературні алюзії."
+      en: "Personal bookplates in which the owner is evoked through animals, myths and literary allusions."
+    works:
+      - slug: "pegasus-constellation"
+        title: { uk: "Сузір’я Пегаса", en: "Pegasus Constellation" }
+        year: 2025
+        technique: "etching"
+        plate: "10 × 9"
+        paper: "19 × 25"
+        full_size: [1866, 1658]
+        thumb_size: [960, 853]
+      - slug: "kalevala"
+        title: { uk: "Калевала", en: "Kalevala" }
+        year: 2025
+        technique: "etching"
+        plate: "7.5 × 9.5"
+        paper: "19 × 25"
+        full_size: [2056, 1760]
+        thumb_size: [960, 822]
+      - slug: "garden-party"
+        title: { uk: "Вечірка в саду", en: "Garden Party" }
+        year: 2025
+        technique: "etching"
+        plate: "8.5 × 10.5"
+        paper: "19 × 25"
+        full_size: [1972, 2096]
+        thumb_size: [903, 960]
+      - slug: "swallow-bookplate"
+        title: { uk: "Ластівка", en: "Swallow" }
+        year: 2026
+        technique: "etching"
+        paper: "19 × 19"
+        full_size: [1901, 1654]
+        thumb_size: [960, 835]
+      - slug: "cat-babylon"
+        title: { uk: "Кіт Вавилон", en: "Cat Babylon" }
+        year: 2026
+        technique: "etching"
+        plate: "10.5 × 8.5"
+        paper: "25 × 19"
+        full_size: [1736, 1920]
+        thumb_size: [868, 960]
+      - slug: "cockatiel-bookplate"
+        title: { uk: "Корела", en: "Cockatiel" }
+        year: 2026
+        technique: "etching"
+        plate: "7.5 × 6.5"
+        paper: "25 × 19"
+        full_size: [1626, 1998]
+        thumb_size: [781, 960]
+      - slug: "unicorn-bookplate"
+        title: { uk: "Єдиноріг", en: "Unicorn" }
+        year: 2025
+        technique: "etching"
+        plate: "7.5 × 11"
+        paper: "19 × 25"
+        full_size: [2035, 1501]
+        thumb_size: [960, 708]
+      - slug: "bonnie-bookplate"
+        title: { uk: "Бонні", en: "Bonnie" }
+        year: 2026
+        technique: "etching"
+        plate: "14.5 × 8"
+        paper: "25 × 19"
+        full_size: [1654, 2257]
+        thumb_size: [704, 960]

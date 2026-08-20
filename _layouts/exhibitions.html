@@ -11,7 +11,8 @@ layout: base
     {% for item in site.data.exhibitions.solo %}
       <li>
         <time>{{ item.year }}</time>
-        <div><strong>{{ item.title[locale] }}</strong>{% if item.dates %}<span>{{ item.dates[locale] }}</span>{% endif %}<span>{{ item.venue[locale] }} · {{ item.city[locale] }}</span>
+        <div><strong>{% if item.page %}<a class="timeline-title-link" href="{{ item.page[locale] }}">{{ item.title[locale] }}</a>{% else %}{{ item.title[locale] }}{% endif %}</strong>{% if item.dates %}<span>{{ item.dates[locale] }}</span>{% endif %}<span>{{ item.venue[locale] }} · {{ item.city[locale] }}</span>
+          {% if item.page %}<a class="text-link timeline-detail-link" href="{{ item.page[locale] }}">{{ site_t.home.current_exhibition_catalog }} →</a>{% endif %}
           {% for source_id in item.source_ids limit: 1 %}{% include source-links.html source_id=source_id locale=locale label=t.source %}{% endfor %}
         </div>
       </li>

@@ -47,6 +47,7 @@ en:
     exhibitions_cta: "All exhibitions"
     current_exhibition: "Now in Lviv"
     current_exhibition_cta: "About the exhibition"
+    current_exhibition_catalog: "View works"
   works:
     title: "Works"
     intro: "Selected prints by Anna Voitiuk, spanning etching and related intaglio techniques."
@@ -191,6 +192,7 @@ uk:
     exhibitions_cta: "Усі виставки"
     current_exhibition: "Зараз у Львові"
     current_exhibition_cta: "Про виставку"
+    current_exhibition_catalog: "Переглянути роботи"
   works:
     title: "Роботи"
     intro: "Вибрані роботи Анни Войтюк у техніках офорту та інших видах глибокого друку."
