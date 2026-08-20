@@ -39,19 +39,64 @@ hommage-2021:
   url: "https://cdnc.heyzine.com/files/uploaded/v2/5f51d8e36ed1f751af2da763181f09c80689715a.pdf"
   type: "official-catalogue"
 trakai-2020:
-  label: "Trakai Peninsula Castle competition catalogue"
+  label: "Trakai Peninsula Castle: Unicorn — 2020 competition catalogue"
   organization: "Trakai History Museum"
   url: "https://fliphtml5.com/vwalu/bxhu/Trakai_peninsula_castle%3A_unicorn_%E2%80%93_a_symbol_of_cultural_and_historical_heritage/"
   type: "official-catalogue"
+trakai-2021:
+  label: "Trakai 700 — 2021 competition winners"
+  organization: "Trakai History Museum"
+  url: "https://trakaimuziejus.lt/en/renginiai/sveikiname-2021-m-traku-istorijos-muziejuje-skelbto-tarptautinio-ekslibrisu-konkurso-trakams-700-tapatybes-beieskant-trakiecio-dnr-nugaletojus/"
+  type: "official-results"
 green-sofa-2026:
   label: "Red Book exhibition announcement"
   organization: "Green Sofa Gallery"
   url: "https://artgreensofa.com/?p=6320&lang=en"
   type: "gallery-announcement"
+lvivonline-orchestra-2025:
+  label: "Animal Orchestra exhibition announcement"
+  organization: "LvivOnline"
+  url: "https://lviv-online.com/ua/events/arts/vystavka-anny-vojtyuk-orkestr-tvaryn/"
+  type: "event-listing"
+lvivconcert-carnival-2024:
+  label: "Carnival of the Animals exhibition announcement"
+  organization: "Lviv Organ Hall"
+  url: "https://www.lvivconcert.house/event-details/vistavka-karnaval-tvarin-anni-voytyuk"
+  type: "institution"
+fisae-poltava-2025:
+  label: "FISAE Newsletter 475"
+  organization: "FISAE"
+  url: "https://www.exlibris-austria.at/08_fisae/2025_nl/250503_FISAE_Newsletter_475.pdf"
+  type: "professional-publication"
+pnpu-book-2025:
+  label: "Ukrainian Exlibris after February 24, 2022"
+  organization: "Poltava V. G. Korolenko National Pedagogical University"
+  url: "https://publishing.pnpu.edu.ua/catalog/download/881/1526/10487?inline=1"
+  type: "institutional-publication"
+trakai-2022:
+  label: "International Ex Libris Competition 2022 catalogue"
+  organization: "Trakai History Museum"
+  url: "https://trakaimuziejus.lt/wp-content/uploads/2022/10/TIM-Ex-libris-2022-web.pdf"
+  type: "official-catalogue"
+ruse-2020:
+  label: "XVI International Ex Libris Competition catalogue"
+  organization: "Lyuben Karavelov Regional Library"
+  url: "https://www.libruse.bg/filesDB/catalogues/Catalogue_20/exliibris_2020.pdf"
+  type: "official-catalogue"
+exlibriswereld-2025:
+  label: "Grafiekwereld article about the 2025 premieprent"
+  organization: "Exlibriswereld"
+  url: "https://exlibriswereld.nl/category/grafiekwereld"
+  type: "professional-publication"
+buechergilde-2025:
+  label: "Büchergilde Magazin 1/2025"
+  organization: "Büchergilde Gutenberg"
+  url: "https://pimcore.buechergilde.de/Redaktionelle%20Inhalte/Aktuelles/Magazin/Magazin%20PDFs/2025/2025_1.pdf"
+  type: "professional-publication"
 cinii-2025:
   label: "CiNii Books author record"
   organization: "National Institute of Informatics, Japan"
-  url: "https://ci.nii.ac.jp/author/DB00526478"
+  url: "https://ci.nii.ac.jp/ncid/BD14167564"
   type: "bibliographic-record"
 berlin-2023:
   label: "Day after Day exhibition notice"
@@ -63,4 +108,4 @@ artist-cv-2026:
   organization: "Anna Voitiuk"
   url: "/assets/documents/Anna_Voitiuk_CV_2026-08-20.pdf"
   type: "artist-cv"
-
+  public: false

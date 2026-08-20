@@ -6,7 +6,6 @@
   artwork: "Bicycle Race"
   technique: "C3"
   source_ids: [varna-2025, fisae-varna-2025]
-  verification: verified-primary
   featured: true
 - year: 2023
   award: "Prize"
@@ -14,7 +13,6 @@
   city: "Rybnik"
   country: { en: "Poland", uk: "Польща" }
   source_ids: [rybnik-2023]
-  verification: verified-primary
   featured: true
 - year: 2021
   award: "1st Prize — Jean de La Fontaine category"
@@ -23,15 +21,15 @@
   country: { en: "Spain", uk: "Іспанія" }
   artwork: "Haste Makes Waste"
   source_ids: [hommage-2021]
-  verification: verified-primary
   featured: true
 - year: 2021
-  award: "Additional Prize"
+  award: "2nd Place"
   event: "International Ex Libris Competition “Trakai 700. In Search of Identity: Trakai Resident's DNA”"
   city: "Trakai"
   country: { en: "Lithuania", uk: "Литва" }
-  source_ids: []
-  verification: verified-primary
+  technique: "C3, X3"
+  size: "95 × 120 mm"
+  source_ids: [trakai-2021]
   featured: false
 - year: 2021
   award: "International Jury's Encouragement — category 14–26"
@@ -41,7 +39,6 @@
   artwork: "Trains' Time"
   technique: "C3"
   source_ids: []
-  verification: verified-primary
   featured: false
 - year: 2021
   award: "Prize"
@@ -49,7 +46,6 @@
   city: "Rybnik"
   country: { en: "Poland", uk: "Польща" }
   source_ids: [rybnik-2021]
-  verification: verified-primary
   featured: false
 - year: 2020
   award: "Diploma"
@@ -57,8 +53,8 @@
   city: "Trakai"
   country: { en: "Lithuania", uk: "Литва" }
   technique: "C3, C5"
+  size: "135 × 70 mm"
   source_ids: [trakai-2020]
-  verification: verified-primary
   featured: false
 - year: 2020
   award: "Distinction — Destacados"
@@ -68,6 +64,4 @@
   artwork: "Lviv 1982"
   technique: "C3"
   source_ids: []
-  verification: verified-primary
   featured: true
-

@@ -11,7 +11,7 @@ layout: base
       <li>
         <time>{{ item.year }}</time>
         <div><strong>{{ item.title[locale] }}</strong><span>{{ item.venue[locale] }} · {{ item.city[locale] }}</span>
-          {% for source_id in item.source_ids %}{% assign source = site.data.sources[source_id] %}{% if source.url %}<a class="source-link" href="{{ source.url }}" rel="noopener noreferrer">{{ t.source }} ↗</a>{% endif %}{% endfor %}
+          {% for source_id in item.source_ids limit: 1 %}{% include source-links.html source_id=source_id locale=locale label=t.source %}{% endfor %}
         </div>
       </li>
     {% endfor %}
@@ -23,10 +23,9 @@ layout: base
     <ol class="timeline-list timeline-list-wide">
       {% for item in site.data.exhibitions.group %}
         <li><time>{{ item.year }}</time><div><strong>{{ item.title }}</strong>{% if item.venue %}<span>{{ item.venue[locale] }}</span>{% endif %}<span>{{ item.city[locale] }}</span>
-          {% for source_id in item.source_ids limit: 1 %}{% assign source = site.data.sources[source_id] %}{% if source.url %}<a class="source-link" href="{{ source.url }}" rel="noopener noreferrer">{{ t.source }} ↗</a>{% endif %}{% endfor %}
+          {% for source_id in item.source_ids limit: 1 %}{% include source-links.html source_id=source_id locale=locale label=t.source %}{% endfor %}
         </div></li>
       {% endfor %}
     </ol>
   </div>
 </section>
-

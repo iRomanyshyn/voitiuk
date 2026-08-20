@@ -1,0 +1,13 @@
+{% assign source = site.data.sources[include.source_id] %}
+{% assign reference_t = site.data.content[include.locale].reference %}
+{% if source and source.url %}
+  {% unless source.public == false %}
+    <span class="reference-links">
+      <a class="{{ include.class | default: 'source-link' }}" href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ include.label | default: reference_t.source }} ↗</a>
+      {% assign url_prefix = source.url | slice: 0, 4 %}
+      {% if url_prefix == 'http' %}
+        <a class="archive-link" href="https://web.archive.org/web/*/{{ source.url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ reference_t.archive_label }}: {{ source.label | escape }}">{{ reference_t.archive }}</a>
+      {% endif %}
+    </span>
+  {% endunless %}
+{% endif %}

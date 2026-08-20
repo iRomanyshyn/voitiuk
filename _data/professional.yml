@@ -22,12 +22,12 @@ projects:
     title: "Exlibriswereld / Grafiekwereld"
     en: "Commissioned premieprent for Exlibriswereld, published with Grafiekwereld 1/2025."
     uk: "Авторська premieprent для нідерландської асоціації Exlibriswereld, представлена разом із виданням Grafiekwereld 1/2025."
-    source_ids: [artist-cv-2026]
+    source_ids: [exlibriswereld-2025]
   - year: 2025
     title: "Deutsche Exlibris-Gesellschaft"
     en: "Exlibris created for the Deutsche Exlibris-Gesellschaft and published in Büchergilde-related materials."
     uk: "Екслібрис для Deutsche Exlibris-Gesellschaft, опублікований у матеріалах, пов'язаних із Büchergilde."
-    source_ids: [artist-cv-2026]
+    source_ids: [buechergilde-2025]
 press:
   - year: 2024
     title: "Die phantastische (Exlibris-)Welt der Anna Voitiuk"
@@ -44,5 +44,4 @@ research:
     title: { en: "Ukrainian Exlibris after February 24, 2022 — online presentation", uk: "Ukrainian Exlibris after February 24, 2022 — онлайн-презентація" }
     en: "Video How to Make an Etching and a lecture on the graphic work of Taras Shevchenko and Rembrandt van Rijn."
     uk: "Відео «Як створити офорт» і лекція про графічну творчість Тараса Шевченка та Рембрандта ван Рейна."
-    source_ids: [artist-cv-2026]
-
+    source_ids: [fisae-poltava-2025]

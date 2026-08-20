@@ -5,6 +5,10 @@ en:
   skip: "Skip to content"
   menu: "Menu"
   language: "Language"
+  reference:
+    source: "Source"
+    archive: "archive"
+    archive_label: "Archived copies"
   nav:
     - label: "Works"
       url: "/en/works/"
@@ -35,15 +39,13 @@ en:
     exhibitions_cta: "All exhibitions"
   works:
     title: "Works"
-    intro: "A selection of prints with verified catalogue metadata. Additional works from the Red Book of Ukraine, Birds of Ukraine and Motherhood series are being prepared for publication."
+    intro: "Selected prints by Anna Voitiuk, spanning etching and related intaglio techniques."
     source: "Catalogue record"
     open: "Open large image"
     details: "View details"
     close: "Close"
     previous: "Previous work"
     next: "Next work"
-    more_note: "Portfolio in progress"
-    more_copy: "High-resolution images and complete metadata for further works are being prepared. No placeholder or stock images are shown as artworks."
   about:
     title: "About"
     intro: "Anna Voitiuk is a Ukrainian printmaker and graphic artist based in Lviv."
@@ -81,14 +83,14 @@ en:
   cv:
     title: "CV"
     intro: "Selected professional chronology. Entries are listed newest first."
-    download: "Download CV"
+    download: "Open CV as PDF"
+    source: "Source"
     education: "Education"
     awards: "Awards & distinctions"
     solo: "Solo exhibitions"
     group: "Selected group exhibitions"
     publications: "Publications & professional projects"
     research: "Talks & research"
-    pending_note: "Two earlier award records are retained in the internal data layer pending primary-source verification and are not published here."
   contact:
     title: "Contact"
     intro: "For exhibition proposals, collaborations, publications, commissions or questions about available works, please use the contact form or get in touch by email."
@@ -111,6 +113,10 @@ uk:
   skip: "Перейти до змісту"
   menu: "Меню"
   language: "Мова"
+  reference:
+    source: "Джерело"
+    archive: "архів"
+    archive_label: "Архівні копії"
   nav:
     - label: "Роботи"
       url: "/uk/works/"
@@ -141,15 +147,13 @@ uk:
     exhibitions_cta: "Усі виставки"
   works:
     title: "Роботи"
-    intro: "Вибрані відбитки з перевіреними каталожними даними. Інші роботи з циклів «Червона книга України», «Птахи України» та «Материнство» готуються до публікації."
+    intro: "Вибрані роботи Анни Войтюк у техніках офорту та інших видах глибокого друку."
     source: "Каталожний запис"
     open: "Відкрити велике зображення"
     details: "Докладніше"
     close: "Закрити"
     previous: "Попередня робота"
     next: "Наступна робота"
-    more_note: "Портфоліо доповнюється"
-    more_copy: "Готуються якісні зображення й повні метадані інших робіт. Stock-зображення та заглушки не видаються за твори художниці."
   about:
     title: "Про художницю"
     intro: "Анна Войтюк — українська художниця-графік зі Львова."
@@ -187,14 +191,14 @@ uk:
   cv:
     title: "CV"
     intro: "Вибрана професійна хронологія. Новіші події наведено першими."
-    download: "Завантажити CV"
+    download: "Відкрити CV у PDF"
+    source: "Джерело"
     education: "Освіта"
     awards: "Нагороди та відзнаки"
     solo: "Персональні виставки"
     group: "Вибрані групові виставки"
     publications: "Публікації та професійні проєкти"
     research: "Доповіді та дослідження"
-    pending_note: "Два давніші записи про нагороди збережено у внутрішньому data layer до перевірки першоджерел і тут не опубліковано."
   contact:
     title: "Контакти"
     intro: "З питань виставкових проєктів, співпраці, публікацій, замовлень або доступності робіт скористайтеся контактною формою чи напишіть електронною поштою."
@@ -209,4 +213,3 @@ uk:
     instagram: "Instagram"
     facebook: "Facebook"
     contact: "Контакти"
-
