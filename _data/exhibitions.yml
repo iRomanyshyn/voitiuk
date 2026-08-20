@@ -3,27 +3,32 @@ solo:
     title: { en: "Red Book", uk: "«Червона книга»" }
     venue: { en: "Green Sofa Gallery", uk: "галерея «Зелена Канапа»" }
     city: { en: "Lviv, Ukraine", uk: "Львів, Україна" }
+    dates: { en: "18 August – 13 September 2026", uk: "18 серпня — 13 вересня 2026" }
+    start_date: "2026-08-18"
+    end_date: "2026-09-13"
+    summary: { en: "An exhibition of 43 new etchings and woodcuts devoted to the animal world.", uk: "Виставка 43 нових офортів і дереворитів, присвячених світові тварин." }
+    current: true
     source_ids: [green-sofa-2026]
   - year: 2026
     title: { en: "Exlibris Animalia", uk: "Exlibris Animalia" }
     venue: { en: "Homin Center", uk: "«Гомін Центр»" }
     city: { en: "Lviv, Ukraine", uk: "Львів, Україна" }
-    source_ids: [green-sofa-2026]
+    source_ids: [listin-animalia-2026]
   - year: 2025
     title: { en: "Animal Orchestra", uk: "«Оркестр тварин»" }
     venue: { en: "Lviv Organ Hall", uk: "Львівський органний зал" }
     city: { en: "Lviv, Ukraine", uk: "Львів, Україна" }
-    source_ids: [lvivonline-orchestra-2025, green-sofa-2026]
+    source_ids: [lvivonline-orchestra-2025]
   - year: 2024
     title: { en: "Carnival of the Animals", uk: "«Карнавал тварин»" }
     venue: { en: "Lviv Organ Hall", uk: "Львівський органний зал" }
     city: { en: "Lviv, Ukraine", uk: "Львів, Україна" }
-    source_ids: [lvivconcert-carnival-2024, green-sofa-2026]
+    source_ids: [lvivconcert-carnival-2024]
   - year: 2024
     title: { en: "When Animals Still Spoke", uk: "«Коли ще звірі говорили»" }
     venue: { en: "Franko House", uk: "Дім Франка" }
     city: { en: "Lviv, Ukraine", uk: "Львів, Україна" }
-    source_ids: [green-sofa-2026]
+    source_ids: [zaxid-art-may-2024]
 group:
   - year: 2025
     title: "Ukrainian Exlibris after February 24, 2022"

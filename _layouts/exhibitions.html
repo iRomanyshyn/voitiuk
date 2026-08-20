@@ -2,15 +2,16 @@
 layout: base
 ---
 {% assign locale = page.lang %}
+{% assign site_t = site.data.content[locale] %}
 {% assign t = site.data.content[locale].exhibitions %}
-<header class="page-hero shell"><p class="eyebrow">Chronology</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
+<header class="page-hero shell"><p class="eyebrow">{{ site_t.labels.chronology }}</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
 <section class="section shell timeline-section">
   <h2>{{ t.solo }}</h2>
   <ol class="timeline-list timeline-list-wide">
     {% for item in site.data.exhibitions.solo %}
       <li>
         <time>{{ item.year }}</time>
-        <div><strong>{{ item.title[locale] }}</strong><span>{{ item.venue[locale] }} · {{ item.city[locale] }}</span>
+        <div><strong>{{ item.title[locale] }}</strong>{% if item.dates %}<span>{{ item.dates[locale] }}</span>{% endif %}<span>{{ item.venue[locale] }} · {{ item.city[locale] }}</span>
           {% for source_id in item.source_ids limit: 1 %}{% include source-links.html source_id=source_id locale=locale label=t.source %}{% endfor %}
         </div>
       </li>

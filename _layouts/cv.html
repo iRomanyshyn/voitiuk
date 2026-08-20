@@ -2,8 +2,9 @@
 layout: base
 ---
 {% assign locale = page.lang %}
+{% assign site_t = site.data.content[locale] %}
 {% assign t = site.data.content[locale].cv %}
-<header class="page-hero shell page-hero-actions"><div><p class="eyebrow">Curriculum vitae</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></div><a class="button" href="/assets/documents/Anna_Voitiuk_CV_2026-08-20.pdf" target="_blank" rel="noopener">{{ t.download }} ↗</a></header>
+<header class="page-hero shell page-hero-actions"><div><p class="eyebrow">{{ site_t.labels.curriculum_vitae }}</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></div><a class="button" href="/assets/documents/Anna_Voitiuk_CV_2026-08-20.pdf" target="_blank" rel="noopener">{{ t.download }} ↗</a></header>
 <div class="section shell cv-layout">
   <section><h2>{{ t.education }}</h2><ol class="timeline-list timeline-list-wide">{% for item in site.data.professional.education %}<li><time>{{ item.year }}</time><div><span>{{ item[locale] }}</span></div></li>{% endfor %}</ol></section>
   <section><h2>{{ t.awards }}</h2><ol class="timeline-list timeline-list-wide">{% for item in site.data.awards %}<li><time>{{ item.year }}</time><div><strong>{{ item.award }}</strong><span>{{ item.event }} · {{ item.city }}, {{ item.country[locale] }}</span>{% for source_id in item.source_ids limit: 1 %}{% include source-links.html source_id=source_id locale=locale label=t.source %}{% endfor %}</div></li>{% endfor %}</ol></section>

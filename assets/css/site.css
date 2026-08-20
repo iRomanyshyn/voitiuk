@@ -62,6 +62,14 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
 .button-secondary:hover { background: var(--ink); color: white; }
 .text-link { color: var(--accent-dark); font-size: 0.9rem; font-weight: 600; }
 
+.current-exhibition { border-block: 1px solid var(--line); background: #e8e6df; }
+.current-exhibition-inner { display: grid; grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1fr); align-items: start; gap: clamp(44px, 9vw, 130px); padding-block: clamp(52px, 7vw, 86px); }
+.current-exhibition h2 { max-width: 620px; margin-bottom: 0; font-size: clamp(2.5rem, 5.5vw, 5.2rem); }
+.current-exhibition-copy { max-width: 660px; }
+.current-exhibition-copy p { color: var(--muted); }
+.current-exhibition-copy p:first-child { color: var(--ink); }
+.current-exhibition-copy .reference-links { margin-top: 8px; }
+
 .shop-promo { border-block: 1px solid var(--line); background: var(--ink); color: var(--paper-bright); }
 .shop-promo-inner { min-height: 400px; display: grid; grid-template-columns: minmax(260px, 0.68fr) minmax(0, 1fr); align-items: center; gap: clamp(50px, 10vw, 150px); padding-block: clamp(64px, 8vw, 110px); }
 .shop-promo-name { container-type: inline-size; display: flex; flex-direction: column; justify-content: center; min-height: 220px; border: 1px solid #6e716d; padding: clamp(28px, 4vw, 56px); font-family: var(--serif); }
@@ -241,6 +249,7 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
   .split-editorial { grid-template-columns: 1fr; gap: 30px; }
   .split-editorial h2 { position: static; }
   .shop-promo-inner { grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr); gap: 50px; }
+  .current-exhibition-inner { gap: 48px; }
   .article-body blockquote { margin-inline: -30px; }
   .article-body figure { margin-inline: -50px; }
   .two-columns, .publication-columns { gap: 50px; }
@@ -256,6 +265,7 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
   .hero h1 { font-size: clamp(3.3rem, 17vw, 5.2rem); }
   .hero-art { min-height: 370px; }
   .hero-art > span { right: 10px; bottom: 10px; max-width: calc(100% - 20px); }
+  .current-exhibition-inner { grid-template-columns: 1fr; gap: 28px; }
   .section { padding-block: 76px; }
   .section-heading { grid-template-columns: 1fr; gap: 0; }
   .section-heading > p { margin-top: -16px; }

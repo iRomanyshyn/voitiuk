@@ -2,6 +2,7 @@
 layout: base
 ---
 {% assign locale = page.lang %}
+{% assign site_t = site.data.content[locale] %}
 {% assign t = site.data.content[locale].works %}
 {% assign work = site.data.works | where: 'id', page.work_id | first %}
 {% assign source = site.data.sources[work.source_id] %}
@@ -9,7 +10,7 @@ layout: base
   {"@context":"https://schema.org","@type":"VisualArtwork","name":{{ work.title[locale] | jsonify }},"creator":{"@type":"Person","name":"Anna Voitiuk"},"artform":"Printmaking","artMedium":{{ work.technique[locale] | jsonify }},{% if work.year %}"dateCreated":"{{ work.year }}",{% endif %}"image":"{{ work.image | absolute_url }}","width":"{{ work.plate_size }}"}
 </script>
 <article class="artwork-page shell">
-  <header><p class="eyebrow">Portfolio{% if work.year %} · {{ work.year }}{% endif %}</p><h1>{{ work.title[locale] }}</h1></header>
+  <header><p class="eyebrow">{{ site_t.labels.portfolio }}{% if work.year %} · {{ work.year }}{% endif %}</p><h1>{{ work.title[locale] }}</h1></header>
   <figure><img src="{{ work.image }}" alt="{{ work.alt[locale] }}" width="{{ work.image_width }}" height="{{ work.image_height }}" fetchpriority="high" decoding="async"><figcaption>{{ work.title[locale] }}{% if work.year %}, {{ work.year }}{% endif %}</figcaption></figure>
   <dl class="artwork-meta"><div><dt>{% if locale == 'uk' %}Техніка{% else %}Technique{% endif %}</dt><dd>{% include technique.html work=work locale=locale %}</dd></div><div><dt>{% if locale == 'uk' %}Розмір зображення{% else %}Image size{% endif %}</dt><dd>{{ work.plate_size }}</dd></div>{% if work.edition %}<div><dt>{% if locale == 'uk' %}Тираж{% else %}Edition{% endif %}</dt><dd>{{ work.edition }}</dd></div>{% endif %}</dl>
   {% if work.description %}<div class="artwork-description"><p>{{ work.description[locale] }}</p></div>{% endif %}

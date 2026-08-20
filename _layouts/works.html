@@ -2,8 +2,9 @@
 layout: base
 ---
 {% assign locale = page.lang %}
+{% assign site_t = site.data.content[locale] %}
 {% assign t = site.data.content[locale].works %}
-<header class="page-hero shell"><p class="eyebrow">Portfolio</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
+<header class="page-hero shell"><p class="eyebrow">{{ site_t.labels.portfolio }}</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
 {% include etsy-promo.html locale=locale %}
 <section class="section shell">
   <div class="works-grid works-grid-full">

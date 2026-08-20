@@ -1,7 +1,8 @@
 ---
 layout: redirect
-redirect_to: /en/
-permalink: /de.html
+lang: en
+redirect_to: /privacy/
+permalink: /legal.html
 sitemap: false
 robots: noindex,follow
 ---

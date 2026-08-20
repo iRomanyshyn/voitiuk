@@ -2,8 +2,9 @@
 layout: base
 ---
 {% assign locale = page.lang %}
+{% assign site_t = site.data.content[locale] %}
 {% assign t = site.data.content[locale].contact %}
-<header class="page-hero shell"><p class="eyebrow">Anna Voitiuk</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
+<header class="page-hero shell"><p class="eyebrow">{{ site_t.site_name }}</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
 <section class="section shell contact-layout">
   <form class="contact-form" action="https://formspree.io/f/{{ site.formspree_form_id }}" method="POST" accept-charset="UTF-8">
     <div class="form-field"><label for="contact-name">{{ t.name }} <span aria-hidden="true">*</span><span class="sr-only">{{ t.required }}</span></label><input id="contact-name" name="name" type="text" autocomplete="name" required></div>

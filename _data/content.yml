@@ -9,6 +9,14 @@ en:
     source: "Source"
     archive: "archive"
     archive_label: "Archived copies"
+  labels:
+    portfolio: "Portfolio"
+    biography: "Biography"
+    recognition: "Recognition"
+    exhibitions: "Exhibitions"
+    chronology: "Chronology"
+    curriculum_vitae: "Curriculum vitae"
+    bibliography: "Bibliography"
   nav:
     - label: "Works"
       url: "/en/works/"
@@ -37,6 +45,8 @@ en:
     awards_cta: "View full CV"
     exhibitions_title: "Current and recent solo exhibitions"
     exhibitions_cta: "All exhibitions"
+    current_exhibition: "Now in Lviv"
+    current_exhibition_cta: "About the exhibition"
   works:
     title: "Works"
     intro: "Selected prints by Anna Voitiuk, spanning etching and related intaglio techniques."
@@ -85,7 +95,7 @@ en:
   cv:
     title: "CV"
     intro: "Selected professional chronology. Entries are listed newest first."
-    download: "Open CV as PDF"
+    download: "Open CV as PDF — Ukrainian"
     source: "Source"
     education: "Education"
     awards: "Awards & distinctions"
@@ -139,6 +149,14 @@ uk:
     source: "Джерело"
     archive: "архів"
     archive_label: "Архівні копії"
+  labels:
+    portfolio: "Портфоліо"
+    biography: "Біографія"
+    recognition: "Відзнаки"
+    exhibitions: "Виставки"
+    chronology: "Хронологія"
+    curriculum_vitae: "Резюме"
+    bibliography: "Бібліографія"
   nav:
     - label: "Роботи"
       url: "/uk/works/"
@@ -155,7 +173,7 @@ uk:
   home:
     eyebrow: "Львів · Україна"
     title: "Анна Войтюк"
-    subtitle: "Художниця-графік · Printmaker"
+    subtitle: "Художниця-графік · авторка друкованої графіки"
     description: "Українська художниця-графік зі Львова, що працює з офортом, авторською друкованою графікою та екслібрисом."
     works_cta: "Переглянути роботи"
     about_cta: "Про художницю"
@@ -167,6 +185,8 @@ uk:
     awards_cta: "Переглянути повне CV"
     exhibitions_title: "Актуальні та недавні персональні виставки"
     exhibitions_cta: "Усі виставки"
+    current_exhibition: "Зараз у Львові"
+    current_exhibition_cta: "Про виставку"
   works:
     title: "Роботи"
     intro: "Вибрані роботи Анни Войтюк у техніках офорту та інших видах глибокого друку."

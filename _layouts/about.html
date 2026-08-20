@@ -2,8 +2,9 @@
 layout: base
 ---
 {% assign locale = page.lang %}
+{% assign site_t = site.data.content[locale] %}
 {% assign t = site.data.content[locale].about %}
-<header class="page-hero shell"><p class="eyebrow">Anna Voitiuk</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
+<header class="page-hero shell"><p class="eyebrow">{{ site_t.site_name }}</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
 <section class="section shell split-editorial">
   <div><h2>{{ t.biography_title }}</h2></div>
   <div class="prose">{% for paragraph in t.biography %}<p>{{ paragraph }}</p>{% endfor %}</div>
@@ -18,4 +19,3 @@ layout: base
   <div><h2>{{ t.name_title }}</h2><p>{{ t.name_copy }}</p></div>
   <div><h2>{{ t.acknowledgement_title }}</h2><p>{{ t.acknowledgement }}</p></div>
 </section>
-

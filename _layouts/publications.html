@@ -2,8 +2,9 @@
 layout: base
 ---
 {% assign locale = page.lang %}
+{% assign site_t = site.data.content[locale] %}
 {% assign t = site.data.content[locale].publications %}
-<header class="page-hero shell"><p class="eyebrow">Bibliography</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
+<header class="page-hero shell"><p class="eyebrow">{{ site_t.labels.bibliography }}</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
 <section class="section shell publication-section article-listing">
   <h2>{{ t.articles }}</h2>
   {% for item in site.data.articles %}
