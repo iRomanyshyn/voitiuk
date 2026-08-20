@@ -1,0 +1,73 @@
+- year: 2025
+  award: "Prize for Young Artist"
+  event: "Sixth International Exlibris Competition Varna"
+  city: "Varna"
+  country: { en: "Bulgaria", uk: "Болгарія" }
+  artwork: "Bicycle Race"
+  technique: "C3"
+  source_ids: [varna-2025, fisae-varna-2025]
+  verification: verified-primary
+  featured: true
+- year: 2023
+  award: "Prize"
+  event: "V International Biennial of Small Graphic Forms “Between Black and White…”"
+  city: "Rybnik"
+  country: { en: "Poland", uk: "Польща" }
+  source_ids: [rybnik-2023]
+  verification: verified-primary
+  featured: true
+- year: 2021
+  award: "1st Prize — Jean de La Fontaine category"
+  event: "Hommage à Trois"
+  city: "La Ràpita"
+  country: { en: "Spain", uk: "Іспанія" }
+  artwork: "Haste Makes Waste"
+  source_ids: [hommage-2021]
+  verification: verified-primary
+  featured: true
+- year: 2021
+  award: "Additional Prize"
+  event: "International Ex Libris Competition “Trakai 700. In Search of Identity: Trakai Resident's DNA”"
+  city: "Trakai"
+  country: { en: "Lithuania", uk: "Литва" }
+  source_ids: []
+  verification: verified-primary
+  featured: false
+- year: 2021
+  award: "International Jury's Encouragement — category 14–26"
+  event: "XVII International Ex Libris Competition “Ex Libris – Ex Trains”"
+  city: "Ruse"
+  country: { en: "Bulgaria", uk: "Болгарія" }
+  artwork: "Trains' Time"
+  technique: "C3"
+  source_ids: []
+  verification: verified-primary
+  featured: false
+- year: 2021
+  award: "Prize"
+  event: "IV International Biennial of Small Graphic Forms “Between Black and White…”"
+  city: "Rybnik"
+  country: { en: "Poland", uk: "Польща" }
+  source_ids: [rybnik-2021]
+  verification: verified-primary
+  featured: false
+- year: 2020
+  award: "Diploma"
+  event: "International Ex Libris Competition “Trakai Peninsula Castle: Unicorn – a Symbol of Cultural and Historical Heritage”"
+  city: "Trakai"
+  country: { en: "Lithuania", uk: "Литва" }
+  technique: "C3, C5"
+  source_ids: [trakai-2020]
+  verification: verified-primary
+  featured: false
+- year: 2020
+  award: "Distinction — Destacados"
+  event: "4th Bienal Internacional Mini Print 2020"
+  city: "Laguna Paiva"
+  country: { en: "Argentina", uk: "Аргентина" }
+  artwork: "Lviv 1982"
+  technique: "C3"
+  source_ids: []
+  verification: verified-primary
+  featured: true
+

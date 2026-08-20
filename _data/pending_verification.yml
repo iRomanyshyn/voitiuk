@@ -1,0 +1,27 @@
+- year: 2020
+  title: "6th Award"
+  event: "Exlibris Aboensis"
+  country: "Finland"
+  verification: artist-cv-only
+  publish: false
+  note: "Primary-source confirmation of the artist's award status is still required."
+- year: 2020
+  title: "1st Prize"
+  event: "International Exlibris Competition in Skaudvilė"
+  country: "Lithuania"
+  verification: artist-cv-only
+  publish: false
+  note: "Primary-source confirmation of the artist's award status is still required."
+- work_id: sightseeing-tour
+  field: paper_size
+  verification: pending
+  publish: false
+- work_id: le-carnaval-des-animaux
+  field: paper_size
+  verification: pending
+  publish: false
+- work_id: fenrirs-children
+  field: paper_size
+  verification: pending
+  publish: false
+

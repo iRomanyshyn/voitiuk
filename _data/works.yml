@@ -1,0 +1,62 @@
+- id: sightseeing-tour
+  slug: sightseeing-tour
+  title: { en: "Sightseeing Tour", uk: "Sightseeing Tour" }
+  year: 2020
+  series: null
+  technique: { en: "C3, C5", uk: "C3, C5" }
+  plate_size: "8.5 × 11.5 cm"
+  paper_size: null
+  edition: 20
+  image: "/assets/img/works/sightseeing-tour.jpg"
+  thumbnail: "/assets/img/works/sightseeing-tour-960.jpg"
+  image_width: 1912
+  image_height: 1396
+  thumbnail_width: 960
+  thumbnail_height: 701
+  alt:
+    en: "Etching shaped like a tour bus, with animals appearing as passengers in its windows."
+    uk: "Офорт у формі туристичного автобуса, у вікнах якого зображені тварини-пасажири."
+  availability: unknown
+  source_id: heike-sightseeing
+
+- id: le-carnaval-des-animaux
+  slug: le-carnaval-des-animaux
+  title: { en: "Le carnaval des animaux", uk: "Le carnaval des animaux" }
+  year: 2020
+  series: null
+  technique: { en: "C3, C5", uk: "C3, C5" }
+  plate_size: "11 × 22 cm"
+  paper_size: null
+  edition: 20
+  image: "/assets/img/works/le-carnaval-des-animaux.jpg"
+  thumbnail: "/assets/img/works/le-carnaval-des-animaux-960.jpg"
+  image_width: 1920
+  image_height: 1073
+  thumbnail_width: 960
+  thumbnail_height: 536
+  alt:
+    en: "Horizontal etching combining a musical staff, flowering plants and animal forms arranged as notes."
+    uk: "Горизонтальний офорт, що поєднує нотний стан, квітучі рослини та форми тварин, розташовані як ноти."
+  availability: unknown
+  source_id: heike-carnaval
+
+- id: fenrirs-children
+  slug: fenrirs-children
+  title: { en: "Fenrir's Children", uk: "Fenrir's Children" }
+  year: 2019
+  series: null
+  technique: { en: "C3, C5, C7", uk: "C3, C5, C7" }
+  plate_size: "12.5 × 12.5 cm"
+  paper_size: null
+  edition: 50
+  image: "/assets/img/works/fenrirs-children.jpg"
+  thumbnail: "/assets/img/works/fenrirs-children-960.jpg"
+  image_width: 1762
+  image_height: 1920
+  thumbnail_width: 960
+  thumbnail_height: 1046
+  alt:
+    en: "Square black-and-white print depicting two wolves facing each other around a cracked celestial sphere."
+    uk: "Квадратна чорно-біла графіка із двома вовками, що дивляться один на одного крізь розколоту небесну сферу."
+  availability: unknown
+  source_id: heike-fenrir

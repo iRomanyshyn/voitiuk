@@ -1,0 +1,34 @@
+{% assign work = include.work %}
+{% assign locale = include.locale %}
+{% assign t = site.data.content[locale].works %}
+<article class="work-card">
+  <button
+    class="work-image-button"
+    type="button"
+    data-lightbox-item
+    data-image="{{ work.image }}"
+    data-alt="{{ work.alt[locale] | escape }}"
+    data-title="{{ work.title[locale] | escape }}"
+    data-meta="{{ work.year }} · {{ work.technique[locale] | escape }}"
+    aria-label="{{ t.open }}: {{ work.title[locale] | escape }}"
+  >
+    <img
+      src="{{ work.thumbnail }}"
+      srcset="{{ work.thumbnail }} {{ work.thumbnail_width }}w, {{ work.image }} {{ work.image_width }}w"
+      sizes="(max-width: 720px) 100vw, 50vw"
+      alt="{{ work.alt[locale] }}"
+      width="{{ work.thumbnail_width }}"
+      height="{{ work.thumbnail_height }}"
+      loading="{% if include.eager %}eager{% else %}lazy{% endif %}"
+      decoding="async"
+      {% if include.eager %}fetchpriority="high"{% endif %}
+    >
+  </button>
+  <div class="work-caption">
+    <div>
+      <h3><a href="/{{ locale }}/works/{{ work.slug }}/">{{ work.title[locale] }}</a></h3>
+      <p>{{ work.year }} · {{ work.technique[locale] }}</p>
+    </div>
+    <a class="text-link" href="/{{ locale }}/works/{{ work.slug }}/">{{ t.details }}</a>
+  </div>
+</article>

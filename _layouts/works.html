@@ -1,0 +1,14 @@
+---
+layout: base
+---
+{% assign locale = page.lang %}
+{% assign t = site.data.content[locale].works %}
+<header class="page-hero shell"><p class="eyebrow">Portfolio</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
+<section class="section shell">
+  <div class="works-grid works-grid-full">
+    {% for work in site.data.works %}{% include work-card.html work=work locale=locale eager=forloop.first %}{% endfor %}
+  </div>
+  <aside class="portfolio-note"><strong>{{ t.more_note }}</strong><p>{{ t.more_copy }}</p></aside>
+</section>
+{% include lightbox.html locale=locale %}
+

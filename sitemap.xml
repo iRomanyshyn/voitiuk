@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% assign indexed_pages = site.pages | where_exp: 'item', 'item.lang == "en" or item.lang == "uk"' %}
+{% for item in indexed_pages %}{% unless item.sitemap == false %}
+  <url>
+    <loc>{{ item.url | absolute_url }}</loc>
+    {% if item.alternate_en %}<xhtml:link rel="alternate" hreflang="en" href="{{ item.alternate_en | absolute_url }}" />{% endif %}
+    {% if item.alternate_uk %}<xhtml:link rel="alternate" hreflang="uk" href="{{ item.alternate_uk | absolute_url }}" />{% endif %}
+  </url>
+{% endunless %}{% endfor %}
+</urlset>
+

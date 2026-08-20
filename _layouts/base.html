@@ -1,0 +1,97 @@
+<!doctype html>
+{% assign locale = page.lang | default: 'en' %}
+{% assign t = site.data.content[locale] %}
+{% assign meta_title = page.title | default: t.site_name %}
+{% assign meta_description = page.description | default: site.description %}
+{% assign canonical_path = page.canonical_path | default: page.url %}
+{% assign share_image = page.image | default: '/assets/img/works/sightseeing-tour.jpg' %}
+{% assign head_work = site.data.works | where: 'id', page.work_id | first %}
+{% if head_work %}
+  {% assign share_alt = head_work.alt[locale] %}
+{% else %}
+  {% assign share_alt = 'Sightseeing Tour, a 2020 print by Anna Voitiuk' %}
+{% endif %}
+<html lang="{{ locale }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ meta_title }}</title>
+    <meta name="description" content="{{ meta_description | escape }}">
+    <meta name="theme-color" content="#f4f2ec">
+    <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="canonical" href="{{ canonical_path | absolute_url }}">
+    {% if page.alternate_en %}<link rel="alternate" hreflang="en" href="{{ page.alternate_en | absolute_url }}">{% endif %}
+    {% if page.alternate_uk %}<link rel="alternate" hreflang="uk" href="{{ page.alternate_uk | absolute_url }}">{% endif %}
+    {% if page.alternate_en %}<link rel="alternate" hreflang="x-default" href="{{ page.alternate_en | absolute_url }}">{% endif %}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Anna Voitiuk">
+    <meta property="og:title" content="{{ meta_title | escape }}">
+    <meta property="og:description" content="{{ meta_description | escape }}">
+    <meta property="og:url" content="{{ canonical_path | absolute_url }}">
+    <meta property="og:image" content="{{ share_image | absolute_url }}">
+    <meta property="og:image:alt" content="{{ share_alt | escape }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ meta_title | escape }}">
+    <meta name="twitter:description" content="{{ meta_description | escape }}">
+    <meta name="twitter:image" content="{{ share_image | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Anna Voitiuk",
+        "alternateName": ["Анна Войтюк", "Anna Vojtiuk"],
+        "url": "https://voitiuk.com",
+        "image": "{{ '/assets/img/works/sightseeing-tour.jpg' | absolute_url }}",
+        "jobTitle": ["Printmaker", "Graphic Artist"],
+        "nationality": {"@type": "Country", "name": "Ukraine"},
+        "homeLocation": {"@type": "Place", "name": "Lviv, Ukraine"},
+        "sameAs": [
+          "https://www.instagram.com/voitiuk_print/",
+          "https://www.facebook.com/anna.vojtyuk/"
+        ]
+      }
+    </script>
+    {% if page.extra_schema %}{{ page.extra_schema }}{% endif %}
+  </head>
+  <body class="page-{{ page.page_key | default: 'default' }}">
+    <a class="skip-link" href="#main-content">{{ t.skip }}</a>
+    <header class="site-header" data-site-header>
+      <div class="shell header-inner">
+        <a class="brand" href="/{% if locale == 'uk' %}uk{% else %}en{% endif %}/" aria-label="{{ t.site_name }} — home">
+          <span class="brand-name">{{ t.site_name }}</span>
+          <span class="brand-role">{{ t.role }}</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" data-menu-toggle>
+          <span>{{ t.menu }}</span><span aria-hidden="true">＋</span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="Primary" data-navigation>
+          <ul>
+            {% for item in t.nav %}
+              <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+            {% endfor %}
+          </ul>
+          <div class="language-switcher" aria-label="{{ t.language }}">
+            {% if page.alternate_en %}<a href="{{ page.alternate_en }}" lang="en" hreflang="en"{% if locale == 'en' %} aria-current="page"{% endif %}>EN</a>{% endif %}
+            <span aria-hidden="true">/</span>
+            {% if page.alternate_uk %}<a href="{{ page.alternate_uk }}" lang="uk" hreflang="uk"{% if locale == 'uk' %} aria-current="page"{% endif %}>UA</a>{% endif %}
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>{{ t.footer.rights }}</p>
+        <nav aria-label="Footer">
+          <a href="https://www.instagram.com/voitiuk_print/" rel="me noopener noreferrer">{{ t.footer.instagram }}</a>
+          <a href="https://www.facebook.com/anna.vojtyuk/" rel="me noopener noreferrer">{{ t.footer.facebook }}</a>
+          <a href="/{% if locale == 'uk' %}uk{% else %}en{% endif %}/contact/">{{ t.footer.contact }}</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  </body>
+</html>

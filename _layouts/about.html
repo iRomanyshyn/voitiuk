@@ -1,0 +1,21 @@
+---
+layout: base
+---
+{% assign locale = page.lang %}
+{% assign t = site.data.content[locale].about %}
+<header class="page-hero shell"><p class="eyebrow">Anna Voitiuk</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
+<section class="section shell split-editorial">
+  <div><h2>{{ t.biography_title }}</h2></div>
+  <div class="prose">{% for paragraph in t.biography %}<p>{{ paragraph }}</p>{% endfor %}</div>
+</section>
+<section class="section section-tint">
+  <div class="shell split-editorial">
+    <div><h2>{{ t.statement_title }}</h2></div>
+    <div class="prose statement">{% for paragraph in t.statement %}<p>{{ paragraph }}</p>{% endfor %}</div>
+  </div>
+</section>
+<section class="section shell about-notes">
+  <div><h2>{{ t.name_title }}</h2><p>{{ t.name_copy }}</p></div>
+  <div><h2>{{ t.acknowledgement_title }}</h2><p>{{ t.acknowledgement }}</p></div>
+</section>
+

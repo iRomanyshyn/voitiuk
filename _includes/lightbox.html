@@ -1,0 +1,17 @@
+{% assign locale = include.locale %}
+{% assign t = site.data.content[locale].works %}
+<dialog class="lightbox" data-lightbox aria-label="{{ t.open }}">
+  <div class="lightbox-bar">
+    <div>
+      <strong data-lightbox-title></strong>
+      <span data-lightbox-meta></span>
+    </div>
+    <button class="icon-button" type="button" data-lightbox-close aria-label="{{ t.close }}">×</button>
+  </div>
+  <div class="lightbox-stage">
+    <button class="icon-button lightbox-previous" type="button" data-lightbox-previous aria-label="{{ t.previous }}">←</button>
+    <img src="" alt="" data-lightbox-image>
+    <button class="icon-button lightbox-next" type="button" data-lightbox-next aria-label="{{ t.next }}">→</button>
+  </div>
+</dialog>
+

@@ -1,0 +1,48 @@
+education:
+  - year: "2025–present"
+    en: "Lviv Polytechnic National University, Institute of Printing and Media Technologies — master's programme Book and Easel Graphics, speciality B4 Fine Arts and Restoration."
+    uk: "Національний університет «Львівська політехніка», Інститут поліграфії та медійних технологій — магістерська освітня програма «Книжкова та станкова графіка», спеціальність B4 «Образотворче мистецтво та реставрація»."
+  - year: "2018–2022"
+    en: "Ukrainian Academy of Printing — bachelor's degree in Fine Arts."
+    uk: "Українська академія друкарства — бакалавр образотворчого мистецтва."
+  - year: "2014–2018"
+    en: "Lviv Higher Vocational Art School — qualification in stained-glass painting."
+    uk: "Львівське вище професійне художнє училище — кваліфікація «живописець-вітражник»."
+  - year: "2007–2014"
+    en: "Lviv Children's Art School named after Oleksa Novakivskyi."
+    uk: "Львівська дитяча художня школа ім. О. Новаківського."
+publications:
+  - year: 2025
+    title: "Ukrainian Exlibris after February 24, 2022: Glance from Japan"
+    en: "Co-author; author of Comparison of the Creative Legacies of Taras Shevchenko and Rembrandt van Rijn. Kyiv, 2025. English, Ukrainian and Japanese. ISBN 978-617-8413-25-5."
+    uk: "Співавторка; авторка статті «Порівняння творчої спадщини Тараса Шевченка та Рембрандта ван Рейна». Київ, 2025. Англійська, українська та японська мови. ISBN 978-617-8413-25-5."
+    source_ids: [cinii-2025]
+projects:
+  - year: 2025
+    title: "Exlibriswereld / Grafiekwereld"
+    en: "Commissioned premieprent for Exlibriswereld, published with Grafiekwereld 1/2025."
+    uk: "Авторська premieprent для нідерландської асоціації Exlibriswereld, представлена разом із виданням Grafiekwereld 1/2025."
+    source_ids: [artist-cv-2026]
+  - year: 2025
+    title: "Deutsche Exlibris-Gesellschaft"
+    en: "Exlibris created for the Deutsche Exlibris-Gesellschaft and published in Büchergilde-related materials."
+    uk: "Екслібрис для Deutsche Exlibris-Gesellschaft, опублікований у матеріалах, пов'язаних із Büchergilde."
+    source_ids: [artist-cv-2026]
+press:
+  - year: 2024
+    title: "Die phantastische (Exlibris-)Welt der Anna Voitiuk"
+    en: "Profile by Utz Benkel in DEG Mitteilungen."
+    uk: "Персональний матеріал Utz Benkel у DEG Mitteilungen."
+    source_ids: [artist-cv-2026]
+research:
+  - year: 2025
+    title: { en: "Carlo Zvirynskyi and His Students: Artistic Opposition", uk: "«Карло Звіринський і його учні: мистецька опозиція»" }
+    en: "Conference presentation as a master's student at Lviv Polytechnic."
+    uk: "Доповідь на науковій конференції як магістрантки НУ «Львівська політехніка»."
+    source_ids: [artist-cv-2026]
+  - year: 2025
+    title: { en: "Ukrainian Exlibris after February 24, 2022 — online presentation", uk: "Ukrainian Exlibris after February 24, 2022 — онлайн-презентація" }
+    en: "Video How to Make an Etching and a lecture on the graphic work of Taras Shevchenko and Rembrandt van Rijn."
+    uk: "Відео «Як створити офорт» і лекція про графічну творчість Тараса Шевченка та Рембрандта ван Рейна."
+    source_ids: [artist-cv-2026]
+

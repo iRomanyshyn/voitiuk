@@ -1,0 +1,16 @@
+---
+layout: base
+---
+{% assign locale = page.lang %}
+{% assign t = site.data.content[locale].works %}
+{% assign work = site.data.works | where: 'id', page.work_id | first %}
+{% assign source = site.data.sources[work.source_id] %}
+<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"VisualArtwork","name":{{ work.title[locale] | jsonify }},"creator":{"@type":"Person","name":"Anna Voitiuk"},"artform":"Printmaking","artMedium":{{ work.technique[locale] | jsonify }},"dateCreated":"{{ work.year }}","image":"{{ work.image | absolute_url }}","width":"{{ work.plate_size }}"}
+</script>
+<article class="artwork-page shell">
+  <header><p class="eyebrow">Portfolio · {{ work.year }}</p><h1>{{ work.title[locale] }}</h1></header>
+  <figure><img src="{{ work.image }}" alt="{{ work.alt[locale] }}" width="{{ work.image_width }}" height="{{ work.image_height }}" fetchpriority="high" decoding="async"><figcaption>{{ work.title[locale] }}, {{ work.year }}</figcaption></figure>
+  <dl class="artwork-meta"><div><dt>{% if locale == 'uk' %}Техніка{% else %}Technique{% endif %}</dt><dd>{{ work.technique[locale] }}</dd></div><div><dt>{% if locale == 'uk' %}Розмір зображення{% else %}Image size{% endif %}</dt><dd>{{ work.plate_size }}</dd></div><div><dt>{% if locale == 'uk' %}Тираж{% else %}Edition{% endif %}</dt><dd>{{ work.edition }}</dd></div></dl>
+  <div class="artwork-links"><a class="button button-secondary" href="/{{ locale }}/works/">← {{ t.title }}</a><a class="text-link" href="{{ source.url }}" rel="noopener noreferrer">{{ t.source }} ↗</a></div>
+</article>

@@ -1,0 +1,32 @@
+---
+layout: base
+---
+{% assign locale = page.lang %}
+{% assign t = site.data.content[locale].exhibitions %}
+<header class="page-hero shell"><p class="eyebrow">Chronology</p><h1>{{ t.title }}</h1><p>{{ t.intro }}</p></header>
+<section class="section shell timeline-section">
+  <h2>{{ t.solo }}</h2>
+  <ol class="timeline-list timeline-list-wide">
+    {% for item in site.data.exhibitions.solo %}
+      <li>
+        <time>{{ item.year }}</time>
+        <div><strong>{{ item.title[locale] }}</strong><span>{{ item.venue[locale] }} · {{ item.city[locale] }}</span>
+          {% for source_id in item.source_ids %}{% assign source = site.data.sources[source_id] %}{% if source.url %}<a class="source-link" href="{{ source.url }}" rel="noopener noreferrer">{{ t.source }} ↗</a>{% endif %}{% endfor %}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+<section class="section section-tint">
+  <div class="shell timeline-section">
+    <h2>{{ t.group }}</h2>
+    <ol class="timeline-list timeline-list-wide">
+      {% for item in site.data.exhibitions.group %}
+        <li><time>{{ item.year }}</time><div><strong>{{ item.title }}</strong>{% if item.venue %}<span>{{ item.venue[locale] }}</span>{% endif %}<span>{{ item.city[locale] }}</span>
+          {% for source_id in item.source_ids limit: 1 %}{% assign source = site.data.sources[source_id] %}{% if source.url %}<a class="source-link" href="{{ source.url }}" rel="noopener noreferrer">{{ t.source }} ↗</a>{% endif %}{% endfor %}
+        </div></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+

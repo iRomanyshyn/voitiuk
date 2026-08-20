@@ -1,0 +1,93 @@
+solo:
+  - year: 2026
+    title: { en: "Red Book", uk: "«Червона книга»" }
+    venue: { en: "Green Sofa Gallery", uk: "галерея «Зелена Канапа»" }
+    city: { en: "Lviv, Ukraine", uk: "Львів, Україна" }
+    source_ids: [green-sofa-2026]
+    verification: verified-secondary
+  - year: 2026
+    title: { en: "Exlibris Animalia", uk: "Exlibris Animalia" }
+    venue: { en: "Homin Center", uk: "«Гомін Центр»" }
+    city: { en: "Lviv, Ukraine", uk: "Львів, Україна" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+  - year: 2025
+    title: { en: "Animal Orchestra", uk: "«Оркестр тварин»" }
+    venue: { en: "Lviv Organ Hall", uk: "Львівський органний зал" }
+    city: { en: "Lviv, Ukraine", uk: "Львів, Україна" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+  - year: 2024
+    title: { en: "Carnival of the Animals", uk: "«Карнавал тварин»" }
+    venue: { en: "Lviv Organ Hall", uk: "Львівський органний зал" }
+    city: { en: "Lviv, Ukraine", uk: "Львів, Україна" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+  - year: 2024
+    title: { en: "When Animals Still Spoke", uk: "«Коли ще звірі говорили»" }
+    venue: { en: "Franko House", uk: "Дім Франка" }
+    city: { en: "Lviv, Ukraine", uk: "Львів, Україна" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+group:
+  - year: 2025
+    title: "Ukrainian Exlibris after February 24, 2022"
+    venue: { en: "Poltava Art Museum / Mykola Yaroshenko Art Museum", uk: "Полтавський художній музей / музей імені Миколи Ярошенка" }
+    city: { en: "Poltava, Ukraine", uk: "Полтава, Україна" }
+    source_ids: [artist-cv-2026]
+    verification: verified-secondary
+  - year: 2025
+    title: "XIX International Contest of Small Graphic Forms and Exlibris"
+    venue: null
+    city: { en: "Ostrów Wielkopolski, Poland", uk: "Острув-Велькопольський, Польща" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+  - year: "2023–2024"
+    title: "Day after Day"
+    venue: { en: "Multi-city exhibition project of Ukrainian artists", uk: "Багатоміський виставковий проєкт українських митців" }
+    city: { en: "Paderborn, Berlin, Ueckermünde, Nürnberg and Bad Doberan, Germany", uk: "Падерборн, Берлін, Юккермюнде, Нюрнберг та Бад-Доберан, Німеччина" }
+    source_ids: [berlin-2023, artist-cv-2026]
+    verification: verified-secondary
+  - year: 2023
+    title: "Exlibris Courage"
+    venue: { en: "Ukrainian exlibris exhibition", uk: "Виставка українського екслібриса" }
+    city: { en: "Tokyo, Japan", uk: "Токіо, Японія" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+  - year: 2023
+    title: "Ukraine and Japan Exchange Exhibition"
+    venue: { en: "Ryutsu Keizai University", uk: "Ryutsu Keizai University" }
+    city: { en: "Matsudo, Japan", uk: "Мацудо, Японія" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+  - year: 2023
+    title: "Art is My Weapon"
+    venue: { en: "Exhibition of Ukrainian artists", uk: "Виставка українських митців" }
+    city: { en: "Kamakura, Japan", uk: "Камакура, Японія" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+  - year: 2022
+    title: "International Ex Libris Competition"
+    venue: { en: "Trakai History Museum", uk: "Trakai History Museum" }
+    city: { en: "Trakai, Lithuania", uk: "Тракай, Литва" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+  - year: 2022
+    title: "XVIII International Contest of Small Graphic Forms and Exlibris"
+    venue: null
+    city: { en: "Ostrów Wielkopolski, Poland", uk: "Острув-Велькопольський, Польща" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+  - year: 2020
+    title: "XVI International Ex Libris Competition"
+    venue: null
+    city: { en: "Ruse, Bulgaria", uk: "Русе, Болгарія" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+  - year: 2019
+    title: "XVII International Contest of Small Graphic Forms and Exlibris"
+    venue: null
+    city: { en: "Ostrów Wielkopolski, Poland", uk: "Острув-Велькопольський, Польща" }
+    source_ids: [artist-cv-2026]
+    verification: artist-cv-only
+

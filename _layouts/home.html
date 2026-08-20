@@ -1,0 +1,62 @@
+---
+layout: base
+---
+{% assign locale = page.lang %}
+{% assign t = site.data.content[locale] %}
+{% assign hero_work = site.data.works | first %}
+<section class="hero shell">
+  <div class="hero-copy">
+    <p class="eyebrow">{{ t.home.eyebrow }}</p>
+    <h1>{{ t.home.title }}</h1>
+    <p class="hero-role">{{ t.home.subtitle }}</p>
+    <p class="hero-description">{{ t.home.description }}</p>
+    <div class="actions">
+      <a class="button" href="/{{ locale }}/works/">{{ t.home.works_cta }}</a>
+      <a class="button button-secondary" href="/{{ locale }}/about/">{{ t.home.about_cta }}</a>
+    </div>
+  </div>
+  <a class="hero-art" href="/{{ locale }}/works/{{ hero_work.slug }}/">
+    <img src="{{ hero_work.image }}" alt="{{ hero_work.alt[locale] }}" width="{{ hero_work.image_width }}" height="{{ hero_work.image_height }}" fetchpriority="high" decoding="async">
+    <span><strong>{{ hero_work.title[locale] }}</strong><small>{{ hero_work.year }} · {{ hero_work.technique[locale] }}</small></span>
+  </a>
+</section>
+
+<section class="section shell" aria-labelledby="selected-works-title">
+  <div class="section-heading">
+    <div><p class="eyebrow">Portfolio</p><h2 id="selected-works-title">{{ t.home.featured_works }}</h2></div>
+    <p>{{ t.home.featured_works_text }}</p>
+  </div>
+  <div class="works-grid">
+    {% for work in site.data.works %}{% include work-card.html work=work locale=locale %}{% endfor %}
+  </div>
+</section>
+
+<section class="section section-tint">
+  <div class="shell split-editorial">
+    <div><p class="eyebrow">Biography</p><h2>{{ t.home.bio_title }}</h2></div>
+    <div class="prose"><p>{{ t.home.bio }}</p><a class="text-link" href="/{{ locale }}/about/">{{ t.home.about_cta }} →</a></div>
+  </div>
+</section>
+
+<section class="section shell two-columns">
+  <div>
+    <div class="section-heading compact"><div><p class="eyebrow">Recognition</p><h2>{{ t.home.awards_title }}</h2></div></div>
+    <ol class="timeline-list">
+      {% assign featured_awards = site.data.awards | where: 'featured', true %}
+      {% for item in featured_awards %}
+        <li><time>{{ item.year }}</time><div><strong>{{ item.award }}</strong><span>{{ item.event }}, {{ item.city }}, {{ item.country[locale] }}</span></div></li>
+      {% endfor %}
+    </ol>
+    <a class="text-link" href="/{{ locale }}/cv/">{{ t.home.awards_cta }} →</a>
+  </div>
+  <div>
+    <div class="section-heading compact"><div><p class="eyebrow">Exhibitions</p><h2>{{ t.home.exhibitions_title }}</h2></div></div>
+    <ol class="timeline-list">
+      {% for item in site.data.exhibitions.solo limit: 3 %}
+        <li><time>{{ item.year }}</time><div><strong>{{ item.title[locale] }}</strong><span>{{ item.venue[locale] }}, {{ item.city[locale] }}</span></div></li>
+      {% endfor %}
+    </ol>
+    <a class="text-link" href="/{{ locale }}/exhibitions/">{{ t.home.exhibitions_cta }} →</a>
+  </div>
+</section>
+{% include lightbox.html locale=locale %}
