@@ -6,14 +6,16 @@
   --line: #c9c7c0;
   --accent: #205e67;
   --accent-dark: #163f45;
+  --anchor-offset: 112px;
   --shell: min(1320px, calc(100vw - 64px));
   --serif: Georgia, "Times New Roman", serif;
   --sans: "Segoe UI", "Noto Sans", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--anchor-offset); }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.65; }
+[id] { scroll-margin-top: var(--anchor-offset); }
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
 button, input, textarea { font: inherit; }
@@ -51,7 +53,7 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
 .hero-art { position: relative; display: block; align-self: stretch; min-height: 520px; background: var(--paper-bright); overflow: hidden; text-decoration: none; }
 .hero-art img { width: 100%; height: 100%; object-fit: contain; padding: clamp(12px, 2.4vw, 40px); transition: transform 400ms ease; }
 .hero-art:hover img { transform: scale(1.012); }
-.hero-art span { position: absolute; right: 22px; bottom: 20px; display: flex; flex-direction: column; align-items: flex-end; padding: 7px 10px; background: rgba(251, 250, 247, 0.9); }
+.hero-art > span { position: absolute; right: 22px; bottom: 20px; display: flex; max-width: calc(100% - 44px); flex-direction: column; align-items: flex-end; padding: 7px 10px; background: rgba(251, 250, 247, 0.9); text-align: right; }
 .hero-art small { color: var(--muted); }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
 .button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 11px 21px; border: 1px solid var(--ink); background: var(--ink); color: white; text-decoration: none; cursor: pointer; transition: background 180ms ease, color 180ms ease; }
@@ -245,7 +247,7 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
 }
 
 @media (max-width: 720px) {
-  :root { --shell: calc(100% - 28px); }
+  :root { --anchor-offset: 94px; --shell: calc(100% - 28px); }
   body { font-size: 16px; }
   .header-inner { min-height: 78px; }
   .brand-role { max-width: 210px; }
@@ -253,7 +255,7 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
   .hero { padding-block: 55px 70px; gap: 42px; }
   .hero h1 { font-size: clamp(3.3rem, 17vw, 5.2rem); }
   .hero-art { min-height: 370px; }
-  .hero-art span { right: 10px; bottom: 10px; }
+  .hero-art > span { right: 10px; bottom: 10px; max-width: calc(100% - 20px); }
   .section { padding-block: 76px; }
   .section-heading { grid-template-columns: 1fr; gap: 0; }
   .section-heading > p { margin-top: -16px; }
