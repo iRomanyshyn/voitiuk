@@ -21,37 +21,46 @@ layout: base
   </a>
 </section>
 
-{% assign current_exhibition = site.data.exhibitions.solo | where: 'current', true | first %}
-{% if current_exhibition %}
-  {% assign current_source_id = current_exhibition.source_ids | first %}
-  {% assign current_source = site.data.sources[current_source_id] %}
+{% assign current_exhibitions = site.data.exhibitions.solo | where: 'current', true %}
+{% if current_exhibitions.size > 0 %}
   <section class="current-exhibition">
-    <div class="shell current-exhibition-inner">
-      <div>
-        <p class="eyebrow">{{ t.home.current_exhibition }}</p>
-        <h2>{{ current_exhibition.title[locale] }}</h2>
-      </div>
-      <div class="current-exhibition-copy">
-        <p><strong>{{ current_exhibition.dates[locale] }}</strong><br>{{ current_exhibition.venue[locale] }} · {{ current_exhibition.city[locale] }}</p>
-        <p>{{ current_exhibition.summary[locale] }}</p>
-        {% include source-links.html source_id=current_source_id locale=locale class='text-link' label=t.home.current_exhibition_cta %}
+    <div class="shell current-exhibition-shell">
+      <p class="eyebrow current-exhibition-label">{{ t.home.current_exhibition }}</p>
+      <div class="current-exhibition-list">
+        {% for current_exhibition in current_exhibitions %}
+          {% assign current_source_id = current_exhibition.source_ids | first %}
+          {% assign current_source = site.data.sources[current_source_id] %}
+          <article class="current-exhibition-item">
+            <div class="current-exhibition-heading">
+              <h2>{{ current_exhibition.title[locale] }}</h2>
+            </div>
+            <div class="current-exhibition-meta">
+              <p><strong>{{ current_exhibition.dates[locale] }}</strong></p>
+              <p>{{ current_exhibition.venue[locale] }}<br>{{ current_exhibition.city[locale] }}</p>
+            </div>
+            <div class="current-exhibition-copy">
+              <p>{{ current_exhibition.summary[locale] }}</p>
+              <a class="text-link" href="{{ current_source.url }}" target="_blank" rel="noopener noreferrer">{{ t.home.current_exhibition_cta }} ↗</a>
+            </div>
+          </article>
+          <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "ExhibitionEvent",
+            "name": {{ current_exhibition.title[locale] | jsonify }},
+            "description": {{ current_exhibition.summary[locale] | jsonify }},
+            "startDate": "{{ current_exhibition.start_date }}",
+            {% if current_exhibition.end_date %}"endDate": "{{ current_exhibition.end_date }}",{% endif %}
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {"@type": "Place", "name": {{ current_exhibition.venue[locale] | jsonify }}, "address": {{ current_exhibition.city[locale] | jsonify }}},
+            "performer": {"@type": "Person", "name": "Anna Voitiuk"},
+            "url": {{ current_source.url | jsonify }}
+          }
+          </script>
+        {% endfor %}
       </div>
     </div>
   </section>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ExhibitionEvent",
-    "name": {{ current_exhibition.title[locale] | jsonify }},
-    "description": {{ current_exhibition.summary[locale] | jsonify }},
-    "startDate": "{{ current_exhibition.start_date }}",
-    "endDate": "{{ current_exhibition.end_date }}",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "location": {"@type": "Place", "name": {{ current_exhibition.venue[locale] | jsonify }}, "address": {{ current_exhibition.city[locale] | jsonify }}},
-    "performer": {"@type": "Person", "name": "Anna Voitiuk"},
-    "url": {{ current_source.url | jsonify }}
-  }
-  </script>
 {% endif %}
 
 {% include etsy-promo.html locale=locale %}
