@@ -175,8 +175,8 @@ series:
         year: 2026
         technique: "wood_engraving"
         paper: "15 × 21"
-        full_size: [1268, 1752]
-        thumb_size: [695, 960]
+        full_size: [1752, 1268]
+        thumb_size: [960, 695]
       - slug: "cuckoo"
         title: { uk: "Зозуля", en: "Cuckoo" }
         year: 2026
@@ -196,8 +196,8 @@ series:
         year: 2026
         technique: "wood_engraving"
         paper: "15 × 21"
-        full_size: [1252, 1764]
-        thumb_size: [681, 960]
+        full_size: [1764, 1252]
+        thumb_size: [960, 681]
       - slug: "magpie"
         title: { uk: "Сорока", en: "Magpie" }
         year: 2026
@@ -224,8 +224,8 @@ series:
         year: 2026
         technique: "wood_engraving"
         paper: "21 × 15"
-        full_size: [1204, 1756]
-        thumb_size: [658, 960]
+        full_size: [1756, 1204]
+        thumb_size: [960, 658]
       - slug: "stork"
         title: { uk: "Лелека", en: "Stork" }
         year: 2026
@@ -246,8 +246,8 @@ series:
         technique: "etching"
         plate: "11 × 5.5"
         paper: "19 × 25"
-        full_size: [1472, 2080]
-        thumb_size: [679, 960]
+        full_size: [2080, 1472]
+        thumb_size: [960, 679]
       - slug: "mice"
         title: { uk: "Мишки", en: "Mice" }
         year: 2026
@@ -276,8 +276,8 @@ series:
         year: 2025
         technique: "etching"
         paper: "19 × 19"
-        full_size: [1868, 1900]
-        thumb_size: [944, 960]
+        full_size: [1900, 1868]
+        thumb_size: [960, 944]
       - slug: "reda"
         title: { uk: "Реда", en: "Reda" }
         year: 2024
@@ -340,8 +340,8 @@ series:
         year: 2026
         technique: "etching"
         paper: "25 × 19"
-        full_size: [2056, 2352]
-        thumb_size: [839, 960]
+        full_size: [2352, 2056]
+        thumb_size: [960, 839]
       - slug: "pregnant-cat"
         title: { uk: "Кішка при надії", en: "Pregnant Cat" }
         year: 2026
@@ -385,7 +385,7 @@ series:
         technique: "etching"
         plate: "8.5 × 10.5"
         paper: "19 × 25"
-        full_size: [1972, 2096]
+        full_size: [2096, 1972]
         thumb_size: [903, 960]
       - slug: "swallow-bookplate"
         title: { uk: "Ластівка", en: "Swallow" }

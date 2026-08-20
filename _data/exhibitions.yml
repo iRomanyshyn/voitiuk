@@ -6,7 +6,7 @@ solo:
     dates: { en: "18 August – 13 September 2026", uk: "18 серпня — 13 вересня 2026" }
     start_date: "2026-08-18"
     end_date: "2026-09-13"
-    summary: { en: "An exhibition of 43 new etchings and woodcuts devoted to the animal world.", uk: "Виставка 43 нових офортів і дереворитів, присвячених світові тварин." }
+    summary: { en: "An exhibition of etchings and wood engravings devoted to the animal world.", uk: "Виставка офортів і гравюр на дереві, присвячених світові тварин." }
     page: { en: "/en/exhibitions/red-book-2026/", uk: "/uk/exhibitions/red-book-2026/" }
     current: true
     source_ids: [green-sofa-2026]
