@@ -12,3 +12,25 @@
   url:
     en: "/en/articles/etching-intaglio-linocut-bookplates/"
     uk: "/uk/articles/ofort-hlybokyi-druk-ekslibris/"
+
+- date: "2022-01-14"
+  date_label:
+    en: "14 January 2022"
+    uk: "14 січня 2022"
+  kind: "video"
+  image: "/assets/img/publications/artistes-15-anna-voitiuk.jpg"
+  image_alt:
+    en: "Haste makes waste, the prize-winning print presented by Anna Voitiuk in the AIDA video"
+    uk: "«Haste makes waste», нагороджена робота, яку Анна Войтюк представляє у відео AIDA"
+  title:
+    en: "“Artistes, 15”. Anna Voitiuk: “Haste makes waste”"
+    uk: "«Artistes, 15». Анна Войтюк: «Haste makes waste»"
+  summary:
+    en: "Anna Voitiuk speaks about her printmaking, her First Prize in the Jean de La Fontaine category of the 2021 Hommage à Trois competition, and the idea behind Haste makes waste."
+    uk: "Анна Войтюк розповідає про свою графіку, першу премію в категорії Жана де Лафонтена на конкурсі Hommage à Trois 2021 року та задум роботи «Haste makes waste»."
+  cta:
+    en: "Watch video"
+    uk: "Дивитися відео"
+  url:
+    en: "/en/publications/artistes-15-anna-voitiuk/"
+    uk: "/uk/publications/artistes-15-anna-voitiuk/"

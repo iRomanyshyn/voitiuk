@@ -15,8 +15,19 @@ layout: base
     {% if page.ai_disclosure %}<p class="article-disclosure">{{ page.ai_disclosure }}</p>{% endif %}
   </header>
 
-  <figure class="article-hero shell">
-    <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}">
+  <figure class="article-hero{% if page.video_id %} article-video-hero{% endif %} shell">
+    {% if page.video_id %}
+      <div class="article-video" data-video-id="{{ page.video_id | escape }}" data-video-title="{{ page.video_title | escape }}">
+        <button class="article-video-facade" type="button" data-video-load aria-label="{{ page.video_load_label | escape }}">
+          <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}">
+          <span class="article-video-play" aria-hidden="true">▶</span>
+          <span class="article-video-label" aria-hidden="true">{{ page.video_load_label }}</span>
+        </button>
+        <noscript><p class="article-video-noscript"><a href="https://www.youtube.com/watch?v={{ page.video_id }}" target="_blank" rel="noopener noreferrer">{{ page.video_external_label }} ↗</a></p></noscript>
+      </div>
+    {% else %}
+      <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}">
+    {% endif %}
     <figcaption>{{ page.image_caption }}</figcaption>
   </figure>
 
@@ -57,6 +68,16 @@ layout: base
   "dateModified": "{{ page.date | date: '%Y-%m-%d' }}",
   "inLanguage": "{{ locale }}",
   "image": "{{ page.image | absolute_url }}",
+  {% if page.video_id %}"video": {
+    "@type": "VideoObject",
+    "name": {{ page.video_title | jsonify }},
+    "description": {{ page.description | jsonify }},
+    "thumbnailUrl": "{{ page.image | absolute_url }}",
+    "uploadDate": "{{ page.date | date: '%Y-%m-%d' }}",
+    "duration": "{{ page.video_duration_iso }}",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/{{ page.video_id }}",
+    "contentUrl": "https://www.youtube.com/watch?v={{ page.video_id }}"
+  },{% endif %}
   {% if page.ai_disclosure %}"creditText": {{ page.ai_disclosure | jsonify }},{% endif %}
   "publisher": {"@type": "Person", "name": "{{ site.data.content[locale].site_name }}"},
   "mainEntityOfPage": "{{ page.url | absolute_url }}"

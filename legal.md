@@ -30,6 +30,7 @@ alternate_uk: /uk/privacy/
 
   <h2>External links</h2>
   <p>The website links to Etsy, Instagram, Facebook, galleries and professional sources. Those services have their own privacy practices.</p>
+  <p>Video pages initially show a locally hosted preview. The embedded YouTube player loads only after you press the play button; from that point, interaction with it is governed by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and the <a href="https://www.youtube.com/static?template=terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service</a>.</p>
 
   <h2>Contact</h2>
   <p>Questions about this notice can be sent through the <a href="/en/contact/">contact form</a>.</p>

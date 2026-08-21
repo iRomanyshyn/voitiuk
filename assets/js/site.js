@@ -79,6 +79,23 @@
     });
   }
 
+  const videoFacades = Array.from(document.querySelectorAll('[data-video-load]'));
+  videoFacades.forEach((button) => {
+    button.addEventListener('click', () => {
+      const video = button.closest('[data-video-id]');
+      if (!video) return;
+
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(video.dataset.videoId)}?autoplay=1&rel=0`;
+      iframe.title = video.dataset.videoTitle || '';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.allowFullscreen = true;
+      video.replaceChildren(iframe);
+      iframe.focus();
+    });
+  });
+
   const clarityProjectId = document.body.dataset.clarityProjectId;
   const consentBanner = document.querySelector('[data-consent-banner]');
   const acceptAnalytics = document.querySelector('[data-clarity-accept]');

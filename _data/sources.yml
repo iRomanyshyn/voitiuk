@@ -255,3 +255,9 @@ essdee-artists-lino:
   organization: "Essdee"
   url: "https://www.essdee.co.uk/lino/"
   type: "manufacturer-reference"
+aida-artistes-15-video:
+  label: '“Artistes, 15”. Anna Voitiuk: “Haste makes waste”'
+  organization: "Associació Internacional Duana de les Arts — AIDA"
+  url: "https://www.youtube.com/watch?v=hyYq9XikK_U"
+  type: "video"
+  published: "2022-01-14"

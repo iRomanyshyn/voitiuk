@@ -30,6 +30,7 @@ alternate_uk: /uk/privacy/
 
   <h2>Зовнішні посилання</h2>
   <p>Сайт містить посилання на Etsy, Instagram, Facebook, галереї та професійні джерела. Ці сервіси мають власні правила приватності.</p>
+  <p>На сторінках із відео спочатку показується локальне прев’ю. Вбудований програвач YouTube завантажується лише після натискання кнопки відтворення; відтоді взаємодія з ним регулюється <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Політикою конфіденційності Google</a> та <a href="https://www.youtube.com/static?template=terms" target="_blank" rel="noopener noreferrer">Умовами використання YouTube</a>.</p>
 
   <h2>Зв’язок</h2>
   <p>Запитання щодо цього повідомлення можна надіслати через <a href="/uk/contact/">контактну форму</a>.</p>
