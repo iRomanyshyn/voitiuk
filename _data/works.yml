@@ -58,7 +58,7 @@
 - id: kotoroka
   slug: kotoroka
   title: { en: "Kotoroka", uk: "Которока" }
-  technique: { en: "Drypoint", uk: "Суха голка" }
+  technique: { en: "Drypoint on plastic", uk: "Суха голка на пластику" }
   technique_code: "C4"
   plate_size: "12.5 × 17.5 cm"
   image: "/assets/img/works/kotoroka.jpg"

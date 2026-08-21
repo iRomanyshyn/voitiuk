@@ -262,15 +262,15 @@ series:
         year: 2026
         technique: "etching"
         paper: "25 × 19"
-        full_size: [1344, 1290]
-        thumb_size: [960, 921]
+        full_size: [2270, 1478]
+        thumb_size: [960, 625]
       - slug: "pupa"
         title: { uk: "Пупа", en: "Pupa" }
         year: 2025
         technique: "etching"
         paper: "19 × 19"
-        full_size: [2270, 1478]
-        thumb_size: [960, 625]
+        full_size: [1344, 1290]
+        thumb_size: [960, 921]
       - slug: "coffee-gathering"
         title: { uk: "Кавування", en: "Coffee Gathering" }
         year: 2025
@@ -386,7 +386,7 @@ series:
         plate: "8.5 × 10.5"
         paper: "19 × 25"
         full_size: [2096, 1972]
-        thumb_size: [903, 960]
+        thumb_size: [960, 903]
       - slug: "swallow-bookplate"
         title: { uk: "Ластівка", en: "Swallow" }
         year: 2026

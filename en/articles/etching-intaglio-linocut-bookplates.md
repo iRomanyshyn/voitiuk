@@ -85,12 +85,12 @@ Today many workshops use **ferric chloride, or iron(III) chloride**, for copper 
 Several related intaglio techniques are often used alongside etching:
 
 - **aquatint** produces tonal fields and gradations rather than line alone. A granular resist is formed on the plate, and the mordant bites in the microscopic spaces around its particles;
-- **drypoint** needs no mordant: the image is scratched directly into the plate. The displaced material creates a burr that holds ink and prints a soft, velvety line. Because the burr gradually wears under the press, only a limited number of especially rich impressions can usually be taken;
+- **drypoint** needs no mordant: the image is scratched directly into a metal or plastic plate. The displaced material creates a burr that holds ink and prints a soft, velvety line. Because the burr gradually wears under the press, only a limited number of especially rich impressions can usually be taken;
 - **mezzotint** begins with a plate roughened so evenly that it could print as a deep black. The tool used is a **mezzotint rocker**: a curved steel blade with extremely regular teeth and a handle. It looks a little like a miniature toothed hoe or some precisely engineered piece of farm equipment, yet it is made with the accuracy of an engraver’s tool. The rocker is rolled repeatedly across the plate in many directions until the surface is covered with an even field of burrs. Scrapers and burnishers then reduce this roughness: the smoother the area, the less ink it holds and the lighter it prints.<sup><a href="#source-vam-what-is-print">[1]</a></sup>
 
 <figure>
-  <img src="/assets/img/works/kotoroka.jpg" alt="Kotoroka, a drypoint by Anna Voitiuk">
-  <figcaption>Anna Voitiuk, Kotoroka. Drypoint (C4): the line is scratched directly into the plate.</figcaption>
+  <img src="/assets/img/works/kotoroka.jpg" alt="Kotoroka, a drypoint on plastic by Anna Voitiuk">
+  <figcaption>Anna Voitiuk, Kotoroka. Drypoint on plastic (C4): the line is scratched directly into a plastic plate.</figcaption>
 </figure>
 
 ## An art more than five centuries old
