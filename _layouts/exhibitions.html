@@ -13,7 +13,7 @@ layout: base
         <time>{{ item.year }}</time>
         <div><strong>{% if item.page %}<a class="timeline-title-link" href="{{ item.page[locale] }}">{{ item.title[locale] }}</a>{% else %}{{ item.title[locale] }}{% endif %}</strong>{% if item.dates %}<span>{{ item.dates[locale] }}</span>{% endif %}<span>{{ item.venue[locale] }} · {{ item.city[locale] }}</span>
           {% if item.page %}<a class="text-link timeline-detail-link" href="{{ item.page[locale] }}">{{ site_t.home.current_exhibition_catalog }} →</a>{% endif %}
-          {% for source_id in item.source_ids limit: 1 %}{% include source-links.html source_id=source_id locale=locale label=t.source %}{% endfor %}
+          {% for source_id in item.source_ids %}{% include source-links.html source_id=source_id locale=locale label=t.source %}{% endfor %}
         </div>
       </li>
     {% endfor %}
@@ -25,7 +25,7 @@ layout: base
     <ol class="timeline-list timeline-list-wide">
       {% for item in site.data.exhibitions.group %}
         <li><time>{{ item.year }}</time><div><strong>{{ item.title }}</strong>{% if item.venue %}<span>{{ item.venue[locale] }}</span>{% endif %}<span>{{ item.city[locale] }}</span>
-          {% for source_id in item.source_ids limit: 1 %}{% include source-links.html source_id=source_id locale=locale label=t.source %}{% endfor %}
+          {% for source_id in item.source_ids %}{% include source-links.html source_id=source_id locale=locale label=t.source %}{% endfor %}
         </div></li>
       {% endfor %}
     </ol>

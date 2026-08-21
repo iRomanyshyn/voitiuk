@@ -7,8 +7,11 @@ en:
   language: "Language"
   reference:
     source: "Source"
+    catalogue: "Catalogue"
+    results: "Results"
     archive: "archive"
     archive_label: "Archived copies"
+    new_tab: "opens in a new tab"
   labels:
     portfolio: "Portfolio"
     biography: "Biography"
@@ -152,8 +155,11 @@ uk:
   language: "Мова"
   reference:
     source: "Джерело"
+    catalogue: "Каталог"
+    results: "Результати"
     archive: "архів"
     archive_label: "Архівні копії"
+    new_tab: "відкривається в новій вкладці"
   labels:
     portfolio: "Портфоліо"
     biography: "Біографія"

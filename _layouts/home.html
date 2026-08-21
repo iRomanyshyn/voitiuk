@@ -42,7 +42,9 @@ layout: base
               <p>{{ current_exhibition.summary[locale] }}</p>
               <div class="current-exhibition-links">
                 {% if current_exhibition.page %}<a class="text-link" href="{{ current_exhibition.page[locale] }}">{{ t.home.current_exhibition_catalog }} →</a>{% endif %}
-                {% include source-links.html source_id=current_source_id locale=locale label=t.home.current_exhibition_cta %}
+                {% for source_id in current_exhibition.source_ids %}
+                  {% include source-links.html source_id=source_id locale=locale label=t.home.current_exhibition_cta %}
+                {% endfor %}
               </div>
             </div>
           </article>
@@ -91,7 +93,7 @@ layout: base
     <ol class="timeline-list">
       {% assign featured_awards = site.data.awards | where: 'featured', true %}
       {% for item in featured_awards %}
-        <li><time>{{ item.year }}</time><div><strong>{{ item.award }}</strong><span>{{ item.event }}, {{ item.city }}, {{ item.country[locale] }}</span></div></li>
+        <li><time>{{ item.year }}</time><div><strong>{{ item.award }}</strong><span>{{ item.event }}, {{ item.city }}, {{ item.country[locale] }}</span>{% for source_id in item.source_ids %}{% include source-links.html source_id=source_id locale=locale label=t.reference.source %}{% endfor %}</div></li>
       {% endfor %}
     </ol>
     <a class="text-link" href="/{{ locale }}/cv/">{{ t.home.awards_cta }} →</a>
