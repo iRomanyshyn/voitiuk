@@ -13,10 +13,12 @@ education:
     uk: "Львівська дитяча художня школа ім. О. Новаківського."
 publications:
   - year: 2025
-    title: "Ukrainian Exlibris after February 24, 2022: Glance from Japan"
-    en: "Co-author; author of Comparison of the Creative Legacies of Taras Shevchenko and Rembrandt van Rijn. Kyiv, 2025. English, Ukrainian and Japanese. ISBN 978-617-8413-25-5."
-    uk: "Співавторка; авторка статті «Порівняння творчої спадщини Тараса Шевченка та Рембрандта ван Рейна». Київ, 2025. Англійська, українська та японська мови. ISBN 978-617-8413-25-5."
-    source_ids: [cinii-2025]
+    title:
+      en: "Ukrainian Exlibris after February 24, 2022: Glance from Japan"
+      uk: "«Український екслібрис після 24 лютого 2022 року: погляд із Японії»"
+    en: "Co-author of the trilingual illustrated publication and author of Comparison of the Creative Legacies of Taras Shevchenko and Rembrandt van Rijn (pp. 89–115). Kyiv: FOP Samchenko, 2025. English, Ukrainian and Japanese. ISBN 978-617-8413-25-5; DOI 10.33989/pnpu.881.c3610."
+    uk: "Співавторка тримовного ілюстрованого видання та авторка статті «Порівняння творчої спадщини Тараса Шевченка та Рембрандта ван Рейна» (с. 89–115). Київ: ФОП Самченко, 2025. Англійська, українська та японська мови. ISBN 978-617-8413-25-5; DOI 10.33989/pnpu.881.c3610."
+    source_ids: [pnpu-ukrainian-exlibris-2025, pnpu-ukrainian-exlibris-2025-pdf]
 projects:
   - year: 2025
     title: "Exlibriswereld / Grafiekwereld"
@@ -41,7 +43,7 @@ research:
     uk: "Доповідь на науковій конференції як магістрантки НУ «Львівська політехніка»."
     source_ids: [artist-cv-2026]
   - year: 2025
-    title: { en: "Ukrainian Exlibris after February 24, 2022 — online presentation", uk: "Ukrainian Exlibris after February 24, 2022 — онлайн-презентація" }
-    en: "Video How to Make an Etching and a lecture on the graphic work of Taras Shevchenko and Rembrandt van Rijn."
-    uk: "Відео «Як створити офорт» і лекція про графічну творчість Тараса Шевченка та Рембрандта ван Рейна."
-    source_ids: [fisae-poltava-2025]
+    title: { en: "Ukrainian Exlibris after February 24, 2022 — online presentation", uk: "«Український екслібрис після 24 лютого 2022 року» — онлайн-презентація" }
+    en: "Video How to Make an Etching and a lecture on the graphic work of Taras Shevchenko and Rembrandt van Rijn. The related comparative study is included in the trilingual publication."
+    uk: "Відео «Як створити офорт» і лекція про графічну творчість Тараса Шевченка та Рембрандта ван Рейна. Пов'язане з доповіддю порівняльне дослідження увійшло до тримовного видання."
+    source_ids: [fisae-poltava-2025, pnpu-ukrainian-exlibris-2025, pnpu-ukrainian-exlibris-2025-pdf]

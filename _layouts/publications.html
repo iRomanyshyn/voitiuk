@@ -22,7 +22,7 @@ layout: base
 <section class="section shell publication-section">
   <h2>{{ t.authored }}</h2>
   {% for item in site.data.professional.publications %}
-    <article class="publication-feature"><time>{{ item.year }}</time><div><h3>{{ item.title }}</h3><p>{{ item[locale] }}</p>{% for source_id in item.source_ids %}{% include source-links.html source_id=source_id locale=locale class='text-link' label=t.source %}{% endfor %}</div></article>
+    <article class="publication-feature"><time>{{ item.year }}</time><div><h3>{{ item.title[locale] | default: item.title }}</h3><p>{{ item[locale] }}</p>{% for source_id in item.source_ids %}{% include source-links.html source_id=source_id locale=locale class='text-link' label=t.source %}{% endfor %}</div></article>
   {% endfor %}
 </section>
 <section class="section section-tint"><div class="shell publication-columns">

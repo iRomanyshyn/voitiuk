@@ -3,7 +3,10 @@
 {% if source and source.url %}
   {% unless source.public == false %}
     {% assign link_label = include.label | default: reference_t.source %}
-    {% if source.type == 'official-catalogue' %}
+    {% if source.link_label %}
+      {% assign localized_link_label = source.link_label[include.locale] | default: source.link_label %}
+      {% assign link_label = localized_link_label %}
+    {% elsif source.type == 'official-catalogue' %}
       {% assign link_label = reference_t.catalogue %}
     {% elsif source.type == 'jury-protocol' or source.type == 'official-results' %}
       {% assign link_label = reference_t.results %}

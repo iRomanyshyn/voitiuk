@@ -148,6 +148,27 @@ cinii-2025:
   organization: "National Institute of Informatics, Japan"
   url: "https://ci.nii.ac.jp/ncid/BD14167564"
   type: "bibliographic-record"
+pnpu-ukrainian-exlibris-2025:
+  label: "Ukrainian Exlibris after February 24, 2022: Glance from Japan"
+  organization: "V. G. Korolenko Poltava National Pedagogical University Publishing House"
+  url: "https://publishing.pnpu.edu.ua/catalog/book/881"
+  type: "official-publication"
+  link_label:
+    en: "Official publication"
+    uk: "Офіційне видання"
+  last_checked: "2026-08-24"
+pnpu-ukrainian-exlibris-2025-pdf:
+  label: "Ukrainian Exlibris after February 24, 2022 — complete trilingual PDF"
+  organization: "V. G. Korolenko Poltava National Pedagogical University Publishing House"
+  url: "/assets/documents/publications/Ukrainian_Exlibris_after_February_24_2022.pdf"
+  original_url: "https://publishing.pnpu.edu.ua/catalog/view/881/1526/10485"
+  type: "publication-pdf"
+  link_label: "PDF"
+  file_size: 18989019
+  pages: 160
+  verified_pages: [1, 2, 3, 90, 95, 104]
+  printed_pages: [89, 94, 103]
+  sha256: "34A5B62238976BEBEF06E6D0A79162CDEEFB7AF990A2E7B5ED826B473814FAC8"
 berlin-2023:
   label: "Day after Day exhibition notice"
   organization: "Stadtbibliothek Berlin-Lichtenberg"
