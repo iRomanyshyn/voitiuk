@@ -25,6 +25,16 @@
     });
   }
 
+  document.querySelectorAll('[data-language-choice]').forEach((choice) => {
+    choice.addEventListener('click', () => {
+      try {
+        window.localStorage.setItem('voitiuk-language', choice.dataset.languageChoice);
+      } catch (_error) {
+        // The language links still work when storage is unavailable.
+      }
+    });
+  });
+
   const dialog = document.querySelector('[data-lightbox]');
   const items = Array.from(document.querySelectorAll('[data-lightbox-item]'));
   if (dialog && items.length) {

@@ -42,7 +42,11 @@ button { color: inherit; }
 .language-choice strong, .language-choice small { display: block; }
 .language-choice strong { font-family: var(--serif); font-size: clamp(1.2rem, 2vw, 1.55rem); font-weight: 400; line-height: 1.2; }
 .language-choice small { margin-top: 4px; color: var(--muted); font-size: 0.76rem; }
+.language-choice-recommendation { display: inline-block; margin-top: 8px; padding: 3px 7px; border: 1px solid var(--accent); color: var(--accent); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; }
+.language-choice-recommendation[hidden] { display: none; }
+.language-choice.is-recommended { border-color: var(--accent); }
 .language-choice:hover small { color: #cfd1cc; }
+.language-choice:hover .language-choice-recommendation { border-color: currentColor; color: inherit; }
 .language-choice-arrow { font-size: 1.3rem; }
 .language-gateway-art { position: relative; min-height: 620px; margin: 0; display: grid; place-items: center; background: var(--paper-bright); overflow: hidden; }
 .language-gateway-art img { width: 100%; height: 100%; object-fit: contain; padding: clamp(24px, 5vw, 84px); }

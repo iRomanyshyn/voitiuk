@@ -20,19 +20,17 @@ layout: null
   <meta property="og:url" content="{{ '/' | absolute_url }}">
   <meta property="og:image" content="{{ '/assets/img/works/sightseeing-tour.jpg' | absolute_url }}">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
-  <script>
-    (function () {
-      var languages = Array.isArray(navigator.languages) && navigator.languages.length
-        ? navigator.languages
-        : [navigator.language || 'en'];
-      var primaryLanguage = String(languages[0] || 'en').toLowerCase().split(/[-_]/)[0];
-      var target = primaryLanguage === 'uk' || primaryLanguage === 'ru'
-        ? {{ '/uk/' | relative_url | jsonify }}
-        : {{ '/en/' | relative_url | jsonify }};
-      window.location.replace(target);
-    }());
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": {{ '/' | absolute_url | jsonify }},
+    "name": "Anna Voitiuk",
+    "alternateName": "Анна Войтюк",
+    "inLanguage": ["en", "uk"]
+  }
   </script>
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
 <body class="page-gateway">
   <a class="skip-link" href="#language-choice">Choose language / Обрати мову</a>
@@ -47,14 +45,14 @@ layout: null
           <p lang="uk">Офіційний сайт української художниці-графіка: вибрані роботи, виставки, публікації та резюме.</p>
         </div>
         <nav class="language-choices" id="language-choice" aria-label="Choose language / Оберіть мову">
-          <a class="language-choice" href="{{ '/en/' | relative_url }}" lang="en" hreflang="en">
+          <a class="language-choice" href="{{ '/en/' | relative_url }}" lang="en" hreflang="en" data-language-choice="en">
             <span class="language-choice-code" aria-hidden="true">EN</span>
-            <span><strong>Continue in English</strong><small>Enter the portfolio</small></span>
+            <span><strong>Continue in English</strong><small>Enter the portfolio</small><span class="language-choice-recommendation" hidden>Browser preference</span></span>
             <span class="language-choice-arrow" aria-hidden="true">→</span>
           </a>
-          <a class="language-choice" href="{{ '/uk/' | relative_url }}" lang="uk" hreflang="uk">
+          <a class="language-choice" href="{{ '/uk/' | relative_url }}" lang="uk" hreflang="uk" data-language-choice="uk">
             <span class="language-choice-code" aria-hidden="true">UA</span>
-            <span><strong>Перейти українською</strong><small>Увійти до портфоліо</small></span>
+            <span><strong>Перейти українською</strong><small>Увійти до портфоліо</small><span class="language-choice-recommendation" hidden>Мова браузера</span></span>
             <span class="language-choice-arrow" aria-hidden="true">→</span>
           </a>
         </nav>
@@ -65,5 +63,48 @@ layout: null
       <figcaption><span lang="uk">«Оглядова екскурсія»</span><span>Sightseeing Tour · 2020</span></figcaption>
     </figure>
   </main>
+  <script>
+    (function () {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('choose') !== '1') {
+          var savedLanguage = window.localStorage.getItem('voitiuk-language');
+          if (savedLanguage === 'uk') {
+            window.location.replace({{ '/uk/' | relative_url | jsonify }});
+            return;
+          }
+          if (savedLanguage === 'en') {
+            window.location.replace({{ '/en/' | relative_url | jsonify }});
+            return;
+          }
+        }
+      } catch (_error) {
+        // Keep the language selector available when storage is unavailable.
+      }
+
+      var languages = Array.isArray(navigator.languages) && navigator.languages.length
+        ? navigator.languages
+        : [navigator.language || 'en'];
+      var primaryLanguage = String(languages[0] || 'en').toLowerCase().split(/[-_]/)[0];
+      var suggestedLanguage = primaryLanguage === 'uk' || primaryLanguage === 'ru' ? 'uk' : 'en';
+      var choices = document.querySelectorAll('[data-language-choice]');
+
+      choices.forEach(function (choice) {
+        if (choice.dataset.languageChoice === suggestedLanguage) {
+          choice.classList.add('is-recommended');
+          var recommendation = choice.querySelector('.language-choice-recommendation');
+          if (recommendation) recommendation.hidden = false;
+        }
+
+        choice.addEventListener('click', function () {
+          try {
+            window.localStorage.setItem('voitiuk-language', choice.dataset.languageChoice);
+          } catch (_error) {
+            // Navigation still works when storage is unavailable.
+          }
+        });
+      });
+    }());
+  </script>
 </body>
 </html>

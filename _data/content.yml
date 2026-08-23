@@ -145,6 +145,7 @@ en:
     etsy: "Etsy shop"
     contact: "Contact"
     privacy: "Privacy"
+    choose_language: "Choose language"
 
 uk:
   site_name: "Анна Войтюк"
@@ -293,3 +294,4 @@ uk:
     etsy: "Etsy-магазин"
     contact: "Контакти"
     privacy: "Приватність"
+    choose_language: "Обрати мову"
