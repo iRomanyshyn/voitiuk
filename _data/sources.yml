@@ -2,16 +2,19 @@ heike-sightseeing:
   label: "Galleri Heike Arndt catalogue record"
   organization: "Galleri Heike Arndt"
   url: "https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/"
+  archive_url: "https://web.archive.org/web/20260315200808/https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-sightseeing-tour/"
   type: "gallery-catalogue"
 heike-carnaval:
   label: "Galleri Heike Arndt catalogue record"
   organization: "Galleri Heike Arndt"
   url: "https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-le-carnaval-des-animaux/"
+  archive_url: "https://web.archive.org/web/20260519010208/https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-le-carnaval-des-animaux/"
   type: "gallery-catalogue"
 heike-fenrir:
   label: "Galleri Heike Arndt catalogue record"
   organization: "Galleri Heike Arndt"
   url: "https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-fenrirs-children/"
+  archive_url: "https://web.archive.org/web/20260213141245/https://webshop.heike-arndt.dk/product/anna-voitiuk-ua-fenrirs-children/"
   type: "gallery-catalogue"
 varna-2025:
   label: "Sixth International Exlibris Competition Varna 2025 catalogue"
@@ -71,6 +74,7 @@ trakai-2021:
   label: "Trakai 700 — 2021 competition winners"
   organization: "Trakai History Museum"
   url: "https://trakaimuziejus.lt/en/renginiai/sveikiname-2021-m-traku-istorijos-muziejuje-skelbto-tarptautinio-ekslibrisu-konkurso-trakams-700-tapatybes-beieskant-trakiecio-dnr-nugaletojus/"
+  archive_url: "https://web.archive.org/web/20240922193417/https://trakaimuziejus.lt/en/renginiai/sveikiname-2021-m-traku-istorijos-muziejuje-skelbto-tarptautinio-ekslibrisu-konkurso-trakams-700-tapatybes-beieskant-trakiecio-dnr-nugaletojus/"
   type: "official-results"
 green-sofa-2026:
   label: "Red Book exhibition announcement"
@@ -86,27 +90,25 @@ zaxid-art-may-2024:
   label: "Art May: current exhibitions in Lviv"
   organization: "ZAXID.NET"
   url: "https://zaxid.net/miy_art_may_n1586214"
+  archive_url: "https://web.archive.org/web/20241219232956/https://zaxid.net/miy_art_may_n1586214"
   type: "press"
 lvivonline-orchestra-2025:
   label: "Animal Orchestra exhibition announcement"
   organization: "LvivOnline"
   url: "https://lviv-online.com/ua/events/arts/vystavka-anny-vojtyuk-orkestr-tvaryn/"
+  archive_url: "https://web.archive.org/web/20260124205635/https://lviv-online.com/ua/events/arts/vystavka-anny-vojtyuk-orkestr-tvaryn/"
   type: "event-listing"
 lvivconcert-carnival-2024:
   label: "Carnival of the Animals exhibition announcement"
   organization: "Lviv Organ Hall"
   url: "https://www.lvivconcert.house/event-details/vistavka-karnaval-tvarin-anni-voytyuk"
+  archive_url: "https://web.archive.org/web/20260310123937/https://www.lvivconcert.house/event-details/vistavka-karnaval-tvarin-anni-voytyuk"
   type: "institution"
 fisae-poltava-2025:
   label: "FISAE Newsletter 475"
   organization: "FISAE"
   url: "https://www.exlibris-austria.at/08_fisae/2025_nl/250503_FISAE_Newsletter_475.pdf"
   type: "professional-publication"
-pnpu-book-2025:
-  label: "Ukrainian Exlibris after February 24, 2022"
-  organization: "Poltava V. G. Korolenko National Pedagogical University"
-  url: "https://publishing.pnpu.edu.ua/catalog/download/881/1526/10487?inline=1"
-  type: "institutional-publication"
 trakai-2022:
   label: "International Ex Libris Competition 2022 catalogue"
   organization: "Trakai History Museum"
@@ -133,11 +135,13 @@ exlibriswereld-2025:
   label: "Grafiekwereld article about the 2025 premieprent"
   organization: "Exlibriswereld"
   url: "https://exlibriswereld.nl/category/grafiekwereld"
+  archive_url: "https://web.archive.org/web/20260513004615/https://exlibriswereld.nl/category/grafiekwereld"
   type: "professional-publication"
 buechergilde-2025:
   label: "Büchergilde Magazin 1/2025"
   organization: "Büchergilde Gutenberg"
   url: "https://pimcore.buechergilde.de/Redaktionelle%20Inhalte/Aktuelles/Magazin/Magazin%20PDFs/2025/2025_1.pdf"
+  archive_url: "https://web.archive.org/web/20260720151257/https://pimcore.buechergilde.de/Redaktionelle%20Inhalte/Aktuelles/Magazin/Magazin%20PDFs/2025/2025_1.pdf"
   type: "professional-publication"
 cinii-2025:
   label: "CiNii Books author record"
@@ -148,6 +152,7 @@ berlin-2023:
   label: "Day after Day exhibition notice"
   organization: "Stadtbibliothek Berlin-Lichtenberg"
   url: "https://www.berlin.de/stadtbibliothek-lichtenberg/aktuelles/newsletter/newsletter.1329427.php"
+  archive_url: "https://web.archive.org/web/20240506012502/https://www.berlin.de/stadtbibliothek-lichtenberg/aktuelles/newsletter/newsletter.1329427.php"
   type: "institution"
 artist-cv-2026:
   label: "Anna Voitiuk CV, 20 August 2026"
@@ -159,51 +164,61 @@ met-print-history:
   label: "The Printed Image in the West: History and Techniques"
   organization: "The Metropolitan Museum of Art"
   url: "https://www.metmuseum.org/essays/the-printed-image-in-the-west-history-and-techniques"
+  archive_url: "https://web.archive.org/web/20260414151714/https://www.metmuseum.org/essays/the-printed-image-in-the-west-history-and-techniques"
   type: "museum-essay"
 met-renaissance-etching:
   label: "The Renaissance of Etching"
   organization: "The Metropolitan Museum of Art"
   url: "https://www.metmuseum.org/exhibitions/listings/2019/renaissance-of-etching"
+  archive_url: "https://web.archive.org/web/20260307152615/https://www.metmuseum.org/exhibitions/listings/2019/renaissance-of-etching"
   type: "museum-exhibition"
 met-rembrandt-prints:
   label: "Rembrandt van Rijn: Prints"
   organization: "The Metropolitan Museum of Art"
   url: "https://www.metmuseum.org/essays/rembrandt-van-rijn-1606-1669-prints"
+  archive_url: "https://web.archive.org/web/20260210235344/https://www.metmuseum.org/essays/rembrandt-van-rijn-1606-1669-prints"
   type: "museum-essay"
 met-goya-graphic:
   label: "Goya's Graphic Imagination"
   organization: "The Metropolitan Museum of Art"
   url: "https://www.metmuseum.org/met-publications/goyas-graphic-imagination"
+  archive_url: "https://web.archive.org/web/20260305220441/https://www.metmuseum.org/met-publications/goyas-graphic-imagination"
   type: "museum-publication"
 vam-what-is-print:
   label: "What is print?"
   organization: "Victoria and Albert Museum"
   url: "https://www.vam.ac.uk/articles/what-is-print"
+  archive_url: "https://web.archive.org/web/20260309091353/https://www.vam.ac.uk/articles/what-is-print"
   type: "museum-essay"
 met-picasso-linocuts:
   label: "Picasso Linoleum Cuts"
   organization: "The Metropolitan Museum of Art"
   url: "https://www.metmuseum.org/es/met-publications/picasso-linoleum-cuts-the-mr-and-mrs-charles-kramer-collection"
+  archive_url: "https://web.archive.org/web/20241109215407/https://www.metmuseum.org/es/met-publications/picasso-linoleum-cuts-the-mr-and-mrs-charles-kramer-collection"
   type: "museum-publication"
 shevchenko-museum-collection:
   label: "Art collection: Taras Shevchenko"
   organization: "National Museum of Taras Shevchenko"
   url: "https://collection.museumshevchenko.org.ua/documents/view/11"
+  archive_url: "https://web.archive.org/web/20251013113132/https://collection.museumshevchenko.org.ua/documents/view/11"
   type: "museum-collection"
 encyclopedia-picturesque-ukraine:
   label: "Zhivopisnaia Ukraina"
   organization: "Encyclopedia of Ukraine"
   url: "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CZ%5CH%5CZhivopisnaiaUkrainaIT.htm"
+  archive_url: "https://web.archive.org/web/20260417125109/https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CZ%5CH%5CZhivopisnaiaUkrainaIT.htm"
   type: "encyclopedia-entry"
 nbuv-shevchenko-academician:
   label: "Shevchenko as an academician-engraver"
   organization: "V. I. Vernadsky National Library of Ukraine"
   url: "https://nbuv.gov.ua/node/1879"
+  archive_url: "https://web.archive.org/web/20260521131113/https://www.nbuv.gov.ua/node/1879"
   type: "institutional-essay"
 vam-bookplates:
   label: "Bookplates: from a mark of ownership to an art form"
   organization: "Victoria and Albert Museum"
   url: "https://www.vam.ac.uk/blog/caring-for-our-collections/bookplates"
+  archive_url: "https://web.archive.org/web/20260108092620/https://www.vam.ac.uk/blog/caring-for-our-collections/bookplates"
   type: "museum-essay"
 met-bookplates:
   label: "Bookplates"
@@ -214,16 +229,19 @@ loc-bookplates:
   label: "Crafting from the Collections: Make Your Own Bookplate"
   organization: "Library of Congress"
   url: "https://blogs.loc.gov/families/2021/08/crafting-from-collections-bookplates/"
+  archive_url: "https://web.archive.org/web/20260118135852/https://blogs.loc.gov/families/2021/08/crafting-from-collections-bookplates/"
   type: "library-essay"
 fisae-technique-codes:
   label: "International standard codes for exlibris printmaking techniques"
   organization: "Istanbul Ex-libris Society"
   url: "https://www.aed.org.tr/en/teknikler/"
+  archive_url: "https://web.archive.org/web/20151212114938/http://www.aed.org.tr:80/en/teknikler/"
   type: "professional-reference"
 usask-safer-intaglio:
   label: "Safer Printmaking: Intaglio"
   organization: "University of Saskatchewan"
   url: "https://research-groups.usask.ca/saferprintmaking/intaglio.php"
+  archive_url: "https://web.archive.org/web/20251102060844/https://research-groups.usask.ca/saferprintmaking/intaglio.php"
   type: "university-safety-reference"
 kent-printmaking-safety:
   label: "Art Safety: Printmaking"
@@ -234,6 +252,7 @@ pubchem-nitric-acid:
   label: "Nitric Acid — Compound Summary"
   organization: "PubChem, National Library of Medicine"
   url: "https://pubchem.ncbi.nlm.nih.gov/compound/Nitric-Acid"
+  archive_url: "https://web.archive.org/web/20260812155633/https://pubchem.ncbi.nlm.nih.gov/compound/Nitric-Acid"
   type: "government-chemical-reference"
 pubchem-ferric-chloride:
   label: "Ferric Chloride — Compound Summary"
@@ -244,16 +263,19 @@ encyclopedia-hnizdovsky:
   label: "Hnizdovsky, Jacques"
   organization: "Encyclopedia of Ukraine"
   url: "https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CH%5CN%5CHnizdovskyJacques.htm"
+  archive_url: "https://web.archive.org/web/20260519223503/https://www.encyclopediaofukraine.com/display.asp?linkpath=pages%5CH%5CN%5CHnizdovskyJacques.htm"
   type: "encyclopedia-entry"
 kitchen-lithography-aizier:
   label: "Kitchen Litho on aluminium foil"
   organization: "Atelier Kitchen Print — Émilie Aizier"
   url: "https://www.atelier-kitchen-print.org/product/kitchen-litho-simple-and-non-toxic-lithography-with-cola-and-cooking-oil/"
+  archive_url: "https://web.archive.org/web/20260609051219/https://www.atelier-kitchen-print.org/product/kitchen-litho-simple-and-non-toxic-lithography-with-cola-and-cooking-oil/"
   type: "artist-method-reference"
 essdee-artists-lino:
   label: "Traditional lino and contemporary carving materials"
   organization: "Essdee"
   url: "https://www.essdee.co.uk/lino/"
+  archive_url: "https://web.archive.org/web/20260211013132/https://www.essdee.co.uk/lino/"
   type: "manufacturer-reference"
 aida-artistes-15-video:
   label: '“Artistes, 15”. Anna Voitiuk: “Haste makes waste”'

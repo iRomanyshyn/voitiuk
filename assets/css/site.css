@@ -149,8 +149,8 @@ h3 { font-size: 1.05rem; line-height: 1.35; }
 .timeline-title-link { text-decoration-thickness: 1px; text-decoration-color: transparent; text-underline-offset: 0.16em; transition: color 160ms ease, text-decoration-color 160ms ease; }
 .timeline-title-link:hover { color: var(--accent-dark); text-decoration-color: currentColor; }
 .timeline-detail-link { display: inline-block; margin-top: 10px; }
-.reference-links { display: inline-flex; align-items: baseline; gap: 8px; margin-top: 8px; }
-.reference-links + .reference-links { margin-left: 14px; }
+.reference-links { display: flex; align-items: baseline; width: fit-content; gap: 8px; margin-top: 8px; }
+.reference-links + .reference-links { margin-top: 6px; }
 .reference-links .source-link { margin-top: 0; }
 .source-link { display: inline-block; color: var(--accent-dark); font-size: 0.74rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; }
 .archive-link { color: var(--muted); font-size: 0.68rem; opacity: 0.72; text-decoration-color: transparent; text-transform: lowercase; transition: opacity 160ms ease, text-decoration-color 160ms ease; }

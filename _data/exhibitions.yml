@@ -39,7 +39,7 @@ group:
     title: "Ukrainian Exlibris after February 24, 2022"
     venue: { en: "Poltava Art Museum / Mykola Yaroshenko Art Museum", uk: "Полтавський художній музей / музей імені Миколи Ярошенка" }
     city: { en: "Poltava, Ukraine", uk: "Полтава, Україна" }
-    source_ids: [fisae-poltava-2025, pnpu-book-2025]
+    source_ids: [fisae-poltava-2025]
   - year: 2025
     title: "XIX International Contest of Small Graphic Forms and Exlibris"
     venue: null
