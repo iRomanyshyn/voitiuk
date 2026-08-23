@@ -18,7 +18,7 @@ image_caption: "Анна Войтюк, «Оглядова екскурсія», 
 alternate_en: /en/articles/etching-intaglio-linocut-bookplates/
 alternate_uk: /uk/articles/ofort-hlybokyi-druk-ekslibris/
 sources_title: "Джерела й подальше читання"
-sources_intro: "Посилання ведуть до музейних, бібліотечних і фахових матеріалів. Поруч із кожним зовнішнім джерелом є ненав’язливе посилання на його копії у вебархіві."
+sources_intro: "Посилання ведуть до музейних, бібліотечних і фахових матеріалів. Якщо для джерела доступна копія у вебархіві, поруч показано окреме посилання «архів»."
 open_source: "Відкрити"
 back_label: "До публікацій"
 source_ids:

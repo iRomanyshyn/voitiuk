@@ -18,7 +18,7 @@ image_caption: "Anna Voitiuk, Sightseeing Tour, 2020. Etching and aquatint (C3+C
 alternate_en: /en/articles/etching-intaglio-linocut-bookplates/
 alternate_uk: /uk/articles/ofort-hlybokyi-druk-ekslibris/
 sources_title: "Sources and further reading"
-sources_intro: "These links lead to museum, library and professional reference materials. Each external source is accompanied by a quiet link to its copies in the Web Archive."
+sources_intro: "These links lead to museum, library and professional reference materials. When an archived copy is available, a separate “archive” link appears beside the source."
 open_source: "Open"
 back_label: "Back to publications"
 source_ids:
