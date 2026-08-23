@@ -123,8 +123,8 @@ series:
         technique: "etching"
         plate: "10 × 10"
         paper: "20 × 20"
-        full_size: [1796, 1818]
-        thumb_size: [948, 960]
+        full_size: [1761, 1770]
+        thumb_size: [955, 960]
       - slug: "european-bison"
         title: { uk: "Зубр", en: "European Bison" }
         year: 2026
@@ -184,8 +184,8 @@ series:
         year: 2026
         technique: "wood_engraving"
         paper: "15 × 21"
-        full_size: [1752, 1268]
-        thumb_size: [960, 695]
+        full_size: [1731, 1208]
+        thumb_size: [960, 670]
       - slug: "cuckoo"
         title: { uk: "Зозуля", en: "Cuckoo" }
         year: 2026
@@ -205,8 +205,8 @@ series:
         year: 2026
         technique: "wood_engraving"
         paper: "15 × 21"
-        full_size: [1764, 1252]
-        thumb_size: [960, 681]
+        full_size: [1719, 1216]
+        thumb_size: [960, 679]
       - slug: "magpie"
         title: { uk: "Сорока", en: "Magpie" }
         year: 2026
@@ -219,8 +219,8 @@ series:
         year: 2026
         technique: "wood_engraving"
         paper: "21 × 15"
-        full_size: [1308, 1736]
-        thumb_size: [723, 960]
+        full_size: [1214, 1658]
+        thumb_size: [703, 960]
       - slug: "parrot"
         title: { uk: "Папуга", en: "Parrot" }
         year: 2026
@@ -233,15 +233,15 @@ series:
         year: 2026
         technique: "wood_engraving"
         paper: "21 × 15"
-        full_size: [1756, 1204]
-        thumb_size: [960, 658]
+        full_size: [1668, 1142]
+        thumb_size: [960, 657]
       - slug: "stork"
         title: { uk: "Лелека", en: "Stork" }
         year: 2026
         technique: "wood_engraving"
         paper: "21 × 15"
-        full_size: [1204, 1764]
-        thumb_size: [655, 960]
+        full_size: [1164, 1726]
+        thumb_size: [647, 960]
 
   - id: "outside-series"
     title: { uk: "Поза циклами", en: "Outside the Series" }
@@ -378,24 +378,24 @@ series:
         technique: "etching"
         plate: "10 × 9"
         paper: "19 × 25"
-        full_size: [1866, 1658]
-        thumb_size: [960, 853]
+        full_size: [1837, 1599]
+        thumb_size: [960, 836]
       - slug: "kalevala"
         title: { uk: "Калевала", en: "Kalevala" }
         year: 2025
         technique: "etching"
         plate: "7.5 × 9.5"
         paper: "19 × 25"
-        full_size: [2056, 1760]
-        thumb_size: [960, 822]
+        full_size: [2021, 1725]
+        thumb_size: [960, 819]
       - slug: "garden-party"
         title: { uk: "Вечірка в саду", en: "Garden Party" }
         year: 2025
         technique: "etching"
         plate: "8.5 × 10.5"
         paper: "19 × 25"
-        full_size: [2096, 1972]
-        thumb_size: [960, 903]
+        full_size: [2055, 1920]
+        thumb_size: [960, 897]
       - slug: "swallow-bookplate"
         title: { uk: "Ластівка", en: "Swallow" }
         year: 2026
@@ -409,8 +409,8 @@ series:
         technique: "etching"
         plate: "10.5 × 8.5"
         paper: "25 × 19"
-        full_size: [1736, 1920]
-        thumb_size: [868, 960]
+        full_size: [1701, 1880]
+        thumb_size: [869, 960]
       - slug: "cockatiel-bookplate"
         title: { uk: "Корела", en: "Cockatiel" }
         year: 2026
