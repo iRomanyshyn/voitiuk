@@ -9,7 +9,7 @@ layout: base
   <h2>{{ t.articles }}</h2>
   {% for item in site.data.articles %}
     <article class="article-card">
-      <a class="article-card-image{% if item.kind == 'video' %} article-card-image-video{% endif %}" href="{{ item.url[locale] }}" tabindex="-1" aria-hidden="true"><img src="{{ item.image }}" alt="">{% if item.kind == 'video' %}<span class="article-card-play">▶</span>{% endif %}</a>
+      <a class="article-card-image{% if item.kind == 'video' %} article-card-image-video{% endif %}" href="{{ item.url[locale] }}"><img src="{{ item.image }}" alt="{{ item.image_alt[locale] | escape }}">{% if item.kind == 'video' %}<span class="article-card-play" aria-hidden="true">▶</span>{% endif %}</a>
       <div>
         <time datetime="{{ item.date }}">{% if item.date_label %}{{ item.date_label[locale] }}{% else %}{{ item.date | date: '%Y' }}{% endif %}</time>
         <h3><a href="{{ item.url[locale] }}">{{ item.title[locale] }}</a></h3>
