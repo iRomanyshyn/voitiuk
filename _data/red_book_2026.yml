@@ -1,3 +1,12 @@
+meta:
+  assets_base: "/assets/img/exhibitions/red-book-2026"
+  image_extension: ".jpg"
+  source_ids: [green-sofa-2026]
+  hero_slug: "barn-owl"
+  start_date: "2026-08-18"
+  end_date: "2026-09-13"
+  event_status: "https://schema.org/EventScheduled"
+
 page:
   uk:
     eyebrow: "Персональна виставка · Львів"

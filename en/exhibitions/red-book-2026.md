@@ -1,5 +1,6 @@
 ---
 layout: exhibition-gallery
+catalog_data: red_book_2026
 lang: en
 page_key: exhibition-gallery
 parent_url: /en/exhibitions/

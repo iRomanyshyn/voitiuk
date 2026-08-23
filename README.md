@@ -10,7 +10,7 @@
 | --- | --- |
 | Тексти інтерфейсу, головної, біографії, контактів і футера | `_data/content.yml` |
 | Вибрані роботи | `_data/works.yml` |
-| Повний каталог виставки «Червона книга» | `_data/red_book_2026.yml` |
+| Великі каталоги робіт | `_data/<назва_набору>.yml`; приклад — `_data/red_book_2026.yml` |
 | Нагороди | `_data/awards.yml` |
 | Персональні та групові виставки | `_data/exhibitions.yml` |
 | Картки авторських матеріалів сайту | `_data/articles.yml` |
@@ -22,8 +22,7 @@
 | Повторно використовувані фрагменти | `_includes/` |
 | Повнорозмірні роботи та прев’ю | `assets/img/works/` |
 | Зображення для публікацій | `assets/img/publications/` |
-| «Червона книга»: повні зображення | `assets/img/exhibitions/red-book-2026/full/` |
-| «Червона книга»: прев’ю | `assets/img/exhibitions/red-book-2026/thumbs/` |
+| Зображення великих каталогів | `assets/img/exhibitions/<slug>/full/` і `assets/img/exhibitions/<slug>/thumbs/` |
 | Локальний архів каталогів | `assets/documents/catalogues/` |
 | PDF-резюме та інші документи | `assets/documents/` |
 | Стилі та JavaScript | `assets/css/`, `assets/js/` |
@@ -268,19 +267,185 @@ source_ids:
 
 `current: true` виводить виставку в блоці поточних подій на головній. Таких виставок може бути кілька. Поле `page` не є обов’язковим, якщо окремої сторінки немає.
 
-### Окрема галерея «Червона книга»
+### Універсальні галереї великих наборів
 
-Це спеціальний розділ, а не запис у `_data/works.yml`:
+«Червона книга» використовує спільний шаблон `_layouts/exhibition-gallery.html`, а не окремий шаблон саме для цієї виставки:
 
 - дані: `_data/red_book_2026.yml`;
 - український маршрут: `uk/exhibitions/red-book-2026.md`;
 - англійський маршрут: `en/exhibitions/red-book-2026.md`;
+- універсальний шаблон: `_layouts/exhibition-gallery.html`;
 - повні зображення: `assets/img/exhibitions/red-book-2026/full/<slug>.jpg`;
 - прев’ю: `assets/img/exhibitions/red-book-2026/thumbs/<slug>.jpg`.
 
-Ім’я файлу зображення утворюється зі `slug` роботи. Записи згруповані за серіями; порядок серій і робіт у YAML є порядком на сторінці.
+Ім’я файлу зображення утворюється зі `slug` роботи. Записи згруповані за серіями; порядок серій і робіт у YAML є порядком на сторінці. Маршрути обирають потрібний YAML через `catalog_data`, тому для наступного набору не треба копіювати layout.
 
-Шаблон `_layouts/exhibition-gallery.html` зараз навмисно прив’язаний до `_data/red_book_2026.yml`, дат цієї виставки й джерела `green-sofa-2026`. Для наступної великої виставки його потрібно узагальнити або зробити окремий шаблон; самого копіювання YAML недостатньо.
+### Як додати наступний великий набір робіт
+
+Окремий каталог доречний, коли робіт багато, вони поділені на серії або становлять цілісну виставку. Такі роботи не потрібно дублювати в `_data/works.yml`, якщо вони не входять також до короткої добірки «Вибрані роботи».
+
+Нижче `animalia-2027` — умовний URL-ідентифікатор нового набору, а `animalia_2027` — відповідне ім’я YAML-файлу.
+
+#### 1. Створити файл даних
+
+Створіть `_data/animalia_2027.yml` за структурою `_data/red_book_2026.yml`:
+
+```yaml
+meta:
+  assets_base: "/assets/img/exhibitions/animalia-2027"
+  image_extension: ".jpg"
+  source_ids: [animalia-2027]
+  hero_slug: "example-work"
+  start_date: "2027-03-01"
+  end_date: "2027-03-30"
+  event_status: "https://schema.org/EventScheduled"
+
+page:
+  uk:
+    eyebrow: "Персональна виставка · Львів"
+    title: "Назва набору"
+    intro: "Короткий вступ до каталогу."
+    dates: "1 березня — 30 березня 2027"
+    venue: "Назва галереї"
+    city: "Львів, Україна"
+    selection: "Роботи з експозиції"
+    browse: "Перейти до розділу"
+    plate: "Пластина"
+    plate_diameter: "Діаметр пластини"
+    plate_side: "Сторона пластини"
+    paper: "Папір"
+    open: "Відкрити велике зображення"
+    source: "Сторінка виставки"
+    back: "Усі виставки"
+  en:
+    eyebrow: "Solo exhibition · Lviv"
+    title: "Collection title"
+    intro: "A short introduction to the catalogue."
+    dates: "1 March – 30 March 2027"
+    venue: "Gallery name"
+    city: "Lviv, Ukraine"
+    selection: "Works from the exhibition"
+    browse: "Go to section"
+    plate: "Plate"
+    plate_diameter: "Plate diameter"
+    plate_side: "Plate side"
+    paper: "Paper"
+    open: "Open large image"
+    source: "Exhibition page"
+    back: "All exhibitions"
+
+techniques:
+  etching:
+    code: "C3"
+    label: { uk: "Офорт", en: "Etching" }
+  wood_engraving:
+    code: "X2"
+    label: { uk: "Гравюра на дереві", en: "Wood engraving" }
+
+series:
+  - id: "first-series"
+    title: { uk: "Перша серія", en: "First Series" }
+    description:
+      uk: "Опис серії."
+      en: "Series description."
+    works:
+      - slug: "example-work"
+        title: { uk: "Назва роботи", en: "Work Title" }
+        year: 2027
+        technique: "etching"
+        plate: "10 × 12"
+        paper: "20 × 25"
+        full_size: [1800, 2200]
+        thumb_size: [785, 960]
+```
+
+Службовий блок `meta` керує всім, що раніше доводилося вписувати у шаблон:
+
+- `assets_base` — спільний шлях до каталогів `full/` і `thumbs/`, без скісної риски в кінці;
+- `image_extension` — розширення зображень разом із крапкою; якщо поле пропущене, використовується `.jpg`;
+- `source_ids` — список ключів джерел з `_data/sources.yml`; поле можна пропустити, якщо підтвердженого зовнішнього джерела немає;
+- `hero_slug` — робота для обкладинки; якщо такого `slug` немає, шаблон безпечно використає першу роботу першої серії;
+- `start_date` і `end_date` — машинні дати Schema.org у форматі `YYYY-MM-DD`;
+- `event_status` — канонічний URL статусу Schema.org. Для запланованої чи поточної виставки використовуйте `https://schema.org/EventScheduled`.
+
+Для авторських каталогів поле `artist` не потрібне: шаблон бере ім’я з `author` у `_config.yml`. Його можна додати до `meta` лише тоді, коли сторінка справді представляє іншого автора.
+
+Ключ `technique` у роботі має існувати в словнику `techniques`. `full_size` і `thumb_size` записуються як `[ширина, висота]` у пікселях.
+
+Поле `plate_kind` уточнює спосіб показу розміру пластини:
+
+- `plate_kind: "diameter"` — діаметр;
+- `plate_kind: "side"` — сторона;
+- без `plate_kind` — звичайні ширина × висота.
+
+Якщо розмір пластини невідомий, поле `plate` можна пропустити. `paper` у поточному шаблоні потрібно заповнювати для кожної роботи.
+
+#### 2. Підготувати зображення
+
+Створіть:
+
+```text
+assets/img/exhibitions/animalia-2027/full/
+assets/img/exhibitions/animalia-2027/thumbs/
+```
+
+Для кожного `slug` мають існувати два файли:
+
+```text
+full/example-work.jpg
+thumbs/example-work.jpg
+```
+
+Застосуйте фізичний поворот, видаліть метадані й запишіть у YAML фактичні розміри файлів після обробки. Ім’я файлу, `slug` у YAML та регістр літер мають точно збігатися.
+
+#### 3. Зареєструвати джерело
+
+Додайте офіційну сторінку, каталог або інше підтвердження до `_data/sources.yml`, наприклад під ключем `animalia-2027`. Якщо каталог може зникнути, збережіть його локальну копію в `assets/documents/catalogues/`.
+
+#### 4. Додати запис до списку виставок
+
+Додайте виставку до `solo` або `group` у `_data/exhibitions.yml`. Поле `page` має вести на майбутні мовні сторінки каталогу, а `source_ids` — містити щойно створене джерело. Якщо подія триває, додайте `current: true`.
+
+#### 5. Створити два мовні маршрути
+
+`uk/exhibitions/animalia-2027.md`:
+
+```yaml
+---
+layout: exhibition-gallery
+catalog_data: animalia_2027
+lang: uk
+page_key: exhibition-gallery
+parent_url: /uk/exhibitions/
+title: "Назва набору — виставка Анни Войтюк"
+description: "Український опис для пошуку й поширення."
+permalink: /uk/exhibitions/animalia-2027/
+canonical_path: /uk/exhibitions/animalia-2027/
+alternate_en: /en/exhibitions/animalia-2027/
+alternate_uk: /uk/exhibitions/animalia-2027/
+image: /assets/img/exhibitions/animalia-2027/full/example-work.jpg
+image_alt: "Опис головної роботи"
+---
+```
+
+Створіть англійський відповідник у `en/exhibitions/animalia-2027.md`, залишивши той самий `layout` і `catalog_data`, але змінивши `lang`, тексти, `permalink` і `canonical_path`.
+
+`catalog_data` — це ім’я YAML-файлу з `_data/` без каталогу й розширення: файл `_data/animalia_2027.yml` підключається як `catalog_data: animalia_2027`.
+
+#### 6. Перевірити каталог
+
+Окрім загального переддеплойного списку, перевірте:
+
+- кількість робіт і розділів у шапці;
+- усі якорі навігації між серіями;
+- головне зображення;
+- кожне прев’ю і його повний варіант у lightbox;
+- підписи технік та C/X-коди;
+- розміри пластини й паперу;
+- джерело, дати та Schema.org-дані;
+- перемикання мов зі збереженням тієї самої сторінки.
+
+Не копіюйте `_layouts/exhibition-gallery.html` для нового каталогу. Різниця між наборами має зберігатися в їхніх YAML-файлах і двох мовних маршрутах; спільна HTML-структура, lightbox, Schema.org-опис і побудова шляхів до зображень лишаються в одному layout.
 
 ## Як додати нагороду
 
