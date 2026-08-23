@@ -22,6 +22,7 @@ clarity_project_id: "y5fc1g7g0m"
 exclude:
   - README.md
   - LICENSE
+  - THIRD_PARTY_NOTICES.md
   - Gemfile
   - Gemfile.lock
   - tmp

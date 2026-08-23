@@ -139,12 +139,13 @@ en:
     decline: "Decline"
     settings: "Analytics settings"
   footer:
-    rights: "© Anna Voitiuk"
+    rights: "© Anna Voitiuk · All rights reserved"
     instagram: "Instagram"
     facebook: "Facebook"
     etsy: "Etsy shop"
     contact: "Contact"
     privacy: "Privacy"
+    copyright: "Copyright"
     choose_language: "Choose language"
 
 uk:
@@ -288,10 +289,11 @@ uk:
     decline: "Відмовитися"
     settings: "Налаштування аналітики"
   footer:
-    rights: "© Анна Войтюк"
+    rights: "© Анна Войтюк · Усі права застережено"
     instagram: "Instagram"
     facebook: "Facebook"
     etsy: "Etsy-магазин"
     contact: "Контакти"
     privacy: "Приватність"
+    copyright: "Авторські права"
     choose_language: "Обрати мову"

@@ -105,6 +105,7 @@
           <a href="https://www.etsy.com/shop/VoitiukPrint" target="_blank" rel="me noopener external">{{ t.footer.etsy }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
           <a href="/{% if locale == 'uk' %}uk{% else %}en{% endif %}/contact/">{{ t.footer.contact }}</a>
           <a href="{% if locale == 'uk' %}/uk/privacy/{% else %}/privacy/{% endif %}">{{ t.footer.privacy }}</a>
+          <a href="{% if locale == 'uk' %}/uk/copyright/{% else %}/copyright/{% endif %}">{{ t.footer.copyright }}</a>
           <a href="/?choose=1">{{ t.footer.choose_language }}</a>
           <button class="footer-link" type="button" data-clarity-settings>{{ t.consent.settings }}</button>
         </nav>
