@@ -1,3 +1,76 @@
+- id: homage-to-goya
+  slug: homage-to-goya
+  title:
+    en: "Homage to Goya: Queen Krysia Meets Princess Amberly at Dnipro Riverside"
+    uk: "Вшанування Гойї: королева Крися зустрічає принцесу Амберлі на березі Дніпра"
+  year: 2024
+  technique:
+    en: "Etching and watercolour"
+    uk: "Офорт і акварель"
+  technique_code: "C3"
+  bookplate_for:
+    en: "Masahito Sakamoto"
+    uk: "Масахіто Сакамото"
+  plate_size: "10 × 21.3 cm"
+  image: "/assets/img/works/homage-to-goya.jpg"
+  thumbnail: "/assets/img/works/homage-to-goya-960.jpg"
+  image_width: 1440
+  image_height: 921
+  thumbnail_width: 960
+  thumbnail_height: 614
+  alt:
+    en: "Hand-coloured etching of animal characters gathering on the Dnipro riverside in Kyiv beneath a bright blue sky."
+    uk: "Розфарбований аквареллю офорт із тваринами, що зібралися на березі Дніпра в Києві під яскраво-блакитним небом."
+  description:
+    en: "Created as a bookplate for Masahito Sakamoto, the work pays homage to Francisco Goya and reimagines The Meadow of San Isidro on the Dnipro riverside in Kyiv. It gathers animal characters from Anna Voitiuk’s works, including Queen Krysia, the artist’s guinea pig, and Princess Amberly, Sakamoto’s dog."
+    uk: "Створений як екслібрис для Масахіто Сакамото, твір вшановує Франсіско Гою та переносить сюжет «Лугу Сан-Ісідро» на берег Дніпра в Києві. Тут зібрано тваринних персонажів із робіт Анни Войтюк, зокрема королеву Крисю — морську свинку художниці — та принцесу Амберлі, собаку Сакамото."
+  source_id: pnpu-ukrainian-exlibris-2025-pdf
+
+- id: koza-dereza
+  slug: koza-dereza
+  title:
+    en: "Koza-Dereza"
+    uk: "Коза-дереза"
+  year: 2023
+  artform: "Drawing"
+  technique:
+    en: "Fineliner drawing"
+    uk: "Малюнок лінерами"
+  image: "/assets/img/works/koza-dereza.jpg"
+  thumbnail: "/assets/img/works/koza-dereza-960.jpg"
+  image_width: 1440
+  image_height: 1535
+  thumbnail_width: 960
+  thumbnail_height: 1023
+  alt:
+    en: "Dancing anthropomorphic goat in embroidered Ukrainian clothing, with flowers and bells decorating her large horns."
+    uk: "Танцююча антропоморфна коза у вишитому українському вбранні, з квітами й дзвіночками на великих рогах."
+  description:
+    en: "Koza-Dereza, the formidable goat from the Ukrainian folk tale, dances in an embroidered shirt and waistcoat, wearing korali — a traditional Ukrainian necklace. Her great horns are entwined with flowers and tiny bells."
+    uk: "Коза-дереза, грізна героїня української народної казки, танцює у вишитій сорочці та камізельці, вбравшись у коралі — традиційну українську народну прикрасу. Її великі роги оповиті квітами й оздоблені дзвіночками."
+  verse_note:
+    en: "A traditional refrain from the Ukrainian folk tale, translated from Ukrainian"
+    uk: "Цитата з української народної казки «Коза-дереза»"
+  verse:
+    en:
+      - "I am Koza-Dereza,"
+      - "Bought for three kopas,"
+      - "Half my side is flayed."
+      - "Stomp-stomp go my feet—"
+      - "I’ll gore you with my horns,"
+      - "Trample you underfoot,"
+      - "Sweep you away with my tail—"
+      - "And that will be your death."
+    uk:
+      - "Я Коза-Дереза,"
+      - "За три копи куплена,"
+      - "Півбока луплена,"
+      - "Тупу-тупу ногами,"
+      - "Сколю тебе рогами,"
+      - "Ніжками затопчу,"
+      - "хвостиком замету, –"
+      - "Тут тобі й смерть"
+
 - id: sightseeing-tour
   slug: sightseeing-tour
   title: { en: "Sightseeing Tour", uk: "Sightseeing Tour" }
