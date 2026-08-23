@@ -37,19 +37,60 @@ Without prior written permission, you may:
   a direct link to the source page are clearly identified.
 
 These permissions do not include reproducing an entire artwork, image, page,
-publication, dataset, collection or other substantial part of the website.
+publication, dataset, collection or other substantial part of the website,
+except for the limited publication use of images described in Section 3.
 
-3. Uses requiring prior written permission
+3. Images used in publications
+
+No separate written permission is required to reproduce individual images from
+the website in an editorial, journalistic, scholarly, educational, cultural or
+informational publication about Anna Voitiuk, her work, an exhibition, an
+award or another directly related subject, provided that all of the following
+conditions are met:
+
+- the image depicts an artwork by Anna Voitiuk or is otherwise clearly
+  identified on the website as material supplied by or belonging to her;
+- Anna Voitiuk is identified as the artist or author of the work;
+- when the publication format supports active links, the credit includes an
+  active link to https://voitiuk.com, preferably to the page on which the image
+  appears;
+- when an active link is not technically possible, the credit instead includes
+  either "voitiuk.com" or wording equivalent to "official website of Anna
+  Voitiuk" in the language of the publication;
+- the image is used only as needed to illustrate the publication and is not
+  offered as a standalone download or high-resolution asset; and
+- the image is not materially altered. Proportional resizing, technical
+  compression, colour-profile conversion and automatic cropping imposed by a
+  publishing platform are permitted.
+
+A suitable credit is, for example:
+
+  © Anna Voitiuk · voitiuk.com
+
+or:
+
+  Image: official website of Anna Voitiuk — voitiuk.com
+
+This permission does not cover advertising unrelated goods or services,
+merchandise, resale, stock-image distribution, misleading endorsement,
+collections that reproduce a substantial part of the website, datasets,
+machine-learning or artificial-intelligence use. It does not apply to material
+credited to a third party. The permission is non-exclusive and applies only
+while all of these conditions are met.
+
+4. Uses requiring prior written permission
 
 Except where applicable law expressly permits otherwise, you may not:
 
 - copy, mirror, republish, distribute or make available all or a substantial
   part of the website or repository;
 - reuse, download for republication, alter, sell or distribute artworks,
-  photographs, scans, text, data or editorial material from the website;
+  photographs, scans, text, data or editorial material from the website,
+  except for image use that fully complies with Section 3;
 - create a clone, derivative website or substantially similar presentation
   from the site-specific code, design, data or editorial arrangement;
-- use the protected material commercially;
+- use the protected material commercially, other than in a qualifying
+  publication that fully complies with Section 3;
 - perform bulk scraping or systematic downloading, other than the limited
   search-engine indexing described above;
 - use the protected material to train, fine-tune, evaluate or supply a dataset
@@ -59,7 +100,7 @@ Except where applicable law expressly permits otherwise, you may not:
 Nothing in this notice restricts quotation, accessibility, preservation or
 other uses that cannot lawfully be excluded under applicable law.
 
-4. Permission requests
+5. Permission requests
 
 For permission to reproduce or license material, use the contact form at:
 
@@ -70,14 +111,14 @@ Identify the material, intended use, territory, format and duration in the
 request. Permission is valid only when granted in writing by the relevant
 rights holder.
 
-5. Third-party material
+6. Third-party material
 
 External catalogues, embedded media, quoted material and other third-party
 content remain subject to the rights and terms of their respective owners.
 Their presence in this repository or on the website does not grant any further
 permission.
 
-6. Upstream MIT-licensed components
+7. Upstream MIT-licensed components
 
 Some portions of upstream software retain the MIT licence reproduced in
 THIRD_PARTY_NOTICES.md. Those terms apply solely to the upstream portions and
