@@ -57,7 +57,7 @@ en:
     current_exhibition_catalog: "View works"
   works:
     title: "Works"
-    intro: "Selected prints by Anna Voitiuk, spanning etching and related intaglio techniques."
+    intro: "Selected printmaking and graphic works by Anna Voitiuk."
     source: "Catalogue record"
     open: "Open large image"
     details: "View details"
@@ -211,7 +211,7 @@ uk:
     current_exhibition_catalog: "Переглянути роботи"
   works:
     title: "Роботи"
-    intro: "Вибрані роботи Анни Войтюк у техніках офорту та інших видах глибокого друку."
+    intro: "Вибрані твори друкованої та станкової графіки Анни Войтюк."
     source: "Каталожний запис"
     open: "Відкрити велике зображення"
     details: "Докладніше"
