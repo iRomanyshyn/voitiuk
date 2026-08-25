@@ -14,8 +14,17 @@ sitemap: false
     <link>{{ '/en/publications/' | absolute_url }}</link>
     <atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml" />
     <language>en</language>
-    {% assign newest_item = site.data.articles | sort: 'date' | last %}
-    {% if newest_item %}<lastBuildDate>{{ newest_item.date_modified | default: newest_item.date | date_to_rfc822 }}</lastBuildDate>{% endif %}
+    {% assign latest_effective_epoch = 0 %}
+    {% assign latest_effective_date = nil %}
+    {% for feed_item in site.data.articles %}
+      {% assign effective_date = feed_item.date_modified | default: feed_item.date %}
+      {% assign effective_epoch = effective_date | date: '%s' | plus: 0 %}
+      {% if effective_epoch > latest_effective_epoch %}
+        {% assign latest_effective_epoch = effective_epoch %}
+        {% assign latest_effective_date = effective_date %}
+      {% endif %}
+    {% endfor %}
+    {% if latest_effective_date %}<lastBuildDate>{{ latest_effective_date | date_to_rfc822 }}</lastBuildDate>{% endif %}
     {% assign feed_items = site.data.articles | sort: 'date' | reverse %}
     {% for item in feed_items %}
     <item>

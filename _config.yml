@@ -19,6 +19,9 @@ defaults:
 formspree_form_id: "mykdekvr"
 clarity_project_id: "y5fc1g7g0m"
 
+include:
+  - .well-known
+
 exclude:
   - README.md
   - LICENSE

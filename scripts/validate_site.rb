@@ -10,6 +10,7 @@ require "yaml"
 
 ROOT = Pathname.new(__dir__).join("..").expand_path
 BUILD = ROOT.join("_site")
+CANONICAL_HOST = "voitiuk.com"
 ERRORS = []
 WARNINGS = []
 
@@ -126,15 +127,136 @@ end
 
 def internal_reference(value, current_url)
   return nil if value.nil? || value.empty?
-  return nil if value.start_with?("mailto:", "tel:", "javascript:", "data:", "blob:", "//")
+  return nil if value.start_with?("mailto:", "tel:", "javascript:", "data:", "blob:")
 
   uri = URI.parse(value)
-  return nil if uri.scheme || uri.host
+  if uri.host
+    return nil unless %w[http https].include?(uri.scheme) || uri.scheme.nil?
+    return nil unless uri.host.casecmp?(CANONICAL_HOST)
+
+    return [uri.path.empty? ? "/" : uri.path, uri.fragment]
+  end
+  return nil if uri.scheme
 
   resolved = URI.join("https://voitiuk.invalid#{current_url}", value)
   [resolved.path.empty? ? current_url : resolved.path, resolved.fragment]
 rescue URI::InvalidURIError
   nil
+end
+
+def validate_internal_reference(reference, current_url, anchor_cache)
+  resolved = internal_reference(reference, current_url)
+  return unless resolved
+
+  target_url, fragment = resolved
+  target = resolve_built_file(target_url)
+  if target.nil?
+    error("Broken internal reference #{reference.inspect} on #{current_url}")
+    return
+  end
+  return unless fragment && target.extname == ".html"
+
+  decoded_fragment = CGI.unescape(fragment)
+  error("Missing anchor ##{decoded_fragment} in #{target_url} (linked from #{current_url})") unless html_anchors(target, anchor_cache).include?(decoded_fragment)
+end
+
+def localized_value?(value)
+  value.is_a?(Hash) && %w[en uk].all? { |locale| !value[locale].to_s.strip.empty? }
+end
+
+def valid_dimensions?(value)
+  value.is_a?(Array) && value.length == 2 && value.all? { |dimension| dimension.is_a?(Integer) && dimension.positive? }
+end
+
+def validate_catalog(name, catalog, catalog_pages)
+  context = "_data/#{name}.yml"
+  unless catalog.is_a?(Hash)
+    error("Catalogue #{name.inspect} referenced by catalog_data does not exist or is not a mapping")
+    return
+  end
+
+  meta = catalog["meta"]
+  unless meta.is_a?(Hash)
+    error("#{context} is missing meta")
+    return
+  end
+
+  assets_base = meta["assets_base"].to_s.strip
+  error("#{context} is missing meta.assets_base") if assets_base.empty?
+  extension = meta["image_extension"].to_s.strip
+  extension = ".jpg" if extension.empty?
+  source_ids = Array(meta["source_ids"]).reject { |id| id.to_s.strip.empty? }
+  error("#{context} is missing meta.source_ids") if source_ids.empty?
+
+  %w[en uk].each do |locale|
+    error("#{context} has no #{locale.upcase} exhibition page") unless catalog_pages.any? { |page| page["lang"] == locale }
+    page_copy = catalog.dig("page", locale)
+    error("#{context} is missing page.#{locale}.title") unless page_copy.is_a?(Hash) && !page_copy["title"].to_s.strip.empty?
+  end
+
+  techniques = catalog["techniques"]
+  techniques = {} unless techniques.is_a?(Hash)
+  error("#{context} has no techniques") if techniques.empty?
+  techniques.each do |id, technique|
+    technique_context = "#{context} techniques.#{id}"
+    error("#{technique_context} is missing code") unless technique.is_a?(Hash) && !technique["code"].to_s.strip.empty?
+    error("#{technique_context} is missing localized labels") unless technique.is_a?(Hash) && localized_value?(technique["label"])
+  end
+
+  series_list = catalog["series"]
+  unless series_list.is_a?(Array) && !series_list.empty?
+    error("#{context} has no series")
+    return
+  end
+
+  series_ids = Set.new
+  work_slugs = Set.new
+  series_list.each_with_index do |series, series_index|
+    series_context = "#{context} series[#{series_index}]"
+    unless series.is_a?(Hash)
+      error("#{series_context} is not a mapping")
+      next
+    end
+
+    series_id = series["id"].to_s.strip
+    error("#{series_context} is missing id") if series_id.empty?
+    error("#{series_context} duplicates series id #{series_id.inspect}") unless series_id.empty? || series_ids.add?(series_id)
+    error("#{series_context} is missing localized titles") unless localized_value?(series["title"])
+
+    series_works = series["works"]
+    unless series_works.is_a?(Array) && !series_works.empty?
+      error("#{series_context} has no works")
+      next
+    end
+
+    series_works.each_with_index do |work, work_index|
+      work_context = "#{series_context} works[#{work_index}]"
+      unless work.is_a?(Hash)
+        error("#{work_context} is not a mapping")
+        next
+      end
+
+      slug = work["slug"].to_s.strip
+      error("#{work_context} is missing slug") if slug.empty?
+      error("#{work_context} duplicates work slug #{slug.inspect}") unless slug.empty? || work_slugs.add?(slug)
+      error("#{work_context} is missing localized titles") unless localized_value?(work["title"])
+      error("#{work_context} has invalid full_size") unless valid_dimensions?(work["full_size"])
+      error("#{work_context} has invalid thumb_size") unless valid_dimensions?(work["thumb_size"])
+
+      Array(work["technique"]).each do |technique_id|
+        error("#{work_context} references unknown technique #{technique_id.inspect}") unless techniques.key?(technique_id)
+      end
+      error("#{work_context} is missing technique") if work["technique"].nil? || Array(work["technique"]).empty?
+
+      next if slug.empty? || assets_base.empty?
+
+      validate_asset("#{assets_base}/full/#{slug}#{extension}", "#{work_context} full image")
+      validate_asset("#{assets_base}/thumbs/#{slug}#{extension}", "#{work_context} thumbnail")
+    end
+  end
+
+  hero_slug = meta["hero_slug"].to_s.strip
+  error("#{context} meta.hero_slug references unknown work #{hero_slug.inspect}") unless hero_slug.empty? || work_slugs.include?(hero_slug)
 end
 
 def html_anchors(path, cache)
@@ -227,17 +349,8 @@ articles.each_with_index do |article, index|
   end
 end
 
-red_book = data["red_book_2026"]
-if red_book
-  base = red_book.dig("meta", "assets_base")
-  extension = red_book.dig("meta", "image_extension") || ".jpg"
-  Array(red_book["series"]).each do |series|
-    Array(series["works"]).each do |work|
-      slug = work["slug"]
-      validate_asset("#{base}/full/#{slug}#{extension}", "Red Book full image #{slug}")
-      validate_asset("#{base}/thumbs/#{slug}#{extension}", "Red Book thumbnail #{slug}")
-    end
-  end
+pages.select { |page| page["catalog_data"] }.group_by { |page| page["catalog_data"].to_s }.each do |catalog_name, catalog_pages|
+  validate_catalog(catalog_name, data[catalog_name], catalog_pages)
 end
 
 today = ENV["VALIDATION_DATE"] ? Date.parse(ENV.fetch("VALIDATION_DATE")) : Date.today
@@ -258,6 +371,31 @@ end
 validate_current_exhibitions(data["exhibitions"], today) if data["exhibitions"]
 
 anchor_cache = {}
+
+security_path = BUILD.join(".well-known", "security.txt")
+if security_path.file?
+  security_text = security_path.read(encoding: "UTF-8")
+  expires_value = security_text[/^Expires:\s*(\S+)\s*$/i, 1]
+  if expires_value.nil?
+    error("security.txt is missing Expires")
+  else
+    begin
+      expires_date = DateTime.iso8601(expires_value).to_date
+      days_remaining = (expires_date - today).to_i
+      error("security.txt expired on #{expires_date}") if days_remaining.negative?
+      warning("security.txt expires in #{days_remaining} day(s) on #{expires_date}") if days_remaining.between?(0, 30)
+    rescue Date::Error
+      error("security.txt has invalid Expires value #{expires_value.inspect}")
+    end
+  end
+
+  security_text.scan(%r{https?://#{Regexp.escape(CANONICAL_HOST)}[^\s]*}).uniq.each do |reference|
+    validate_internal_reference(reference, "/.well-known/security.txt", anchor_cache)
+  end
+else
+  error("Generated security.txt is missing")
+end
+
 BUILD.glob("**/*.html").each do |html_path|
   current_url = built_url(html_path)
   html = html_path.read(encoding: "UTF-8")
@@ -277,19 +415,7 @@ BUILD.glob("**/*.html").each do |html_path|
   end
 
   references.uniq.each do |reference|
-    resolved = internal_reference(reference, current_url)
-    next unless resolved
-
-    target_url, fragment = resolved
-    target = resolve_built_file(target_url)
-    if target.nil?
-      error("Broken internal reference #{reference.inspect} on #{current_url}")
-      next
-    end
-    next unless fragment && target.extname == ".html"
-
-    decoded_fragment = CGI.unescape(fragment)
-    error("Missing anchor ##{decoded_fragment} in #{target_url} (linked from #{current_url})") unless html_anchors(target, anchor_cache).include?(decoded_fragment)
+    validate_internal_reference(reference, current_url, anchor_cache)
   end
 end
 

@@ -6,6 +6,13 @@
 {% assign canonical_path = page.canonical_path | default: page.url %}
 {% assign share_image = page.image | default: '/assets/img/works/sightseeing-tour.jpg' %}
 {% assign og_type = page.og_type | default: 'website' %}
+{% if locale == 'uk' %}
+  {% assign og_locale = 'uk_UA' %}
+  {% assign og_locale_alternate = 'en_US' %}
+{% else %}
+  {% assign og_locale = 'en_US' %}
+  {% assign og_locale_alternate = 'uk_UA' %}
+{% endif %}
 {% assign head_work = site.data.works | where: 'id', page.work_id | first %}
 {% if page.image_alt %}
   {% assign share_alt = page.image_alt %}
@@ -26,6 +33,7 @@
     <meta name="description" content="{{ meta_description | escape }}">
     <meta name="theme-color" content="#f4f2ec">
     <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ t.publications.title | escape }}" href="/{{ locale }}/publications/feed.xml">
     <link rel="canonical" href="{{ canonical_path | absolute_url }}">
     {% if page.alternate_en %}<link rel="alternate" hreflang="en" href="{{ page.alternate_en | absolute_url }}">{% endif %}
@@ -33,6 +41,8 @@
     {% if page.alternate_en %}<link rel="alternate" hreflang="x-default" href="{{ page.alternate_en | absolute_url }}">{% endif %}
     <meta property="og:type" content="{{ og_type }}">
     <meta property="og:site_name" content="Anna Voitiuk">
+    <meta property="og:locale" content="{{ og_locale }}">
+    <meta property="og:locale:alternate" content="{{ og_locale_alternate }}">
     <meta property="og:title" content="{{ meta_title | escape }}">
     <meta property="og:description" content="{{ meta_description | escape }}">
     <meta property="og:url" content="{{ canonical_path | absolute_url }}">
@@ -42,6 +52,7 @@
     <meta name="twitter:title" content="{{ meta_title | escape }}">
     <meta name="twitter:description" content="{{ meta_description | escape }}">
     <meta name="twitter:image" content="{{ share_image | absolute_url }}">
+    <meta name="twitter:image:alt" content="{{ share_alt | escape }}">
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
     {% include clarity-loader.html %}
     <script type="application/ld+json">
@@ -49,9 +60,8 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Anna Voitiuk",
-        "alternateName": ["Анна Войтюк", "Anna Vojtiuk"],
+        "alternateName": ["Анна Войтюк", "Anna Vojtiuk", "Anna Voityuk"],
         "url": "https://voitiuk.com",
-        "image": "{{ '/assets/img/works/sightseeing-tour.jpg' | absolute_url }}",
         "jobTitle": ["Printmaker", "Graphic Artist"],
         "nationality": {"@type": "Country", "name": "Ukraine"},
         "homeLocation": {"@type": "Place", "name": "Lviv, Ukraine"},

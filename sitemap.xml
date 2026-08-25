@@ -25,8 +25,6 @@ permalink: /sitemap.xml
       {% if sitemap_work %}
     <image:image>
       <image:loc>{{ sitemap_work.image | absolute_url }}</image:loc>
-      <image:title>{{ sitemap_work.title[item.lang] | xml_escape }}</image:title>
-      <image:caption>{{ sitemap_work.alt[item.lang] | default: sitemap_work.title[item.lang] | xml_escape }}</image:caption>
     </image:image>
       {% endif %}
     {% elsif item.catalog_data %}
@@ -35,16 +33,12 @@ permalink: /sitemap.xml
         {% for sitemap_series in sitemap_catalog.series %}{% for sitemap_work in sitemap_series.works %}
     <image:image>
       <image:loc>{{ sitemap_catalog.meta.assets_base | append: '/full/' | append: sitemap_work.slug | append: sitemap_catalog.meta.image_extension | absolute_url }}</image:loc>
-      <image:title>{{ sitemap_work.title[item.lang] | xml_escape }}</image:title>
-      <image:caption>{{ sitemap_work.title[item.lang] | xml_escape }}</image:caption>
     </image:image>
         {% endfor %}{% endfor %}
       {% endif %}
     {% elsif item.layout == 'article' and item.image %}
     <image:image>
       <image:loc>{{ item.image | absolute_url }}</image:loc>
-      <image:title>{{ item.title | xml_escape }}</image:title>
-      <image:caption>{{ item.image_alt | default: item.title | xml_escape }}</image:caption>
     </image:image>
     {% endif %}
   </url>

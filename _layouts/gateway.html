@@ -14,12 +14,20 @@ layout: null
   <link rel="alternate" hreflang="uk" href="{{ '/uk/' | absolute_url }}">
   <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
   <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="uk_UA">
   <meta property="og:title" content="{{ page.title | escape }}">
   <meta property="og:description" content="{{ page.description | escape }}">
   <meta property="og:url" content="{{ '/' | absolute_url }}">
   <meta property="og:image" content="{{ '/assets/img/works/sightseeing-tour.jpg' | absolute_url }}">
+  <meta property="og:image:alt" content="Sightseeing Tour, an etching and aquatint by Anna Voitiuk">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | escape }}">
+  <meta name="twitter:description" content="{{ page.description | escape }}">
+  <meta name="twitter:image" content="{{ '/assets/img/works/sightseeing-tour.jpg' | absolute_url }}">
+  <meta name="twitter:image:alt" content="Sightseeing Tour, an etching and aquatint by Anna Voitiuk">
   {% include clarity-loader.html %}
   <script type="application/ld+json">
   {

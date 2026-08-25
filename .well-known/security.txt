@@ -4,7 +4,6 @@ permalink: /.well-known/security.txt
 sitemap: false
 ---
 Contact: https://voitiuk.com/en/contact/
-Expires: 2027-08-25T23:59:59Z
+Expires: 2027-02-26T23:59:59Z
 Canonical: https://voitiuk.com/.well-known/security.txt
 Preferred-Languages: uk, en
-Policy: https://voitiuk.com/en/privacy/
