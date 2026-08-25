@@ -3,7 +3,9 @@ layout: null
 permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>{{ '/' | absolute_url }}</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}" />
@@ -12,10 +14,39 @@ permalink: /sitemap.xml
   </url>
 {% assign indexed_pages = site.pages | where_exp: 'item', 'item.lang == "en" or item.lang == "uk"' %}
 {% for item in indexed_pages %}{% unless item.sitemap == false %}
+  {% assign modified_at = item.date_modified | default: item.last_modified %}
   <url>
     <loc>{{ item.url | absolute_url }}</loc>
+    {% if modified_at %}<lastmod>{{ modified_at | date_to_xmlschema }}</lastmod>{% endif %}
     {% if item.alternate_en %}<xhtml:link rel="alternate" hreflang="en" href="{{ item.alternate_en | absolute_url }}" />{% endif %}
     {% if item.alternate_uk %}<xhtml:link rel="alternate" hreflang="uk" href="{{ item.alternate_uk | absolute_url }}" />{% endif %}
+    {% if item.work_id %}
+      {% assign sitemap_work = site.data.works | where: 'id', item.work_id | first %}
+      {% if sitemap_work %}
+    <image:image>
+      <image:loc>{{ sitemap_work.image | absolute_url }}</image:loc>
+      <image:title>{{ sitemap_work.title[item.lang] | xml_escape }}</image:title>
+      <image:caption>{{ sitemap_work.alt[item.lang] | default: sitemap_work.title[item.lang] | xml_escape }}</image:caption>
+    </image:image>
+      {% endif %}
+    {% elsif item.catalog_data %}
+      {% assign sitemap_catalog = site.data[item.catalog_data] %}
+      {% if sitemap_catalog %}
+        {% for sitemap_series in sitemap_catalog.series %}{% for sitemap_work in sitemap_series.works %}
+    <image:image>
+      <image:loc>{{ sitemap_catalog.meta.assets_base | append: '/full/' | append: sitemap_work.slug | append: sitemap_catalog.meta.image_extension | absolute_url }}</image:loc>
+      <image:title>{{ sitemap_work.title[item.lang] | xml_escape }}</image:title>
+      <image:caption>{{ sitemap_work.title[item.lang] | xml_escape }}</image:caption>
+    </image:image>
+        {% endfor %}{% endfor %}
+      {% endif %}
+    {% elsif item.layout == 'article' and item.image %}
+    <image:image>
+      <image:loc>{{ item.image | absolute_url }}</image:loc>
+      <image:title>{{ item.title | xml_escape }}</image:title>
+      <image:caption>{{ item.image_alt | default: item.title | xml_escape }}</image:caption>
+    </image:image>
+    {% endif %}
   </url>
 {% endunless %}{% endfor %}
 </urlset>

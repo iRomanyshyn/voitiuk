@@ -5,7 +5,8 @@ layout: base
 {% assign catalog = site.data[page.catalog_data] %}
 {% assign meta = catalog.meta %}
 {% assign t = catalog.page[locale] %}
-{% assign artist = meta.artist | default: site.author %}
+{% assign artist = site.data.content[locale].site_name %}
+{% if locale == 'uk' %}{% assign unit_cm = 'см' %}{% else %}{% assign unit_cm = 'cm' %}{% endif %}
 {% assign image_extension = meta.image_extension | default: '.jpg' %}
 {% assign full_images_base = meta.assets_base | append: '/full/' %}
 {% assign thumbs_base = meta.assets_base | append: '/thumbs/' %}
@@ -74,7 +75,7 @@ layout: base
             {% assign thumb_width = work.thumb_size | first %}
             {% assign thumb_height = work.thumb_size | last %}
             {% capture work_alt %}{{ work.title[locale] }}, {{ technique.label[locale] }}, {{ work.year }}, {{ artist }}{% endcapture %}
-            {% capture lightbox_meta %}{{ work.year }} · {{ technique.label[locale] }} · {{ technique.code }}{% if work.paper %} · {{ t.paper }} {{ work.paper }} cm{% endif %}{% endcapture %}
+            {% capture lightbox_meta %}{{ work.year }} · {{ technique.label[locale] }} · {{ technique.code }}{% if work.paper %} · {{ t.paper }} {{ work.paper }} {{ unit_cm }}{% endif %}{% endcapture %}
             <article class="exhibition-work-card">
               <button
                 class="exhibition-work-image"
@@ -96,9 +97,9 @@ layout: base
                 <p>{{ work.year }} · {{ technique.label[locale] }}</p>
                 <p class="exhibition-work-size">
                   {% if work.plate %}
-                    {% if work.plate_kind == 'diameter' %}{{ t.plate_diameter }}{% elsif work.plate_kind == 'side' %}{{ t.plate_side }}{% else %}{{ t.plate }}{% endif %}: {{ work.plate }} cm ·
+                    {% if work.plate_kind == 'diameter' %}{{ t.plate_diameter }}{% elsif work.plate_kind == 'side' %}{{ t.plate_side }}{% else %}{{ t.plate }}{% endif %}: {{ work.plate }} {{ unit_cm }} ·
                   {% endif %}
-                  {{ t.paper }}: {{ work.paper }} cm
+                  {{ t.paper }}: {{ work.paper }} {{ unit_cm }}
                 </p>
               </div>
             </article>

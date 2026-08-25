@@ -89,7 +89,7 @@ Several related intaglio techniques are often used alongside etching:
 - **mezzotint** begins with a plate roughened so evenly that it could print as a deep black. The tool used is a **mezzotint rocker**: a curved steel blade with extremely regular teeth and a handle. It looks a little like a miniature toothed hoe or some precisely engineered piece of farm equipment, yet it is made with the accuracy of an engraver’s tool. The rocker is rolled repeatedly across the plate in many directions until the surface is covered with an even field of burrs. Scrapers and burnishers then reduce this roughness: the smoother the area, the less ink it holds and the lighter it prints.<sup><a href="#source-vam-what-is-print">[1]</a></sup>
 
 <figure>
-  <img src="/assets/img/works/kotoroka.jpg" alt="Kotoroka, a drypoint on plastic by Anna Voitiuk">
+  <img src="/assets/img/works/kotoroka.jpg" alt="Kotoroka, a drypoint on plastic by Anna Voitiuk" width="1588" height="1588" loading="lazy" decoding="async">
   <figcaption>Anna Voitiuk, Kotoroka. Drypoint on plastic (C4): the line is scratched directly into a plastic plate.</figcaption>
 </figure>
 

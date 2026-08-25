@@ -12,7 +12,11 @@
 {% elsif head_work %}
   {% assign share_alt = head_work.alt[locale] %}
 {% else %}
-  {% assign share_alt = 'Sightseeing Tour, a 2020 print by Anna Voitiuk' %}
+  {% if locale == 'uk' %}
+    {% assign share_alt = '«Оглядова екскурсія», офорт та акватинта Анни Войтюк, 2020' %}
+  {% else %}
+    {% assign share_alt = 'Sightseeing Tour, a 2020 print by Anna Voitiuk' %}
+  {% endif %}
 {% endif %}
 <html lang="{{ locale }}">
   <head>
@@ -22,6 +26,7 @@
     <meta name="description" content="{{ meta_description | escape }}">
     <meta name="theme-color" content="#f4f2ec">
     <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ t.publications.title | escape }}" href="/{{ locale }}/publications/feed.xml">
     <link rel="canonical" href="{{ canonical_path | absolute_url }}">
     {% if page.alternate_en %}<link rel="alternate" hreflang="en" href="{{ page.alternate_en | absolute_url }}">{% endif %}
     {% if page.alternate_uk %}<link rel="alternate" hreflang="uk" href="{{ page.alternate_uk | absolute_url }}">{% endif %}
@@ -38,16 +43,7 @@
     <meta name="twitter:description" content="{{ meta_description | escape }}">
     <meta name="twitter:image" content="{{ share_image | absolute_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
-    {% if site.clarity_project_id %}
-    <script>
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        c[a]('consentv2',{ad_Storage:'denied',analytics_Storage:'denied'});
-        t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window,document,'clarity','script','{{ site.clarity_project_id }}');
-    </script>
-    {% endif %}
+    {% include clarity-loader.html %}
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -72,14 +68,14 @@
     <a class="skip-link" href="#main-content">{{ t.skip }}</a>
     <header class="site-header" data-site-header>
       <div class="shell header-inner">
-        <a class="brand" href="/{% if locale == 'uk' %}uk{% else %}en{% endif %}/" aria-label="{{ t.site_name }} — home">
+        <a class="brand" href="/{% if locale == 'uk' %}uk{% else %}en{% endif %}/" aria-label="{{ t.site_name }} — {{ t.accessibility.home }}">
           <span class="brand-name">{{ t.site_name }}</span>
           <span class="brand-role">{{ t.role }}</span>
         </a>
         <button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" data-menu-toggle>
           <span>{{ t.menu }}</span><span aria-hidden="true">＋</span>
         </button>
-        <nav class="site-nav" id="site-navigation" aria-label="Primary" data-navigation>
+        <nav class="site-nav" id="site-navigation" aria-label="{{ t.accessibility.primary_navigation }}" data-navigation>
           <ul>
             {% for item in t.nav %}
               <li><a href="{{ item.url }}"{% if page.url == item.url or page.parent_url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
@@ -99,7 +95,7 @@
     <footer class="site-footer">
       <div class="shell footer-inner">
         <p>{{ t.footer.rights }}</p>
-        <nav aria-label="Footer">
+        <nav aria-label="{{ t.accessibility.footer_navigation }}">
           <a href="https://www.instagram.com/voitiuk_print/" target="_blank" rel="me noopener noreferrer">{{ t.footer.instagram }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
           <a href="https://www.facebook.com/anna.vojtyuk/" target="_blank" rel="me noopener noreferrer">{{ t.footer.facebook }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
           <a href="https://www.etsy.com/shop/VoitiukPrint" target="_blank" rel="me noopener external">{{ t.footer.etsy }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>

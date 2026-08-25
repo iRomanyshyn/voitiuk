@@ -20,6 +20,7 @@ layout: null
   <meta property="og:url" content="{{ '/' | absolute_url }}">
   <meta property="og:image" content="{{ '/assets/img/works/sightseeing-tour.jpg' | absolute_url }}">
   <meta name="twitter:card" content="summary_large_image">
+  {% include clarity-loader.html %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,22 +60,33 @@ layout: null
       </div>
     </section>
     <figure class="language-gateway-art">
-      <img src="{{ '/assets/img/works/sightseeing-tour.jpg' | relative_url }}" alt="Sightseeing Tour, an etching and aquatint by Anna Voitiuk">
+      <img src="{{ '/assets/img/works/sightseeing-tour.jpg' | relative_url }}" alt="Sightseeing Tour, an etching and aquatint by Anna Voitiuk" width="1912" height="1396" fetchpriority="high" decoding="async">
       <figcaption><span lang="uk">«Оглядова екскурсія»</span><span>Sightseeing Tour · 2020</span></figcaption>
     </figure>
   </main>
   <script>
     (function () {
+      function clarityEvent(name) {
+        if (window.clarity) window.clarity('event', name);
+      }
+
+      function redirectWithEvent(language, url) {
+        clarityEvent('gateway_saved_language_redirect_' + (language === 'uk' ? 'ua' : language));
+        window.setTimeout(function () { window.location.replace(url); }, 120);
+      }
+
+      clarityEvent('gateway_view');
+
       try {
         var params = new URLSearchParams(window.location.search);
         if (params.get('choose') !== '1') {
           var savedLanguage = window.localStorage.getItem('voitiuk-language');
           if (savedLanguage === 'uk') {
-            window.location.replace({{ '/uk/' | relative_url | jsonify }});
+            redirectWithEvent('uk', {{ '/uk/' | relative_url | jsonify }});
             return;
           }
           if (savedLanguage === 'en') {
-            window.location.replace({{ '/en/' | relative_url | jsonify }});
+            redirectWithEvent('en', {{ '/en/' | relative_url | jsonify }});
             return;
           }
         }
@@ -97,6 +109,7 @@ layout: null
         }
 
         choice.addEventListener('click', function () {
+          clarityEvent('gateway_select_' + (choice.dataset.languageChoice === 'uk' ? 'ua' : choice.dataset.languageChoice));
           try {
             window.localStorage.setItem('voitiuk-language', choice.dataset.languageChoice);
           } catch (_error) {

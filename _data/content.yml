@@ -5,6 +5,10 @@ en:
   skip: "Skip to content"
   menu: "Menu"
   language: "Language"
+  accessibility:
+    home: "home"
+    primary_navigation: "Primary navigation"
+    footer_navigation: "Footer navigation"
   reference:
     source: "Source"
     catalogue: "Catalogue"
@@ -155,6 +159,10 @@ uk:
   skip: "Перейти до змісту"
   menu: "Меню"
   language: "Мова"
+  accessibility:
+    home: "головна сторінка"
+    primary_navigation: "Основна навігація"
+    footer_navigation: "Навігація в нижній частині сторінки"
   reference:
     source: "Джерело"
     catalogue: "Каталог"

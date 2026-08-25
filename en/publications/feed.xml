@@ -1,0 +1,30 @@
+---
+layout: null
+lang: en
+permalink: /en/publications/feed.xml
+alternate_en: /en/publications/feed.xml
+alternate_uk: /uk/publications/feed.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications — Anna Voitiuk</title>
+    <description>Articles, research and publications about the work of Ukrainian printmaker Anna Voitiuk.</description>
+    <link>{{ '/en/publications/' | absolute_url }}</link>
+    <atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    {% assign newest_item = site.data.articles | sort: 'date' | last %}
+    {% if newest_item %}<lastBuildDate>{{ newest_item.date_modified | default: newest_item.date | date_to_rfc822 }}</lastBuildDate>{% endif %}
+    {% assign feed_items = site.data.articles | sort: 'date' | reverse %}
+    {% for item in feed_items %}
+    <item>
+      <title>{{ item.title.en | xml_escape }}</title>
+      <link>{{ item.url.en | absolute_url }}</link>
+      <guid isPermaLink="true">{{ item.url.en | absolute_url }}</guid>
+      <pubDate>{{ item.date | date_to_rfc822 }}</pubDate>
+      <description>{{ item.summary.en | xml_escape }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

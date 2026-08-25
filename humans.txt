@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: /humans.txt
+sitemap: false
+---
+/* ARTIST */
+Anna Voitiuk — printmaker and graphic artist, Lviv, Ukraine
+Website: https://voitiuk.com/
+
+/* SITE */
+Languages: Ukrainian, English
+Technology: Jekyll, GitHub Pages
+Standards: semantic HTML, responsive images, structured data

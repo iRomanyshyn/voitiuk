@@ -2,6 +2,12 @@
 layout: base
 ---
 {% assign locale = page.lang %}
+{% assign article_entry = nil %}
+{% for entry in site.data.articles %}
+  {% if entry.url[locale] == page.url %}{% assign article_entry = entry %}{% break %}{% endif %}
+{% endfor %}
+{% assign article_image_width = page.image_width | default: article_entry.image_width %}
+{% assign article_image_height = page.image_height | default: article_entry.image_height %}
 <article class="article-page">
   <header class="article-header shell">
     <p class="eyebrow">{{ page.eyebrow }}</p>
@@ -19,14 +25,14 @@ layout: base
     {% if page.video_id %}
       <div class="article-video" data-video-id="{{ page.video_id | escape }}" data-video-title="{{ page.video_title | escape }}">
         <button class="article-video-facade" type="button" data-video-load aria-label="{{ page.video_load_label | escape }}">
-          <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}">
+          <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}"{% if article_image_width and article_image_height %} width="{{ article_image_width }}" height="{{ article_image_height }}"{% endif %} fetchpriority="high" decoding="async">
           <span class="article-video-play" aria-hidden="true">▶</span>
           <span class="article-video-label" aria-hidden="true">{{ page.video_load_label }}</span>
         </button>
         <noscript><p class="article-video-noscript"><a href="https://www.youtube.com/watch?v={{ page.video_id }}" target="_blank" rel="noopener noreferrer">{{ page.video_external_label }} ↗</a></p></noscript>
       </div>
     {% else %}
-      <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}">
+      <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}"{% if article_image_width and article_image_height %} width="{{ article_image_width }}" height="{{ article_image_height }}"{% endif %} fetchpriority="high" decoding="async">
     {% endif %}
     <figcaption>{{ page.image_caption }}</figcaption>
   </figure>
@@ -65,7 +71,7 @@ layout: base
   "headline": {{ page.article_title | jsonify }},
   "description": {{ page.description | jsonify }},
   "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
-  "dateModified": "{{ page.date | date: '%Y-%m-%d' }}",
+  {% if page.date_modified %}"dateModified": "{{ page.date_modified | date: '%Y-%m-%d' }}",{% endif %}
   "inLanguage": "{{ locale }}",
   "image": "{{ page.image | absolute_url }}",
   {% if page.video_id %}"video": {
