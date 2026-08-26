@@ -4,7 +4,7 @@ lang: en
 page_key: artwork
 work_id: spider
 title: "She-Spider — Anna Voitiuk"
-description: "She-Spider by Anna Voitiuk fills an octagonal composition with dense lines, repeated motifs and a web-like centre."
+description: "She-Spider, an etching and aquatint by Anna Voitiuk, wears stockings and shoes in an octagonal composition of dense lines and patterns."
 image: /assets/img/works/spider.jpg
 permalink: /en/works/spider/
 alternate_en: /en/works/spider/

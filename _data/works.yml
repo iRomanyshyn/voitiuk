@@ -155,6 +155,7 @@
   title:
     en: "Samurai Murchyk"
     uk: "Самурай Мурчик"
+  year: 2021
   technique:
     en: "Etching"
     uk: "Офорт"
@@ -179,9 +180,9 @@
     en: "She-Spider"
     uk: "Павучиця"
   technique:
-    en: "Etching"
-    uk: "Офорт"
-  technique_code: "C3"
+    en: "Etching and aquatint"
+    uk: "Офорт і акватинта"
+  technique_code: "C3+C5"
   image: "/assets/img/works/spider.jpg"
   thumbnail: "/assets/img/works/spider-960.jpg"
   image_width: 1400
@@ -189,11 +190,11 @@
   thumbnail_width: 949
   thumbnail_height: 960
   alt:
-    en: "A large she-spider on an octagonal plate, her legs filled with different patterns and her abdomen marked by a concentric web."
-    uk: "Велика павучиця на восьмикутній пластині; її лапи заповнені різними візерунками, а на черевці розходиться концентричне павутиння."
+    en: "A large she-spider in stockings and shoes on an octagonal plate; her legs are filled with different patterns and her abdomen is marked by a concentric web."
+    uk: "Велика павучиця у панчохах і черевичках на восьмикутній пластині; її лапи заповнені різними візерунками, а на черевці розходиться концентричне павутиння."
   description:
-    en: "She-Spider fills an octagonal composition built from dense linework, repeated motifs and a web-like centre."
-    uk: "«Павучиця» заповнює восьмикутну композицію, побудовану зі щільних ліній, повторюваних мотивів і павутинного осердя."
+    en: "She-Spider, wearing stockings and shoes, fills an octagonal composition built from dense linework, repeated motifs and a web-like centre."
+    uk: "«Павучиця» у панчохах і черевичках заповнює восьмикутну композицію, побудовану зі щільних ліній, повторюваних мотивів і павутинного осердя."
   source_id: 032-interview-2024
 
 - id: skaudvile-post-office
