@@ -31,6 +31,13 @@ projects:
     uk: "Екслібрис для Deutsche Exlibris-Gesellschaft, опублікований у матеріалах, пов'язаних із Büchergilde."
     source_ids: [buechergilde-2025]
 press:
+  - year: 2026
+    title:
+      en: "There Are No Bad Animals: Anna Voitiuk on Etching, Bookplates, Memory and a Future Project"
+      uk: "«Поганих тварин немає»: Анна Войтюк про офорт, екслібриси, пам’ять і майбутній проєкт"
+    en: "An interview by Diana Rymarchuk about etching and bookplates, animals in Anna Voitiuk’s work, memory, and a future project about beauty, prejudice and speciesism. Published by KAMO on 25 August 2026."
+    uk: "Інтерв’ю Діани Римарчук про офорт і екслібриси, тварин у творчості Анни Войтюк, пам’ять та майбутній проєкт про красу, упередження і спесишизм. Опубліковано в KAMO 25 серпня 2026 року."
+    source_ids: [kamo-interview-2026]
   - year: 2024
     title:
       en: "How Young Lviv Artists Preserve and Continue the Tradition of Etching: Interview with Anna Voitiuk"
