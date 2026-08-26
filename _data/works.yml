@@ -153,8 +153,8 @@
 - id: cat-samurai
   slug: cat-samurai
   title:
-    en: "Untitled (Cat Samurai)"
-    uk: "Без назви (Кіт-самурай)"
+    en: "Samurai Murchyk"
+    uk: "Самурай Мурчик"
   technique:
     en: "Etching"
     uk: "Офорт"
@@ -166,18 +166,18 @@
   thumbnail_width: 748
   thumbnail_height: 960
   alt:
-    en: "Anthropomorphic cat in ornate samurai armour holding a drawn sword, with a rising sun behind its head."
-    uk: "Антропоморфний кіт у пишних самурайських обладунках тримає оголений меч; за його головою сходить сонце."
+    en: "Samurai Murchyk, an anthropomorphic cat in ornate samurai armour holding a drawn sword, with a rising sun behind his head."
+    uk: "Самурай Мурчик — антропоморфний кіт у пишних самурайських обладунках з оголеним мечем; за його головою сходить сонце."
   description:
-    en: "An anthropomorphic cat appears as a samurai in richly patterned armour. The descriptive title is editorial because a verified original title has not yet been found."
-    uk: "Антропоморфний кіт постає самураєм у багато оздоблених обладунках. Описова назва є редакційною, адже підтвердженої авторської назви поки не знайдено."
+    en: "Samurai Murchyk, an anthropomorphic cat, appears in richly patterned armour with a drawn sword and the rising sun behind him."
+    uk: "Самурай Мурчик — антропоморфний кіт у багато оздоблених обладунках, з оголеним мечем і сонцем, що сходить за його спиною."
   source_id: 032-interview-2024
 
 - id: spider
   slug: spider
   title:
-    en: "Untitled (Spider)"
-    uk: "Без назви (Павук)"
+    en: "She-Spider"
+    uk: "Павучиця"
   technique:
     en: "Etching"
     uk: "Офорт"
@@ -189,11 +189,11 @@
   thumbnail_width: 949
   thumbnail_height: 960
   alt:
-    en: "Large spider on an octagonal plate, its legs filled with different patterns and its abdomen marked by a concentric web."
-    uk: "Великий павук на восьмикутній пластині; його лапи заповнені різними візерунками, а на черевці розходиться концентричне павутиння."
+    en: "A large she-spider on an octagonal plate, her legs filled with different patterns and her abdomen marked by a concentric web."
+    uk: "Велика павучиця на восьмикутній пластині; її лапи заповнені різними візерунками, а на черевці розходиться концентричне павутиння."
   description:
-    en: "A spider fills an octagonal composition built from dense linework, repeated motifs and a web-like centre. The descriptive title is editorial because a verified original title has not yet been found."
-    uk: "Павук заповнює восьмикутну композицію, побудовану зі щільних ліній, повторюваних мотивів і павутинного осердя. Описова назва є редакційною, адже підтвердженої авторської назви поки не знайдено."
+    en: "She-Spider fills an octagonal composition built from dense linework, repeated motifs and a web-like centre."
+    uk: "«Павучиця» заповнює восьмикутну композицію, побудовану зі щільних ліній, повторюваних мотивів і павутинного осердя."
   source_id: 032-interview-2024
 
 - id: skaudvile-post-office
