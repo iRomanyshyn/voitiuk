@@ -32,6 +32,13 @@ projects:
     source_ids: [buechergilde-2025]
 press:
   - year: 2024
+    title:
+      en: "How Young Lviv Artists Preserve and Continue the Tradition of Etching: Interview with Anna Voitiuk"
+      uk: "«Як молоді львівські митці зберігають і продовжують традиції офорта. Інтерв’ю з Анною Войтюк»"
+    en: "An interview by Eduard Hontovskyi about etching, artistic education, international competitions and Anna Voitiuk’s 2024 solo exhibition at Franko House. Published by 032.ua on 25 November 2024."
+    uk: "Інтерв’ю Едуарда Гонтовського про офорт, мистецьку освіту, міжнародні конкурси та персональну виставку Анни Войтюк 2024 року в Домі Франка. Опубліковано на 032.ua 25 листопада 2024 року."
+    source_ids: [032-interview-2024]
+  - year: 2024
     title: "Die phantastische (Exlibris-)Welt der Anna Voitiuk"
     en: "Profile by Utz Benkel in DEG Mitteilungen."
     uk: "Персональний матеріал Utz Benkel у DEG Mitteilungen."

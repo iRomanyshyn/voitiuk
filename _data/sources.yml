@@ -181,6 +181,12 @@ artist-cv-2026:
   url: "/assets/documents/Anna_Voitiuk_CV_2026-08-20.pdf"
   type: "artist-cv"
   public: false
+032-interview-2024:
+  label: "Як молоді львівські митці зберігають і продовжують традиції офорта. Інтерв’ю з Анною Войтюк"
+  organization: "032.ua — Сайт міста Львова"
+  url: "https://www.032.ua/news/3863609/ak-molodi-lvivski-mitci-zberigaut-i-prodovzuut-tradicii-oforta-intervu-z-annou-vojtuk"
+  type: "press-interview"
+  published: "2024-11-25"
 met-print-history:
   label: "The Printed Image in the West: History and Techniques"
   organization: "The Metropolitan Museum of Art"
