@@ -73,6 +73,156 @@
       - "хвостиком замету, –"
       - "Тут тобі й смерть"
 
+- id: haste-makes-waste
+  slug: haste-makes-waste
+  title:
+    en: "Haste makes waste"
+    uk: "Haste makes waste"
+  year: 2021
+  technique:
+    en: "Etching, linocut and embossing"
+    uk: "Офорт, лінорит і тиснення"
+  plate_size: "11 × 16 cm"
+  width_cm: 11
+  height_cm: 16
+  image: "/assets/img/works/haste-makes-waste.jpg"
+  thumbnail: "/assets/img/works/haste-makes-waste-960.jpg"
+  image_width: 1400
+  image_height: 1048
+  thumbnail_width: 960
+  thumbnail_height: 719
+  alt:
+    en: "Tortoise crossing a finish line while a startled hare looks on, arranged on an irregularly shaped printmaking plate."
+    uk: "Черепаха перетинає фінішну лінію, поки приголомшений заєць спостерігає; композицію вписано в пластину неправильної форми."
+  description:
+    en: "An interpretation of Jean de La Fontaine’s fable The Hare and the Tortoise. The composition captures the moment when the hare realises that haste and underestimating his opponent have cost him the race. The work received First Prize in the Jean de La Fontaine category of the 2021 Hommage à Trois competition."
+    uk: "Інтерпретація байки Жана де Лафонтена «Заєць і черепаха». Композиція зосереджена на миті, коли заєць розуміє, що програв через поспішність і недооцінювання суперника. Робота здобула першу премію в категорії Жана де Лафонтена на конкурсі Hommage à Trois 2021 року."
+  source_id: hommage-2021
+
+- id: painted-fox
+  slug: painted-fox
+  title:
+    en: "The Painted Fox"
+    uk: "Фарбований Лис"
+  year: 2024
+  technique:
+    en: "Etching with hand colouring"
+    uk: "Офорт із ручним підфарбовуванням"
+  technique_code: "C3"
+  bookplate_for:
+    en: "Franko House"
+    uk: "Дім Франка"
+  image: "/assets/img/works/painted-fox.jpg"
+  thumbnail: "/assets/img/works/painted-fox-960.jpg"
+  image_width: 1400
+  image_height: 1513
+  thumbnail_width: 888
+  thumbnail_height: 960
+  alt:
+    en: "Hand-coloured bookplate for Franko House depicting the Painted Fox in an embroidered shirt, seated above an open book."
+    uk: "Підфарбований екслібрис для Дому Франка із Фарбованим Лисом у вишитій сорочці, який сидить над розгорнутою книжкою."
+  description:
+    en: "A bookplate created for Franko House in Lviv. Anna Voitiuk chose the Painted Fox, one of the best-known animal characters in Ivan Franko’s fairy tales, as its central figure."
+    uk: "Екслібрис, створений для Дому Франка у Львові. Центральним персонажем Анна Войтюк обрала Фарбованого Лиса — один із найвідоміших звіриних образів у казках Івана Франка."
+  source_id: 032-interview-2024
+
+- id: krysia
+  slug: krysia
+  title:
+    en: "Krysia"
+    uk: "Крися"
+  year: 2022
+  technique:
+    en: "Etching with hand colouring"
+    uk: "Офорт із ручним підфарбовуванням"
+  technique_code: "C3"
+  image: "/assets/img/works/krysia.jpg"
+  thumbnail: "/assets/img/works/krysia-960.jpg"
+  image_width: 1400
+  image_height: 1999
+  thumbnail_width: 672
+  thumbnail_height: 960
+  alt:
+    en: "A guinea pig in a patterned armchair knitting a long striped textile, with a ball of yarn on the floor."
+    uk: "Морська свинка у візерунчастому кріслі в’яже довге смугасте полотно; на підлозі лежить клубок ниток."
+  description:
+    en: "A gently humorous portrait of Krysia, a guinea pig absorbed in knitting while seated in a high-backed armchair. The title and year are inscribed on the print."
+    uk: "М’яко гумористичний портрет морської свинки Крисі, яка захоплено в’яже, сидячи у високому кріслі. Назву й рік зазначено на самому відбитку."
+  source_id: 032-interview-2024
+
+- id: cat-samurai
+  slug: cat-samurai
+  title:
+    en: "Untitled (Cat Samurai)"
+    uk: "Без назви (Кіт-самурай)"
+  technique:
+    en: "Etching"
+    uk: "Офорт"
+  technique_code: "C3"
+  image: "/assets/img/works/cat-samurai.jpg"
+  thumbnail: "/assets/img/works/cat-samurai-960.jpg"
+  image_width: 1400
+  image_height: 1796
+  thumbnail_width: 748
+  thumbnail_height: 960
+  alt:
+    en: "Anthropomorphic cat in ornate samurai armour holding a drawn sword, with a rising sun behind its head."
+    uk: "Антропоморфний кіт у пишних самурайських обладунках тримає оголений меч; за його головою сходить сонце."
+  description:
+    en: "An anthropomorphic cat appears as a samurai in richly patterned armour. The descriptive title is editorial because a verified original title has not yet been found."
+    uk: "Антропоморфний кіт постає самураєм у багато оздоблених обладунках. Описова назва є редакційною, адже підтвердженої авторської назви поки не знайдено."
+  source_id: 032-interview-2024
+
+- id: spider
+  slug: spider
+  title:
+    en: "Untitled (Spider)"
+    uk: "Без назви (Павук)"
+  technique:
+    en: "Etching"
+    uk: "Офорт"
+  technique_code: "C3"
+  image: "/assets/img/works/spider.jpg"
+  thumbnail: "/assets/img/works/spider-960.jpg"
+  image_width: 1400
+  image_height: 1416
+  thumbnail_width: 949
+  thumbnail_height: 960
+  alt:
+    en: "Large spider on an octagonal plate, its legs filled with different patterns and its abdomen marked by a concentric web."
+    uk: "Великий павук на восьмикутній пластині; його лапи заповнені різними візерунками, а на черевці розходиться концентричне павутиння."
+  description:
+    en: "A spider fills an octagonal composition built from dense linework, repeated motifs and a web-like centre. The descriptive title is editorial because a verified original title has not yet been found."
+    uk: "Павук заповнює восьмикутну композицію, побудовану зі щільних ліній, повторюваних мотивів і павутинного осердя. Описова назва є редакційною, адже підтвердженої авторської назви поки не знайдено."
+  source_id: 032-interview-2024
+
+- id: skaudvile-post-office
+  slug: skaudvile-post-office
+  title:
+    en: "Skaudvilė Post Office"
+    uk: "Пошта міста Скаудвіле"
+  year: 2020
+  technique:
+    en: "Etching"
+    uk: "Офорт"
+  technique_code: "C3"
+  bookplate_for:
+    en: "Skaudvilė Post Office"
+    uk: "пошта міста Скаудвіле"
+  image: "/assets/img/works/skaudvile-post-office.jpg"
+  thumbnail: "/assets/img/works/skaudvile-post-office-960.jpg"
+  image_width: 1400
+  image_height: 947
+  thumbnail_width: 960
+  thumbnail_height: 649
+  alt:
+    en: "Bookplate designed as a Lithuanian postage stamp, showing the Skaudvilė post office façade and a horse-drawn mail coach."
+    uk: "Екслібрис у формі литовської поштової марки із фасадом пошти Скаудвіле та кінним поштовим екіпажем."
+  description:
+    en: "Created for a Lithuanian competition that asked artists to honour a local architectural landmark. Anna Voitiuk chose the Skaudvilė post office and framed the building as a postage stamp, accompanied by a historic mail coach."
+    uk: "Створений для литовського конкурсу, учасникам якого запропонували вшанувати місцеву архітектурну пам’ятку. Анна Войтюк обрала будівлю пошти Скаудвіле й оформила композицію як поштову марку, доповнивши її історичним поштовим екіпажем."
+  source_id: 032-interview-2024
+
 - id: sightseeing-tour
   slug: sightseeing-tour
   title: { en: "Sightseeing Tour", uk: "Sightseeing Tour" }
