@@ -4,7 +4,7 @@ lang: uk
 page_key: artwork
 work_id: skaudvile-post-office
 title: "Пошта міста Скаудвіле — Анна Войтюк"
-description: "Офортний екслібрис Анни Войтюк 2020 року для пошти міста Скаудвіле, оформлений як литовська марка з історичним поштовим екіпажем."
+description: "Офортний екслібрис Анни Войтюк 2020 року для пошти міста Скаудвіле, оформлений як литовська марка з конвертом і поштовим штемпелем."
 image: /assets/img/works/skaudvile-post-office.jpg
 permalink: /uk/works/skaudvile-post-office/
 alternate_en: /en/works/skaudvile-post-office/
