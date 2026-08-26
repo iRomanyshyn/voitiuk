@@ -27,7 +27,7 @@
 | Локальний архів книжок і публікацій | `assets/documents/publications/` |
 | PDF-резюме та інші документи | `assets/documents/` |
 | Стилі та JavaScript | `assets/css/`, `assets/js/` |
-| Налаштування сайту, Formspree і Clarity | `_config.yml` |
+| Налаштування сайту, Etsy, Formspree і Clarity | `_config.yml` |
 | GitHub Pages workflow | `.github/workflows/jekyll.yml` |
 
 `_site/`, `.jekyll-cache/`, `tmp/`, `vendor/` і `.bundle/` є згенерованими або локальними службовими каталогами. Їх не потрібно редагувати й комітити.

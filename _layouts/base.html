@@ -68,7 +68,7 @@
         "sameAs": [
           "https://www.instagram.com/voitiuk_print/",
           "https://www.facebook.com/anna.vojtyuk/",
-          "https://www.etsy.com/shop/VoitiukPrint"
+          "{{ site.etsy_shop_url }}"
         ]
       }
     </script>
@@ -108,7 +108,7 @@
         <nav aria-label="{{ t.accessibility.footer_navigation }}">
           <a href="https://www.instagram.com/voitiuk_print/" target="_blank" rel="me noopener noreferrer">{{ t.footer.instagram }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
           <a href="https://www.facebook.com/anna.vojtyuk/" target="_blank" rel="me noopener noreferrer">{{ t.footer.facebook }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
-          <a href="https://www.etsy.com/shop/VoitiukPrint" target="_blank" rel="me noopener external">{{ t.footer.etsy }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
+          <a href="{{ site.etsy_shop_url }}" target="_blank" rel="me noopener external">{{ t.footer.etsy }}<span class="sr-only"> — {{ t.shop.new_tab }}</span></a>
           <a href="/{% if locale == 'uk' %}uk{% else %}en{% endif %}/contact/">{{ t.footer.contact }}</a>
           <a href="{% if locale == 'uk' %}/uk/privacy/{% else %}/privacy/{% endif %}">{{ t.footer.privacy }}</a>
           <a href="{% if locale == 'uk' %}/uk/copyright/{% else %}/copyright/{% endif %}">{{ t.footer.copyright }}</a>
