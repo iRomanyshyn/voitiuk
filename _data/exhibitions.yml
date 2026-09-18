@@ -8,7 +8,7 @@ solo:
     end_date: "2026-09-13"
     summary: { en: "An exhibition of etchings and wood engravings devoted to the animal world.", uk: "Виставка офортів і гравюр на дереві, присвячених світові тварин." }
     page: { en: "/en/exhibitions/red-book-2026/", uk: "/uk/exhibitions/red-book-2026/" }
-    current: true
+    current: false
     source_ids: [green-sofa-2026]
   - year: 2026
     title: { en: "Exlibris Animalia", uk: "Exlibris Animalia" }
