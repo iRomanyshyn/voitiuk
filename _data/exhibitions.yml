@@ -17,7 +17,7 @@ solo:
     dates: { en: "Since 9 July 2026", uk: "Від 9 липня 2026" }
     start_date: "2026-07-09"
     summary: { en: "An exhibition of graphic art and exlibris devoted to animal imagery.", uk: "Виставка графіки та екслібрисів, присвячена образам тварин." }
-    current: true
+    current: false
     source_ids: [listin-animalia-2026]
   - year: 2025
     title: { en: "Animal Orchestra", uk: "«Оркестр тварин»" }
